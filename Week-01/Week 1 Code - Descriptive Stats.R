@@ -1,4 +1,4 @@
-### This script is to run the demo and tutorial Business Analytics
+### Business Analytics Course, New York University
 ### Author: JC Bonilla
 ### jb3379@nyu.edu
 ### Content:
