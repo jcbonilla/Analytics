@@ -1,5 +1,4 @@
 # Load the packages we will be using
-library(Hmisc)
 library(ggplot2)
 
 # Read the data file -- make sure you either provide the full path for the location of the file 
@@ -8,7 +7,6 @@ url<-"https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/Week-
 movies<-read.csv(url)
 
 # Examine the database
-describe(movies)
 summary(movies)
 
 # Notice Genre values are treated as numbers. We can deal with this in two ways:
