@@ -1,0 +1,192 @@
+---
+title: "BA - TimeSeries"
+author: "jb3379@nyu.edu"
+Term: "Fall 2016"
+output: html_document
+---
+
+#Data
+Loading data & exploration
+```{r}
+setwd("~/Google Drive/_NYU GDrive/Teaching/Business Analytics/TimeSeries")
+timeseries<- read.csv("TSdata.csv", 
+                     header=TRUE, stringsAsFactors=FALSE)
+names(timeseries)
+str(timeseries)
+head(timeseries)
+summary(timeseries)
+```
+
+# Time Series Objects
+Next step is to store the data in a time series object in R. To store the data in a time series object, we use the `ts()` function in R.  The function `ts()` is used to create time-series objects.
+
+```{r}
+ts.all<-ts(timeseries)
+ts.all
+ts.1<-ts(timeseries$Series1)    # to select one series only
+ts.1
+```
+
+Sometime temporal data has frequency. This means that data is collected at regular intervals. Example: yearly, monthly, quarterly, etc
+```{r}
+ts.quart<-ts(timeseries$Series1, frequency = 4) 
+ts.quart
+ts.month<-ts(timeseries$Series1, frequency = 12) 
+ts.month
+```
+
+#Plotting Time Series
+To plot a time series data use the plot.ts() function
+```{r}
+plot.ts(ts.all)
+
+```
+
+
+
+#Decomposing Time Series
+Decomposing a time series means separating the time series into these three components: a trend component, a seasonal component, and an irregular component.  
+To estimate these we use the `decompose()` function in R. This function estimates the trend, seasonal, and irregular components of a time series that can be described using an additive model. `decompose()` returns a list object as its result, where the estimates of the seasonal component, trend component and irregular component are stored in named elements of that list objects, called “seasonal”, “trend”, and “random” respectively.   
+
+We proceed to decompose series4 as monthly data using `frequency = 12`
+
+```{r}
+ts.4<-ts(timeseries$Series4, frequency = 12)
+plot.ts(ts.4)
+
+ts.4.d <- decompose(ts.4)
+plot(ts.4.d)
+```
+
+The plot above shows the original time series (top), the estimated trend component (second from top), the estimated seasonal component (third from top), and the estimated irregular component (bottom). We see that the estimated trend component showsa steady increase over time.  
+
+**Try this with series 1,2, and 3 and tell us if there is a trend and seasonality!**  
+
+
+#Forecasting 
+If you have a time series that can be described using an additive model with constant level and no seasonality, you can use simple exponential smoothing to make short-term forecasts.  Smoothing reduces the variation in a time series!
+
+The simple exponential smoothing method provides a way of estimating the level at the current time point. Smoothing is controlled by the parameter alpha; for the estimate of the level at the current time point. The value of alpha; lies between 0 and 1. Values of alpha that are close to 0 mean that little weight is placed on the most recent observations when making forecasts of future values.  
+
+For example, the file http://robjhyndman.com/tsdldata/hurst/precip1.dat contains total annual rainfall in inches. The time series looks as follows:
+
+```{r}
+rain <- scan("http://robjhyndman.com/tsdldata/hurst/precip1.dat",skip=1)
+head(rain)
+str(rain)
+rainseries <- ts(rain,start=c(1900), frequency=2)
+plot.ts(rainseries)
+
+
+rainseries.d <- decompose(rainseries)
+plot(rainseries.d)
+
+```
+From above we can see how there is no trend (stochastic behavior of weather) but strong seasonality.  
+
+#Holt’s exponential smoothing 
+Holt’s exponential smoothing estimates the level and slope at the current time point. Smoothing is controlled by two parameters, **alpha**, for the estimate of the level at the current time point, and **beta** for the estimate of the slope b of the trend component at the current time point. As with simple exponential smoothing, the paramters alpha and beta have values between 0 and 1, and values that are close to 0 mean that little weight is placed on the most recent observations when making forecasts of future values.  With rain data, we can do the following smoothing:  
+```{r}
+rain.holt <- HoltWinters(rainseries, gamma=FALSE)
+rain.holt # to inspect the smoothing results
+```
+
+We can plot the original time series as a black line, with the forecasted values as a red line on top of that, by typing:
+```{r}
+plot(rain.holt)
+```
+We can see from the picture that the in-sample forecasts agree pretty well with the observed values, although they tend to lag behind the observed values a little bit..  
+
+As for simple exponential smoothing, we can make forecasts for future times not covered by the original time series by using the forecast.HoltWinters() function in the `forecast` package. For example, our time series data for rain ranges from 1900-1950, so we can make predictions for 1950 to 1970 (20 more data points), and plot them, by typing:
+
+```{r}
+library(forecast)
+rain.forecasts <- forecast.HoltWinters(rain.holt, h=20)
+plot.forecast(rain.forecasts)
+```
+The forecasts are shown as a blue line, with the 80% prediction intervals as an blue shaded area, and the 95% prediction intervals as a gray shaded area.  
+
+Now, lets try it with the time series data `series4` assuming it is monthly.  Notices how the `frequency = 12` affects the time series
+```{r}
+ts.s4<-ts(timeseries$Series4, start = c(2000), frequency = 12)
+plot(ts.s4)
+ts.s4.holt <- HoltWinters(ts.s4, gamma=FALSE)
+plot(ts.s4.holt)
+ts.s4.forecasts <- forecast.HoltWinters(ts.s4.holt, h=12)  # forecast 1 year (12 months)
+plot.forecast(ts.s4.forecasts)
+
+```
+Now lets try the `gamma = TRUE` paramaters. The gamma parameter is used for the seasonal component. If set to FALSE, an non-seasonal model is fitted.
+
+```{r}
+ts.s4.holt <- HoltWinters(ts.s4, gamma=TRUE)
+plot(ts.s4.holt)
+ts.s4.forecasts <- forecast.HoltWinters(ts.s4.holt, h=12)  # forecast 1 year (12 months)
+plot.forecast(ts.s4.forecasts)
+```
+
+```{r}
+sp500<- read.csv("sp500_5yrs.csv", header=TRUE, stringsAsFactors=FALSE)
+names(sp500)
+sp500.ts<-ts(sp500$Open,start=c(2010),frequency = 12)
+plot(sp500.ts)
+sp500.ts.d<-decompose(sp500.ts)
+plot(sp500.ts.d)
+```
+Any thing wrong here????  
+
+
+***BINGO***
+```{r}
+sp500.sorted<-sp500[order(as.Date(sp500$Date, format="%d/%m/%Y")),]
+
+sp500.sorted.ts<-ts(sp500.sorted$Open,start=c(2010),frequency = 12)
+plot(sp500.sorted.ts)
+sp500.sorted.ts.d<-decompose(sp500.sorted.ts)
+plot(sp500.sorted.ts.d)
+
+sp500.holt.T <- HoltWinters(sp500.sorted.ts, gamma=TRUE)
+sp500.holt.F <- HoltWinters(sp500.sorted.ts, gamma=FALSE)
+sp500.forecasts <- forecast.HoltWinters(sp500.holt.T, h=12)  # forecast 1 year (12 months)
+plot.forecast(sp500.forecasts)
+
+sp500.forecasts.F <- forecast.HoltWinters(sp500.holt.F, h=12)  # forecast 1 year (12 months)
+plot.forecast(sp500.forecasts.F)
+```
+
+  
+#Forecasting Using an ARIMA Model
+In time series analysis, an autoregressive integrated moving average (ARIMA) model is a generalization of an autoregressive moving average (ARMA) model.  You can estimate the parameters of an ARIMA(p,d,q) model using the `arima()` function from the package `library(forecast)`  
+```{r}
+sp500.arima<-arima(sp500.sorted.ts, c(0,0,0))    # this models is equivalent to ARMA(0,0,0)
+sp500.arima.forecasts <- forecast.Arima(sp500.arima, h=12)
+plot(sp500.arima.forecasts)
+
+sp500.arima<-arima(sp500.sorted.ts, c(0,1,0))    # this models is equivalent to ARMA(0,1,0)
+sp500.arima.forecasts <- forecast.Arima(sp500.arima, h=12)
+plot(sp500.arima.forecasts)
+
+sp500.arima<-arima(sp500.sorted.ts, c(1,1,0))   # this models is equivalent to ARMA(1,1,0)
+sp500.arima.forecasts <- forecast.Arima(sp500.arima, h=12)
+plot(sp500.arima.forecasts)
+```
+
+If your time series is *stationary*, or if you have transformed it to a stationary time series by differencing d times, the next step is to select the appropriate ARIMA model, which means finding the values of most appropriate values of p and q for an ARIMA(p,d,q) model. To do this, you usually need to examine the correlogram and partial correlogram of the stationary time series.  
+
+For more details visit this site to learn more abour how to select an ARIMA model
+https://people.duke.edu/~rnau/arimrule.htm
+
+   
+   
+     
+
+Source: 
+http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html#time-series-analysis.   
+
+
+
+
+
+
+
+
