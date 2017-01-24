@@ -3,6 +3,7 @@ This repository contains the class materials for the Business Analytics taught a
 
 By JeanCarlo Bonilla.  Comments or questions please email at jb3379@nyu.edu
 
-###Data Catalog
-Zagat - restaurant data ("Name"    "Food"    "Decor"   "Service" "Price" )
+###List of Datasets
+Zagat - restaurant data ("Name"    "Food"    "Decor"   "Service" "Price")
+
 CitiBike - 
