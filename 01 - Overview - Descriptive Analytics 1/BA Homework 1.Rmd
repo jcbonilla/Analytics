@@ -1,0 +1,78 @@
+---
+title: 'BA Homework #1 Solution'
+author: "J.C. Bonilla"
+date: "Fall 2015"
+output: html_document
+---
+
+Provide summary statistics tables for (1) all grading categories and (2) an index (linear or weighted) that aggregates all rating categories
+
+First, lets load the data with **read.csv** with header activated and then we explore the file using **names( )**
+```{r}
+#loading file
+mydata <- read.csv("~/Dropbox/QTACorpora/zagat.csv", header=TRUE,
+                         stringsAsFactors=FALSE)
+
+#explore headers
+names(mydata)
+```
+
+Now we can use the fuctions **summary()** to provide summary statitics on all the factors.  To plot the results, we use **boxplot** and **hist**.  *NOTE*.  The **par(mfrow=c(2,2))** allows you to visualize 4 plots in a 2x2 table.
+
+```{r}
+#Descriptive Stats
+summary(mydata$Food)
+summary(mydata$Decor)
+summary(mydata$Service)
+summary(mydata$Price)
+
+boxplot(mydata$Food, mydata$Decor, mydata$Service, mydata$Price)
+
+par(mfrow=c(2,2)) 
+hist(mydata$Food)
+hist(mydata$Decor)
+hist(mydata$Service)
+hist(mydata$Price)
+
+
+```
+  
+My index will be designed for a "high-end" customer that expects superb service, food, and decor. As such, my index is as follows:
+```{r}
+food.index<-(0.4*mydata$Food)
+decor.index<-(0.2*mydata$Decor)
+service.index<-(0.3*mydata$Service)
+price.index<-(0.1*mydata$Price)
+index<-food.index+decor.index+service.index+price.index
+
+#descriptive stats
+summary(index)
+boxplot(mydata$Food, mydata$Decor, mydata$Service, mydata$Price, index,col="blue")
+hist(index, col="red")
+```
+To detect outliers using Z-scores we need to compute mean and standard deviation of samples.  After this calculation, we use the function **subset()** to idetify and remove subsets within the dataset.  As such we can determine outliers for Z>2:
+```{r}
+mean.food<-mean(mydata$Food)
+mean.price<-mean(mydata$Price)
+sd.food<-sd(mydata$Food)
+sd.price <- sd(mydata$Price)
+
+# identifying z-scores
+z.food <- (mydata$Food-mean.food)/sd.food
+z.price <- (mydata$Price-mean.price)/sd.price
+
+outliers.food<-subset(mydata, z.food>2)
+outliers.food
+
+outliers.price<-subset(mydata, z.price>2)
+outliers.price
+
+#removing outliers
+mydata1 <- subset(mydata, z.food<2)
+mydata2 <- subset(mydata, z.price<2)
+
+dim(mydata)
+dim(mydata1)
+dim(mydata2)
+```
+
