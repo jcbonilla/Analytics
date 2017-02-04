@@ -3,9 +3,11 @@ This repository contains the class materials for the Business Analytics taught a
 
 By JeanCarlo Bonilla.  Comments or questions please email at jb3379@nyu.edu
 
-###List of Datasets
-CitiBike.csv
+###References & Permissions
+These datasets are publicably available and have been collected from multiple sources which include:
 
-Zagat.csv
+UC Irvine Machine Learning Repository - https://archive.ics.uci.edu/ml/index.html
+Data.world - https://data.world/
+
 
 
