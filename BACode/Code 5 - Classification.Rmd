@@ -1,0 +1,63 @@
+---
+title: "Classification Three"
+author: "Business Analytics@NYU"
+date: "Fall 2017"
+output: html_document
+---
+
+##Decision Threes- CART Modeling via rpart
+Classification and regression trees can be calculated with the *rpart* function in the `library(rpart)`    
+<br>  
+
+**My first classification tree**  
+*Business  Problem*. There’s a common scam amongst motorists where a person will slam on his breaks in heavy traffic with the intention of being rear-ended. The person will then file an insurance claim for personal injury and damage to his vehicle, alleging that the other driver was at fault. Suppose we want to predict which of an insurance company’s claims are fraudulent using a decision tree.  
+To start, we need to build a training set of known fraudulent claims.
+
+```{r}
+train <- data.frame(ClaimID = c(1,2,3),
+                    RearEnd = c(TRUE, FALSE, TRUE),
+                    Fraud = c(TRUE, FALSE, TRUE))
+train
+
+```
+In order to grow our decision tree, we have to first load the rpart package. Then we can use the function rpart(), specifying the model formula, data, and method parameters. In this case, we want to classify the feature Fraud using the predictor RearEnd, so our call to rpart should look like
+
+```{r}
+library(rpart) #load the rpart package
+mytree <- rpart(Fraud ~ RearEnd, data = train, method = "class")
+mytree
+```
+
+Notice the output shows only a root node. This is because rpart has some default parameters that prevented our tree from growing. Namely: minsplit and minbucket. minsplit is “the minimum number of observations that must exist in a node in order for a split to be attempted” and minbucket is “the minimum number of observations in any terminal node”. See what happens when we override these parameters.
+
+```{r}
+mytree <- rpart(Fraud ~ RearEnd, data = train, method = "class", minsplit = 2, minbucket = 1)
+mytree
+
+```
+Now our tree has a root node, one split and two leaves (terminal nodes). Observe that rpart encoded our boolean variable as an integer (False = 0, True = 1). 
+
+We can plot mytree by loading the rattle package (and some helper packages) and using the fancyRpartPlot() function.
+
+
+```{r}
+library(rpart.plot)
+library(RColorBrewer)
+
+rpart.plot(mytree)
+```
+
+Example from Jared
+
+```{r}
+credit <-load("~/Downloads/credit.rdata")
+str(credit)
+require(rpart)
+creditTree<-rpart(Credit~CreditAmount + Age + CreditHistory + Employment, data = credit )
+creditTree
+
+rpart.plot(creditTree)
+```
+
+
+
