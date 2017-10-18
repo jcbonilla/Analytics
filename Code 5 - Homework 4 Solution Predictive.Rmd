@@ -1,0 +1,470 @@
+---
+title: "Homework 4 - Prediction"
+author: "Business Analytics"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+The Dodger Stadium, with a capacity for 56,000, is the largest ballpark is the world. 
+Link to dataset: https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/dodgers.csv 
+<br>  
+**Questions:**
+Complete an exploratory data analysis and answer the following:  
+1. How many times did promotions take place during the year (cap vs shirts vs bobblehead vs fireworks)?  
+2. How does attendance vary with and without promotions 
+3. What patterns exist with programming of games (weather, time, month, day, etc)?  
+4. Which opposing teams bring is attendance above average?. 
+<br>  
+Answer the following questions using predictive modeling techniques:  
+1. Will the bobblehead promotions increase attendance?  
+2. Are bobblehead promotions better than all other promotions?   
+3. Giving your predictions, how many bobblehead should we ordered for the summer time (Jun - Aug)  
+
+```{r}
+library(dataQualityR)
+library(ggplot2)
+
+# read in data and create a data frame called dodgers
+dodgers <- read.csv("https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/dodgers.csv")
+
+# Inspecting data
+str(dodgers)  # check the structure of the data frame
+head(dodgers)
+
+checkDataQuality(data = dodgers, 
+                 out.file.num ="~/Downloads/dq_movies_num.csv", 
+                 out.file.cat= "~/Downloads/dq_movies_cat.csv")
+dq_num<-read.csv("~/Downloads/dq_movies_num.csv")
+dq_cat<-read.csv("~/Downloads/dq_movies_cat.csv")
+head(dq_num)
+head(dq_cat)
+
+# Exploratory Data Analysis of day & month
+# number of promotions
+sum(dodgers$cap=="YES",dodgers$shirt=="YES", dodgers$fireworks=="YES", dodgers$bobblehead=="YES")
+
+dodgers$promo <- as.logical(0)
+dodgers$promo<-(dodgers$cap=="YES"|dodgers$shirt=="YES"|dodgers$fireworks=="YES"|dodgers$bobblehead=="YES")
+table(dodgers$promo)
+
+# overall attendance 
+dodgers.promo<-subset(dodgers, promo==1)
+dodgers.nopromo<-subset(dodgers, promo==0)
+
+summary(dodgers$attend)
+sd(dodgers$attend)
+
+summary(dodgers.promo$attend)
+sd(dodgers.promo$attend)
+
+summary(dodgers.nopromo$attend)
+sd(dodgers.nopromo$attend)
+
+# attendance by day of week
+ggplot(dodgers, aes(day_of_week, attend/1000)) +
+  geom_boxplot() 
+
+# other patterns...
+# we can now order the day of thw week with Mon - Sun
+dodgers$ordered_day_of_week <- with(data=dodgers,
+                                    ifelse ((day_of_week == "Monday"),1,
+                                            ifelse ((day_of_week == "Tuesday"),2,
+                                                    ifelse ((day_of_week == "Wednesday"),3,
+                                                            ifelse ((day_of_week == "Thursday"),4,
+                                                                    ifelse ((day_of_week == "Friday"),5,
+                                                                            ifelse ((day_of_week == "Saturday"),6,7)))))))
+dodgers$ordered_day_of_week <- factor(dodgers$ordered_day_of_week, levels=1:7,
+                                      labels=c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"))
+
+# replotting with ordered day of week as Mon - Sun
+ggplot(dodgers, aes(ordered_day_of_week, attend/1000)) + 
+  geom_boxplot(outlier.colour = "blue", outlier.size = 3)
+  
+
+# when do the Dodgers use bobblehead promotions
+ggplot(data=dodgers, aes(x=bobblehead))+
+  geom_bar()
+
+table(dodgers$bobblehead, dodgers$ordered_day_of_week)
+
+ggplot(data=dodgers, aes(x=bobblehead, y=attend))+
+  geom_point(aes(colour=ordered_day_of_week)) + theme_bw()
+
+ggplot(dodgers, aes(ordered_day_of_week, attend/1000)) +
+  geom_boxplot()
+
+# define an ordered month variable 
+# for plots and data summaries
+dodgers$ordered_month <- with(data=dodgers,
+                              ifelse ((month == "APR"),4,
+                                      ifelse ((month == "MAY"),5,
+                                              ifelse ((month == "JUN"),6,
+                                                      ifelse ((month == "JUL"),7,
+                                                              ifelse ((month == "AUG"),8,
+                                                                      ifelse ((month == "SEP"),9,10)))))))
+dodgers$ordered_month <- factor(dodgers$ordered_month, levels=4:10,
+labels = c("April", "May", "June", "July", "Aug", "Sept", "Oct"))
+
+# exploratory data analysis with standard R graphics: attendance by month 
+table(dodgers$bobblehead, dodgers$ordered_month)
+
+ggplot(data=dodgers, aes(x=bobblehead, y=attend))+
+  geom_point(aes(colour=ordered_month)) + theme_bw()
+
+ggplot(dodgers, aes(ordered_month, attend/1000)) +
+  geom_boxplot()
+
+
+# looking at attendance and temperature with other conditions 
+ggplot(data=dodgers, aes(x=temp, y=attend/1000))+
+  geom_point(aes(colour=fireworks))
+  
+ggplot(data=dodgers, aes(x=temp, y=attend/1000))+
+  geom_point(aes(colour=ordered_day_of_week))
+
+ggplot(data=dodgers, aes(x=temp, y=attend/1000))+
+  geom_point(aes(colour=ordered_day_of_week))
+
+ggplot(data=dodgers, aes(x=temp, y=attend/1000))+
+  geom_point(aes(colour=skies))
+
+# attendance by opponent and day/night game
+ggplot(data=dodgers, aes(x=opponent, y=attend))+
+  geom_point(aes(colour=day_night)) + 
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   size = 8, hjust = 1))+
+
+  
+# MODELING
+# Step 1: Create the training and test (validation) data samples from original data.
+set.seed(1234)  # setting seed to reproduce results of random sampling
+split<-(2/3)
+trainingRowIndex <- sample(1:nrow(dodgers),(split)*nrow(dodgers))  # row indices for training data
+trainingData <- dodgers[trainingRowIndex, ]  # model training data
+testData  <- dodgers[-trainingRowIndex, ]   # test data
+
+head(trainingData)
+head(testData)
+
+
+#Step 2: Develop the model on the training data and use it to predict on test data
+# Model
+model<-{attend ~ bobblehead}
+lm.1 <- lm(model, data=trainingData)  # build the model
+
+# Review diagnostic measures
+summary(lm.1)
+
+# Step 3: Calculate prediction accuracy and error rates
+distPred <- predict(lm.1, testData)  # predict distance
+actuals_preds <- data.frame(cbind(actuals=testData$attend, predicteds=distPred))  # make actuals_predicteds dataframe.
+head(actuals_preds)
+
+
+
+# simple correlation between  actuals vs predicted is an accuracy measure. 
+#  a higher correlation accuracy impliessimilar directional movement
+correlation_accuracy <- cor(actuals_preds)
+correlation_accuracy
+
+#calculating of min/max accuracy measures and error rates (MAPE)
+min_max_accuracy <- mean(apply(actuals_preds, 1, min) / apply(actuals_preds, 1, max))  
+min_max_accuracy # Higher the better
+mape <- mean(abs((actuals_preds$predicteds - actuals_preds$actuals))/actuals_preds$actuals)  
+mape # mean absolute percentage deviation. Lower the better
+
+
+performance.df <- data.frame(cbind(Corr=correlation_accuracy[1,2], 
+                                   MinMax=min_max_accuracy,
+                                   MAPE = mape))  # make actuals_predicteds dataframe.
+round(performance.df, digits = 2)
+
+
+ggplot(data = actuals_preds, aes(x=actuals, y=predicteds, fill=""))+
+  geom_point()+
+  geom_abline()
+  
+
+# Suggestions for the student:
+# Examine regression diagnostics for the fitted model.
+# Examine other linear predictors and other explanatory variables.
+# See if you can improve upon the model with variable transformations.
+
+model.2<-{attend ~ ordered_month + ordered_day_of_week + bobblehead + temp + fireworks + skies}
+lm.2 <- lm(model.2, data=trainingData)  # build the model
+
+summary(lm.2)
+
+distPred <- predict(lm.2, testData)  # predict distance
+actuals_preds <- data.frame(cbind(actuals=testData$attend, predicteds=distPred))  # make actuals_predicteds dataframe.
+head(actuals_preds)
+
+
+
+# simple correlation between  actuals vs predicted is an accuracy measure. 
+#  a higher correlation accuracy impliessimilar directional movement
+correlation_accuracy <- cor(actuals_preds)
+correlation_accuracy
+
+#calculating of min/max accuracy measures and error rates (MAPE)
+min_max_accuracy <- mean(apply(actuals_preds, 1, min) / apply(actuals_preds, 1, max))  
+min_max_accuracy # Higher the better
+mape <- mean(abs((actuals_preds$predicteds - actuals_preds$actuals))/actuals_preds$actuals)  
+mape # mean absolute percentage deviation. Lower the better
+
+
+performance.df <- data.frame(cbind(Corr=correlation_accuracy[1,2], 
+                                   MinMax=min_max_accuracy,
+                                   MAPE = mape))  # make actuals_predicteds dataframe.
+round(performance.df, digits = 2)
+
+
+ggplot(data = actuals_preds, aes(x=actuals, y=predicteds, fill=""))+
+  geom_point()+
+  geom_abline()
+
+```
+
+
+<br />  
+
+##Problem 2: Bank Marketing  
+This dataset captures the results of  series of direct marketing campaigns of “BANK”, an international banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.  
+Link to dataset: https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/bank_marketing.csv  
+<br>  
+**Questions:**
+Complete an exploratory data analysis that describes some of the patterns in dataset:  
+1. Run a model to predict if the client will subscribe a term deposit  
+2. Validate your modeling using 30% of the data  
+3. How many correct predictions did you make?   
+4. What is the ratio of correct predictions vs total predictions?  
+5. How many wrong predictions did you make?   
+6. What is the ratio of wrong predictions vs total predictions?   
+7. What is the correlation between predictions and actual results?  
+
+```{r}
+
+# Load required packages
+library(ggplot2)
+library(dataQualityR)
+
+
+# Load data
+bank <- read.csv("https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/bank_marketing.csv")
+str(bank)
+
+# Plot the breakdown of subscribers to non-susbcribers
+ggplot(data=bank, aes(x=y)) + 
+  geom_bar(alpha = 0.6, fill = "blue") + theme_bw() +
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=14),
+        axis.text.x  = element_text(size=14),
+        axis.title.y = element_text(face="bold", vjust=1, size=14),
+        axis.text.y  = element_text(size=14)) + 
+  labs(x= "Subscribed?", y = "Count")
+
+#Distribution of Last Contact Duration
+ggplot(bank, aes(x=duration/60))+ geom_histogram (alpha = 0.6, fill = "blue", breaks = c(0, 5, 10, 15, 20, 25, 30)) +
+  theme_bw() +
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=14),
+        axis.text.x  = element_text(size=12),
+        axis.title.y = element_text(face="bold", vjust=1, size=14),
+        axis.text.y  = element_text(size=12)) +
+  labs(x= "Last Contact Duration, mins", y = "Count")
+
+# Distribution of previous campaign outcome
+ggplot(data=bank, aes(x=poutcome)) + 
+  geom_bar(alpha = 0.6, fill = "blue") + theme_bw() +
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=14),
+        axis.text.x  = element_text(size=14),
+        axis.title.y = element_text(face="bold", vjust=1, size=14),
+        axis.text.y  = element_text(size=14)) + 
+  labs(x= "Previous Campaign Outcome", y = "Count")
+
+# Subscription status by previous outcome
+ggplot(data=bank, aes(x=y, fill = poutcome)) + 
+  geom_bar(alpha = 0.6) + theme_bw() +
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=14),
+        axis.text.x  = element_text(size=14),
+        axis.title.y = element_text(face="bold", vjust=1, size=14),
+        axis.text.y  = element_text(size=14)) + 
+  labs(x= "Subscribed?", y = "Count")
+
+# Subscription status by education
+ggplot(data=bank, aes(x=y, fill = education)) + 
+  geom_bar(alpha = 0.6) + theme_bw() +
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=14),
+        axis.text.x  = element_text(size=14),
+        axis.title.y = element_text(face="bold", vjust=1, size=14),
+        axis.text.y  = element_text(size=14)) + 
+  labs(x= "Subscribed?", y = "Count")
+
+# Look at more drilled down summaries specifically for our target variable 
+table(bank$y, bank$marital)
+      
+# MODELING
+# MODELING with a training:testing split
+# Step 1: Create the training and test (validation) data samples from original data.
+set.seed(100)  # setting seed to reproduce results of random sampling
+split<-(.7)
+trainingRowIndex <- sample(1:nrow(bank),(split)*nrow(bank))  # row indices for training data
+trainingData <- bank[trainingRowIndex, ]  # model training data
+testData  <- bank[-trainingRowIndex, ]   # test data
+
+
+#Step 2: Develop the model on the training data and use it to predict on test data
+# Model
+model<-{y ~ age + job + marital + education  + default + 
+    housing + loan + contact + month + day_of_week + 
+  duration + campaign + pdays + previous + poutcome + 
+    emp.var.rate + cons.price.idx + cons.conf.idx + euribor3m + nr.employed}
+subs.lm <- glm(model, data=trainingData, family = binomial(link = "logit"))  # build the model
+
+# Review diagnostic measures
+summary(subs.lm)
+
+
+# Step 3: Calculate prediction accuracy and error rates
+response<- ifelse(predict(subs.lm, testData, type = "response")>.5, 1, 0)  # predict distance
+response<-as.factor(response)
+
+### WARNING ###
+# At this point we need to check "prediction from a rank-deficient fit may be misleading"
+# Review this https://stats.stackexchange.com/questions/35071/what-is-rank-deficiency-and-how-to-deal-with-it 
+
+actuals_preds <- data.frame(cbind(actuals=testData$y, predicted=response))  # make actuals_predicteds dataframe.
+head(actuals_preds)
+table(testData$y)
+table(response)
+table(testData$y,response)
+
+
+# simple correlation between  actuals vs predicted is an accuracy measure. 
+#  a higher correlation accuracy impliessimilar directional movement
+correlation_accuracy <- cor(actuals_preds)
+correlation_accuracy
+
+# MODEL 2
+simple.model <-{y ~ age + marital  + default + contact + duration + campaign + pdays + previous + poutcome}
+simple.lm <- glm(simple.model, data=trainingData, family = binomial(link = "logit"))  # build the model
+
+# Step 3: Calculate prediction accuracy and error rates
+response<- ifelse(predict(simple.lm, testData, type = "response")>.5, 1, 0)  # predict distance
+response<-as.factor(response)
+
+actuals_preds <- data.frame(cbind(actuals=testData$y, predicted=response))  # make actuals_predicteds dataframe.
+head(actuals_preds)
+table(testData$y)
+table(response)
+table(testData$y,response)
+
+
+# simple correlation between  actuals vs predicted is an accuracy measure. 
+#  a higher correlation accuracy impliessimilar directional movement
+correlation_accuracy <- cor(actuals_preds)
+correlation_accuracy
+
+
+```
+
+<br>  
+
+##Problem 3: Progresso Soup Sales
+You are provided data for sales of Progresso soup in the U.S. The data are derived from approximately 2000 supermarkets across the country and span 6 years In the file “Progresso.csv”.     
+
+Link to dataset: https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/Progresso_Soup.csv 
+
+**Questions:**  
+Create a dummy variable for “Winter” months defined as Oct, Nov, Dec, Jan & Feb and answer the following:  
+1. What patterns are you seeing in the data?  
+2. What patterns are you seeing in sales during the Winter months?   
+3. Compute the “Market Share” for Progresso (as percentage of total sales) in the Winter vs. non-Winter months  
+  
+Using a 80:20 split, develop a linear regression model to predict Progresso sales. Explain the results of the regression model (model strength, variable importance, relationship between the predictor and dependent variables).  
+  
+Validate the model using test data and comment on the model accuracy
+```{r}
+url <- "https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/Progresso_Soup.csv"
+progresso <- read.csv(url,header = TRUE)
+str(progresso)
+summary(progresso)   #just a nice way to look at descriptive stats
+
+# R thinks the income variables are numeric initially, so convert them to logical.
+
+progresso$Low_Income <- as.logical(progresso$Low_Income)
+progresso$High_Income <- as.logical(progresso$High_Income)
+
+# Create a new variable Winter, which gets added to the data frame as a new column with 
+# all columns initially assigned FALSE.
+progresso$Winter <- FALSE
+
+# Then revise the Winter column by assigning it TRUE if the corresponding value for the Month column is less than 2 (Jan, Feb) 
+# or greater than 10 (Oct, Nov, Dec)
+progresso$Winter[progresso$Month<2 | progresso$Month >10] <- TRUE
+
+# Creat dummy variables for the Regions, Making East default
+progresso$MidWest <- FALSE
+progresso$South <- FALSE
+progresso$West <- FALSE
+
+
+
+for (i in 1:nrow(progresso)){
+  if (progresso$Region[i]=="MidWest")
+    progresso$MidWest[i]<- TRUE
+  else if (progresso$Region[i]=="South")
+    progresso$South[i]<- TRUE
+  else if (progresso$Region[i]=="West")
+    progresso$West[i]<- TRUE
+}
+
+#Lets explore the resulting file
+head(progresso)
+# Now we need to calculate the “Market Share” for Progresso in the Winter and non-Winter months. 
+
+# Sum values for category sales by Winter and non-Winter
+total_sales <- sum(progresso$Sales.Progresso)
+total_sales
+
+# Sum values for Progresso sales by Winter and non-Winter
+progresso_sales <- aggregate(Sales.Progresso ~ Winter, data=progresso, sum)
+progresso_sales 
+
+# Divide progresso sales by total sales to get the market share
+market_share <- progresso_sales[,2] / total_sales
+market_share 
+
+
+#MODEL
+set.seed(1234)  # setting seed to reproduce results of random sampling
+split<-(.8)
+trainingRowIndex <- sample(1:nrow(progresso),(split)*nrow(progresso))  # row indices for training data
+trainingData <- progresso[trainingRowIndex, ]  # model training data
+testData  <- progresso[-trainingRowIndex, ]   # test data
+
+
+progresso.lm <- lm(Sales.Progresso ~ Low_Income + High_Income + Price.Campbell + 
+                     Price.PL + Price.Progresso + Winter + MidWest + South + West, data=trainingData)
+
+summary(progresso.lm)
+
+
+# Predictions
+response<- predict(progresso.lm, testData, type = "response")  # predict distance
+
+actuals_preds <- data.frame(cbind(actuals=testData$Sales, predicted=response))  # make actuals_predicteds dataframe.
+head(actuals_preds)
+
+
+# simple correlation between  actuals vs predicted is an accuracy measure. 
+#  a higher correlation accuracy impliessimilar directional movement
+correlation_accuracy <- cor(actuals_preds)
+correlation_accuracy
+```
+
+###END
