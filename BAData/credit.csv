@@ -1,0 +1,1001 @@
+SeqNo,Checking,Duration,CreditHistory,Purpose,CreditAmount,Savings,Employment,InstallmentRate,GenderMarital,OtherDebtors,YearsAtResidence,RealEstate,Age,OtherInstallment,Housing,ExistingCredits,Job,NumLiable,Phone,Foreign,Credit
+1,A11,6,Critical Account,radio/television,1169,A65,>= 7 years,4,A93,A101,4,A121,67,A143,A152,2,A173,1,A192,A201,Good
+2,A12,48,Up To Date,radio/television,5951,A61,1 - 4 years,2,A92,A101,2,A121,22,A143,A152,1,A173,1,A191,A201,Bad
+3,A14,12,Critical Account,education,2096,A61,4 - 7 years,2,A93,A101,3,A121,49,A143,A152,1,A172,2,A191,A201,Good
+4,A11,42,Up To Date,furniture/equipment,7882,A61,4 - 7 years,2,A93,A103,4,A122,45,A143,A153,1,A173,2,A191,A201,Good
+5,A11,24,Late Payment,car (new),4870,A61,1 - 4 years,3,A93,A101,4,A124,53,A143,A153,2,A173,2,A191,A201,Bad
+6,A14,36,Up To Date,education,9055,A65,1 - 4 years,2,A93,A101,4,A124,35,A143,A153,1,A172,2,A192,A201,Good
+7,A14,24,Up To Date,furniture/equipment,2835,A63,>= 7 years,3,A93,A101,4,A122,53,A143,A152,1,A173,1,A191,A201,Good
+8,A12,36,Up To Date,car (used),6948,A61,1 - 4 years,2,A93,A101,2,A123,35,A143,A151,1,A174,1,A192,A201,Good
+9,A14,12,Up To Date,radio/television,3059,A64,4 - 7 years,2,A91,A101,4,A121,61,A143,A152,1,A172,1,A191,A201,Good
+10,A12,30,Critical Account,car (new),5234,A61,unemployed,4,A94,A101,2,A123,28,A143,A152,2,A174,1,A191,A201,Bad
+11,A12,12,Up To Date,car (new),1295,A61,< 1 year,3,A92,A101,1,A123,25,A143,A151,1,A173,1,A191,A201,Bad
+12,A11,48,Up To Date,business,4308,A61,< 1 year,3,A92,A101,4,A122,24,A143,A151,1,A173,1,A191,A201,Bad
+13,A12,12,Up To Date,radio/television,1567,A61,1 - 4 years,1,A92,A101,1,A123,22,A143,A152,1,A173,1,A192,A201,Good
+14,A11,24,Critical Account,car (new),1199,A61,>= 7 years,4,A93,A101,4,A123,60,A143,A152,2,A172,1,A191,A201,Bad
+15,A11,15,Up To Date,car (new),1403,A61,1 - 4 years,2,A92,A101,4,A123,28,A143,A151,1,A173,1,A191,A201,Good
+16,A11,24,Up To Date,radio/television,1282,A62,1 - 4 years,4,A92,A101,2,A123,32,A143,A152,1,A172,1,A191,A201,Bad
+17,A14,24,Critical Account,radio/television,2424,A65,>= 7 years,4,A93,A101,4,A122,53,A143,A152,2,A173,1,A191,A201,Good
+18,A11,30,All Paid,business,8072,A65,< 1 year,2,A93,A101,3,A123,25,A141,A152,3,A173,1,A191,A201,Good
+19,A12,24,Up To Date,car (used),12579,A61,>= 7 years,4,A92,A101,2,A124,44,A143,A153,1,A174,1,A192,A201,Bad
+20,A14,24,Up To Date,radio/television,3430,A63,>= 7 years,3,A93,A101,2,A123,31,A143,A152,1,A173,2,A192,A201,Good
+21,A14,9,Critical Account,car (new),2134,A61,1 - 4 years,4,A93,A101,4,A123,48,A143,A152,3,A173,1,A192,A201,Good
+22,A11,6,Up To Date,radio/television,2647,A63,1 - 4 years,2,A93,A101,3,A121,44,A143,A151,1,A173,2,A191,A201,Good
+23,A11,10,Critical Account,car (new),2241,A61,< 1 year,1,A93,A101,3,A121,48,A143,A151,2,A172,2,A191,A202,Good
+24,A12,12,Critical Account,car (used),1804,A62,< 1 year,3,A93,A101,4,A122,44,A143,A152,1,A173,1,A191,A201,Good
+25,A14,10,Critical Account,furniture/equipment,2069,A65,1 - 4 years,2,A94,A101,1,A123,26,A143,A152,2,A173,1,A191,A202,Good
+26,A11,6,Up To Date,furniture/equipment,1374,A61,1 - 4 years,1,A93,A101,2,A121,36,A141,A152,1,A172,1,A192,A201,Good
+27,A14,6,All Paid,radio/television,426,A61,>= 7 years,4,A94,A101,4,A123,39,A143,A152,1,A172,1,A191,A201,Good
+28,A13,12,All Paid This Bank,radio/television,409,A64,1 - 4 years,3,A92,A101,3,A121,42,A143,A151,2,A173,1,A191,A201,Good
+29,A12,7,Up To Date,radio/television,2415,A61,1 - 4 years,3,A93,A103,2,A121,34,A143,A152,1,A173,1,A191,A201,Good
+30,A11,60,Late Payment,business,6836,A61,>= 7 years,3,A93,A101,4,A124,63,A143,A152,2,A173,1,A192,A201,Bad
+31,A12,18,Up To Date,business,1913,A64,< 1 year,3,A94,A101,3,A121,36,A141,A152,1,A173,1,A192,A201,Good
+32,A11,24,Up To Date,furniture/equipment,4020,A61,1 - 4 years,2,A93,A101,2,A123,27,A142,A152,1,A173,1,A191,A201,Good
+33,A12,18,Up To Date,car (new),5866,A62,1 - 4 years,2,A93,A101,2,A123,30,A143,A152,2,A173,1,A192,A201,Good
+34,A14,12,Critical Account,business,1264,A65,>= 7 years,4,A93,A101,4,A124,57,A143,A151,1,A172,1,A191,A201,Good
+35,A13,12,Up To Date,furniture/equipment,1474,A61,< 1 year,4,A92,A101,1,A122,33,A141,A152,1,A174,1,A192,A201,Good
+36,A12,45,Critical Account,radio/television,4746,A61,< 1 year,4,A93,A101,2,A122,25,A143,A152,2,A172,1,A191,A201,Bad
+37,A14,48,Critical Account,education,6110,A61,1 - 4 years,1,A93,A101,3,A124,31,A141,A153,1,A173,1,A192,A201,Good
+38,A13,18,Up To Date,radio/television,2100,A61,1 - 4 years,4,A93,A102,2,A121,37,A142,A152,1,A173,1,A191,A201,Bad
+39,A13,10,Up To Date,domestic appliances,1225,A61,1 - 4 years,2,A93,A101,2,A123,37,A143,A152,1,A173,1,A192,A201,Good
+40,A12,9,Up To Date,radio/television,458,A61,1 - 4 years,4,A93,A101,3,A121,24,A143,A152,1,A173,1,A191,A201,Good
+41,A14,30,Up To Date,radio/television,2333,A63,>= 7 years,4,A93,A101,2,A123,30,A141,A152,1,A174,1,A191,A201,Good
+42,A12,12,Up To Date,radio/television,1158,A63,1 - 4 years,3,A91,A101,1,A123,26,A143,A152,1,A173,1,A192,A201,Good
+43,A12,18,Late Payment,repairs,6204,A61,1 - 4 years,2,A93,A101,4,A121,44,A143,A152,1,A172,2,A192,A201,Good
+44,A11,30,Critical Account,car (used),6187,A62,4 - 7 years,1,A94,A101,4,A123,24,A143,A151,2,A173,1,A191,A201,Good
+45,A11,48,Critical Account,car (used),6143,A61,>= 7 years,4,A92,A101,4,A124,58,A142,A153,2,A172,1,A191,A201,Bad
+46,A14,11,Critical Account,car (new),1393,A61,< 1 year,4,A92,A101,4,A123,35,A143,A152,2,A174,1,A191,A201,Good
+47,A14,36,Up To Date,radio/television,2299,A63,>= 7 years,4,A93,A101,4,A123,39,A143,A152,1,A173,1,A191,A201,Good
+48,A11,6,Up To Date,car (used),1352,A63,unemployed,1,A92,A101,2,A122,23,A143,A151,1,A171,1,A192,A201,Good
+49,A14,11,Critical Account,car (new),7228,A61,1 - 4 years,1,A93,A101,4,A122,39,A143,A152,2,A172,1,A191,A201,Good
+50,A14,12,Up To Date,radio/television,2073,A62,1 - 4 years,4,A92,A102,2,A121,28,A143,A152,1,A173,1,A191,A201,Good
+51,A12,24,Late Payment,furniture/equipment,2333,A65,< 1 year,4,A93,A101,2,A122,29,A141,A152,1,A172,1,A191,A201,Good
+52,A12,27,Late Payment,car (used),5965,A61,>= 7 years,1,A93,A101,2,A123,30,A143,A152,2,A174,1,A192,A201,Good
+53,A14,12,Up To Date,radio/television,1262,A61,1 - 4 years,3,A93,A101,2,A123,25,A143,A152,1,A173,1,A191,A201,Good
+54,A14,18,Up To Date,car (used),3378,A65,1 - 4 years,2,A93,A101,1,A122,31,A143,A152,1,A173,1,A192,A201,Good
+55,A12,36,Late Payment,car (new),2225,A61,>= 7 years,4,A93,A101,4,A124,57,A141,A153,2,A173,1,A192,A201,Bad
+56,A14,6,All Paid This Bank,car (new),783,A65,1 - 4 years,1,A93,A103,2,A121,26,A142,A152,1,A172,2,A191,A201,Good
+57,A12,12,Up To Date,radio/television,6468,A65,unemployed,2,A93,A101,1,A124,52,A143,A152,1,A174,1,A192,A201,Bad
+58,A14,36,Critical Account,radio/television,9566,A61,1 - 4 years,2,A92,A101,2,A123,31,A142,A152,2,A173,1,A191,A201,Good
+59,A13,18,Up To Date,car (new),1961,A61,>= 7 years,3,A92,A101,2,A123,23,A143,A152,1,A174,1,A191,A201,Good
+60,A11,36,Critical Account,furniture/equipment,6229,A61,< 1 year,4,A92,A102,4,A124,23,A143,A151,2,A172,1,A192,A201,Bad
+61,A12,9,Up To Date,business,1391,A61,1 - 4 years,2,A94,A101,1,A121,27,A141,A152,1,A173,1,A192,A201,Good
+62,A12,15,Critical Account,radio/television,1537,A65,>= 7 years,4,A93,A103,4,A121,50,A143,A152,2,A173,1,A192,A201,Good
+63,A12,36,All Paid,business,1953,A61,>= 7 years,4,A93,A101,4,A124,61,A143,A153,1,A174,1,A192,A201,Bad
+64,A12,48,All Paid,business,14421,A61,1 - 4 years,2,A93,A101,2,A123,25,A143,A152,1,A173,1,A192,A201,Bad
+65,A14,24,Up To Date,radio/television,3181,A61,< 1 year,4,A92,A101,4,A122,26,A143,A152,1,A173,1,A192,A201,Good
+66,A14,27,Up To Date,repairs,5190,A65,>= 7 years,4,A93,A101,4,A122,48,A143,A152,4,A173,2,A192,A201,Good
+67,A14,12,Up To Date,radio/television,2171,A61,< 1 year,2,A92,A101,2,A123,29,A141,A152,1,A173,1,A191,A201,Good
+68,A12,12,Up To Date,car (new),1007,A64,1 - 4 years,4,A94,A101,1,A121,22,A143,A152,1,A173,1,A191,A201,Good
+69,A14,36,Up To Date,education,1819,A61,1 - 4 years,4,A93,A101,4,A124,37,A142,A153,1,A173,1,A192,A201,Bad
+70,A14,36,Up To Date,radio/television,2394,A65,1 - 4 years,4,A92,A101,4,A123,25,A143,A152,1,A173,1,A191,A201,Good
+71,A14,36,Up To Date,car (used),8133,A61,1 - 4 years,1,A92,A101,2,A122,30,A141,A152,1,A173,1,A191,A201,Good
+72,A14,7,Critical Account,radio/television,730,A65,>= 7 years,4,A93,A101,2,A122,46,A143,A151,2,A172,1,A192,A201,Good
+73,A11,8,Critical Account,others,1164,A61,>= 7 years,3,A93,A101,4,A124,51,A141,A153,2,A174,2,A192,A201,Good
+74,A12,42,Critical Account,business,5954,A61,4 - 7 years,2,A92,A101,1,A121,41,A141,A152,2,A172,1,A191,A201,Good
+75,A11,36,Up To Date,education,1977,A65,>= 7 years,4,A93,A101,4,A124,40,A143,A152,1,A174,1,A192,A201,Bad
+76,A11,12,Critical Account,car (used),1526,A61,>= 7 years,4,A93,A101,4,A124,66,A143,A153,2,A174,1,A191,A201,Good
+77,A11,42,Up To Date,radio/television,3965,A61,< 1 year,4,A93,A101,3,A123,34,A143,A152,1,A173,1,A191,A201,Bad
+78,A12,11,Late Payment,radio/television,4771,A61,4 - 7 years,2,A93,A101,4,A122,51,A143,A152,1,A173,1,A191,A201,Good
+79,A14,54,All Paid,car (used),9436,A65,1 - 4 years,2,A93,A101,2,A122,39,A143,A152,1,A172,2,A191,A201,Good
+80,A12,30,Up To Date,furniture/equipment,3832,A61,< 1 year,2,A94,A101,1,A122,22,A143,A152,1,A173,1,A191,A201,Good
+81,A14,24,Up To Date,radio/television,5943,A65,< 1 year,1,A92,A101,1,A123,44,A143,A152,2,A173,1,A192,A201,Bad
+82,A14,15,Up To Date,radio/television,1213,A63,>= 7 years,4,A93,A101,3,A122,47,A142,A152,1,A173,1,A192,A201,Good
+83,A14,18,Up To Date,business,1568,A62,1 - 4 years,3,A92,A101,4,A122,24,A143,A151,1,A172,1,A191,A201,Good
+84,A11,24,Up To Date,others,1755,A61,>= 7 years,4,A92,A103,4,A121,58,A143,A152,1,A172,1,A192,A201,Good
+85,A11,10,Up To Date,radio/television,2315,A61,>= 7 years,3,A93,A101,4,A121,52,A143,A152,1,A172,1,A191,A201,Good
+86,A14,12,Critical Account,business,1412,A61,1 - 4 years,4,A92,A103,2,A121,29,A143,A152,2,A174,1,A192,A201,Good
+87,A12,18,Critical Account,furniture/equipment,1295,A61,< 1 year,4,A92,A101,1,A122,27,A143,A152,2,A173,1,A191,A201,Good
+88,A12,36,Up To Date,education,12612,A62,1 - 4 years,1,A93,A101,4,A124,47,A143,A153,1,A173,2,A192,A201,Bad
+89,A11,18,Up To Date,car (new),2249,A62,4 - 7 years,4,A93,A101,3,A123,30,A143,A152,1,A174,2,A192,A201,Good
+90,A11,12,All Paid,repairs,1108,A61,4 - 7 years,4,A93,A101,3,A121,28,A143,A152,2,A173,1,A191,A201,Bad
+91,A14,12,Critical Account,radio/television,618,A61,>= 7 years,4,A93,A101,4,A121,56,A143,A152,1,A173,1,A191,A201,Good
+92,A11,12,Critical Account,car (used),1409,A61,>= 7 years,4,A93,A101,3,A121,54,A143,A152,1,A173,1,A191,A201,Good
+93,A14,12,Critical Account,radio/television,797,A65,>= 7 years,4,A92,A101,3,A122,33,A141,A152,1,A172,2,A191,A201,Bad
+94,A13,24,Critical Account,furniture/equipment,3617,A65,>= 7 years,4,A93,A102,4,A124,20,A143,A151,2,A173,1,A191,A201,Good
+95,A12,12,Up To Date,car (new),1318,A64,>= 7 years,4,A93,A101,4,A121,54,A143,A152,1,A173,1,A192,A201,Good
+96,A12,54,All Paid,business,15945,A61,< 1 year,3,A93,A101,4,A124,58,A143,A151,1,A173,1,A192,A201,Bad
+97,A14,12,Critical Account,education,2012,A65,4 - 7 years,4,A92,A101,2,A123,61,A143,A152,1,A173,1,A191,A201,Good
+98,A12,18,Up To Date,business,2622,A62,1 - 4 years,4,A93,A101,4,A123,34,A143,A152,1,A173,1,A191,A201,Good
+99,A12,36,Critical Account,radio/television,2337,A61,>= 7 years,4,A93,A101,4,A121,36,A143,A152,1,A173,1,A191,A201,Good
+100,A12,20,Late Payment,car (used),7057,A65,4 - 7 years,3,A93,A101,4,A122,36,A141,A151,2,A174,2,A192,A201,Good
+101,A14,24,Up To Date,car (new),1469,A62,>= 7 years,4,A94,A101,4,A121,41,A143,A151,1,A172,1,A191,A201,Good
+102,A12,36,Up To Date,radio/television,2323,A61,4 - 7 years,4,A93,A101,4,A123,24,A143,A151,1,A173,1,A191,A201,Good
+103,A14,6,Late Payment,radio/television,932,A61,1 - 4 years,3,A92,A101,2,A121,24,A143,A152,1,A173,1,A191,A201,Good
+104,A12,9,Critical Account,furniture/equipment,1919,A61,4 - 7 years,4,A93,A101,3,A123,35,A143,A151,1,A173,1,A192,A201,Good
+105,A14,12,Up To Date,car (used),2445,A65,< 1 year,2,A94,A101,4,A123,26,A143,A151,1,A173,1,A192,A201,Good
+106,A12,24,Critical Account,others,11938,A61,1 - 4 years,2,A93,A102,3,A123,39,A143,A152,2,A174,2,A192,A201,Bad
+107,A14,18,All Paid This Bank,car (new),6458,A61,>= 7 years,2,A93,A101,4,A124,39,A141,A152,2,A174,2,A192,A201,Bad
+108,A12,12,Up To Date,car (new),6078,A61,4 - 7 years,2,A93,A101,2,A123,32,A143,A152,1,A173,1,A191,A201,Good
+109,A11,24,Up To Date,furniture/equipment,7721,A65,< 1 year,1,A92,A101,2,A122,30,A143,A152,1,A173,1,A192,A202,Good
+110,A12,14,Up To Date,business,1410,A63,>= 7 years,1,A94,A101,2,A121,35,A143,A152,1,A173,1,A192,A201,Good
+111,A12,6,Late Payment,business,1449,A62,>= 7 years,1,A91,A101,2,A123,31,A141,A152,2,A173,2,A191,A201,Good
+112,A13,15,Up To Date,education,392,A61,< 1 year,4,A92,A101,4,A122,23,A143,A151,1,A173,1,A192,A201,Good
+113,A12,18,Up To Date,car (new),6260,A61,4 - 7 years,3,A93,A101,3,A121,28,A143,A151,1,A172,1,A191,A201,Good
+114,A14,36,Critical Account,car (new),7855,A61,1 - 4 years,4,A92,A101,2,A121,25,A142,A152,2,A173,1,A192,A201,Bad
+115,A11,12,Up To Date,radio/television,1680,A63,>= 7 years,3,A94,A101,1,A121,35,A143,A152,1,A173,1,A191,A201,Good
+116,A14,48,Critical Account,radio/television,3578,A65,>= 7 years,4,A93,A101,1,A121,47,A143,A152,1,A173,1,A192,A201,Good
+117,A11,42,Up To Date,radio/television,7174,A65,4 - 7 years,4,A92,A101,3,A123,30,A143,A152,1,A174,1,A192,A201,Bad
+118,A11,10,Critical Account,furniture/equipment,2132,A65,< 1 year,2,A92,A102,3,A121,27,A143,A151,2,A173,1,A191,A202,Good
+119,A11,33,Critical Account,furniture/equipment,4281,A63,1 - 4 years,1,A92,A101,4,A123,23,A143,A152,2,A173,1,A191,A201,Bad
+120,A12,12,Critical Account,car (new),2366,A63,4 - 7 years,3,A91,A101,3,A123,36,A143,A152,1,A174,1,A192,A201,Good
+121,A11,21,Up To Date,radio/television,1835,A61,1 - 4 years,3,A92,A101,2,A121,25,A143,A152,2,A173,1,A192,A201,Bad
+122,A14,24,Critical Account,car (used),3868,A61,>= 7 years,4,A92,A101,2,A123,41,A143,A151,2,A174,1,A192,A201,Good
+123,A14,12,Up To Date,furniture/equipment,1768,A61,1 - 4 years,3,A93,A101,2,A121,24,A143,A151,1,A172,1,A191,A201,Good
+124,A13,10,Critical Account,car (new),781,A61,>= 7 years,4,A93,A101,4,A124,63,A143,A153,2,A173,1,A192,A201,Good
+125,A12,18,Up To Date,furniture/equipment,1924,A65,< 1 year,4,A92,A101,3,A121,27,A143,A151,1,A173,1,A191,A201,Bad
+126,A11,12,Critical Account,car (new),2121,A61,1 - 4 years,4,A93,A101,2,A122,30,A143,A152,2,A173,1,A191,A201,Good
+127,A11,12,Up To Date,radio/television,701,A61,1 - 4 years,4,A94,A101,2,A121,40,A143,A152,1,A172,1,A191,A201,Good
+128,A12,12,Up To Date,repairs,639,A61,1 - 4 years,4,A93,A101,2,A123,30,A143,A152,1,A173,1,A191,A201,Bad
+129,A12,12,Critical Account,car (used),1860,A61,unemployed,4,A93,A101,2,A123,34,A143,A152,2,A174,1,A192,A201,Good
+130,A11,12,Critical Account,car (new),3499,A61,1 - 4 years,3,A92,A102,2,A121,29,A143,A152,2,A173,1,A191,A201,Bad
+131,A12,48,Up To Date,car (new),8487,A65,4 - 7 years,1,A92,A101,2,A123,24,A143,A152,1,A173,1,A191,A201,Good
+132,A11,36,Late Payment,education,6887,A61,1 - 4 years,4,A93,A101,3,A122,29,A142,A152,1,A173,1,A192,A201,Bad
+133,A14,15,Up To Date,furniture/equipment,2708,A61,< 1 year,2,A93,A101,3,A122,27,A141,A152,2,A172,1,A191,A201,Good
+134,A14,18,Up To Date,furniture/equipment,1984,A61,1 - 4 years,4,A93,A101,4,A124,47,A141,A153,2,A173,1,A191,A201,Good
+135,A14,60,Up To Date,radio/television,10144,A62,4 - 7 years,2,A92,A101,4,A121,21,A143,A152,1,A173,1,A192,A201,Good
+136,A14,12,Critical Account,radio/television,1240,A65,>= 7 years,4,A92,A101,2,A121,38,A143,A152,2,A173,1,A192,A201,Good
+137,A14,27,Late Payment,car (used),8613,A64,1 - 4 years,2,A93,A101,2,A123,27,A143,A152,2,A173,1,A191,A201,Good
+138,A12,12,Up To Date,radio/television,766,A63,1 - 4 years,4,A93,A101,3,A121,66,A143,A152,1,A172,1,A191,A201,Bad
+139,A12,15,Critical Account,radio/television,2728,A65,4 - 7 years,4,A93,A103,2,A121,35,A141,A152,3,A173,1,A192,A201,Good
+140,A13,12,Up To Date,radio/television,1881,A61,1 - 4 years,2,A92,A101,2,A123,44,A143,A151,1,A172,1,A192,A201,Good
+141,A13,6,Up To Date,car (new),709,A64,< 1 year,2,A94,A101,2,A121,27,A143,A152,1,A171,1,A191,A202,Good
+142,A12,36,Up To Date,radio/television,4795,A61,< 1 year,4,A92,A101,1,A124,30,A143,A152,1,A174,1,A192,A201,Good
+143,A11,27,Up To Date,radio/television,3416,A61,1 - 4 years,3,A93,A101,2,A123,27,A143,A152,1,A174,1,A191,A201,Good
+144,A11,18,Up To Date,furniture/equipment,2462,A61,1 - 4 years,2,A93,A101,2,A123,22,A143,A152,1,A173,1,A191,A201,Bad
+145,A14,21,Critical Account,furniture/equipment,2288,A61,< 1 year,4,A92,A101,4,A122,23,A143,A152,1,A173,1,A192,A201,Good
+146,A12,48,All Paid This Bank,business,3566,A62,4 - 7 years,4,A93,A101,2,A123,30,A143,A152,1,A173,1,A191,A201,Good
+147,A11,6,Critical Account,car (new),860,A61,>= 7 years,1,A92,A101,4,A124,39,A143,A152,2,A173,1,A192,A201,Good
+148,A14,12,Critical Account,car (new),682,A62,4 - 7 years,4,A92,A101,3,A123,51,A143,A152,2,A173,1,A192,A201,Good
+149,A11,36,Critical Account,furniture/equipment,5371,A61,1 - 4 years,3,A93,A103,2,A122,28,A143,A152,2,A173,1,A191,A201,Good
+150,A14,18,Critical Account,radio/television,1582,A64,>= 7 years,4,A93,A101,4,A123,46,A143,A152,2,A173,1,A191,A201,Good
+151,A14,6,Up To Date,radio/television,1346,A62,>= 7 years,2,A93,A101,4,A124,42,A141,A153,1,A173,2,A192,A201,Good
+152,A14,10,Up To Date,radio/television,1924,A61,1 - 4 years,1,A93,A101,4,A122,38,A143,A152,1,A173,1,A192,A202,Good
+153,A13,36,Up To Date,radio/television,5848,A61,1 - 4 years,4,A93,A101,1,A123,24,A143,A152,1,A173,1,A191,A201,Good
+154,A12,24,Critical Account,car (used),7758,A64,>= 7 years,2,A92,A101,4,A124,29,A143,A151,1,A173,1,A191,A201,Good
+155,A12,24,Late Payment,business,6967,A62,4 - 7 years,4,A93,A101,4,A123,36,A143,A151,1,A174,1,A192,A201,Good
+156,A11,12,Up To Date,furniture/equipment,1282,A61,1 - 4 years,2,A92,A101,4,A123,20,A143,A151,1,A173,1,A191,A201,Bad
+157,A11,9,Critical Account,repairs,1288,A62,>= 7 years,3,A93,A103,4,A121,48,A143,A152,2,A173,2,A191,A202,Good
+158,A11,12,All Paid This Bank,retraining,339,A61,>= 7 years,4,A94,A101,1,A123,45,A141,A152,1,A172,1,A191,A201,Good
+159,A12,24,Up To Date,car (new),3512,A62,4 - 7 years,2,A93,A101,3,A123,38,A141,A152,2,A173,1,A192,A201,Good
+160,A14,6,Critical Account,radio/television,1898,A65,1 - 4 years,1,A93,A101,2,A121,34,A143,A152,2,A172,2,A191,A201,Good
+161,A14,24,Critical Account,radio/television,2872,A62,>= 7 years,3,A93,A101,4,A121,36,A143,A152,1,A173,2,A192,A201,Good
+162,A14,18,Critical Account,car (new),1055,A61,< 1 year,4,A92,A101,1,A122,30,A143,A152,2,A173,1,A191,A201,Good
+163,A14,15,Up To Date,domestic appliances,1262,A63,4 - 7 years,4,A93,A101,3,A122,36,A143,A152,2,A173,1,A192,A201,Good
+164,A12,10,Up To Date,car (new),7308,A61,unemployed,2,A93,A101,4,A124,70,A141,A153,1,A174,1,A192,A201,Good
+165,A14,36,Up To Date,car (new),909,A63,>= 7 years,4,A93,A101,4,A122,36,A143,A152,1,A173,1,A191,A201,Good
+166,A14,6,Up To Date,furniture/equipment,2978,A63,1 - 4 years,1,A93,A101,2,A123,32,A143,A152,1,A173,1,A192,A201,Good
+167,A11,18,Up To Date,furniture/equipment,1131,A61,unemployed,4,A92,A101,2,A123,33,A143,A152,1,A173,1,A191,A201,Bad
+168,A12,11,Up To Date,furniture/equipment,1577,A64,< 1 year,4,A92,A101,1,A121,20,A143,A152,1,A173,1,A191,A201,Good
+169,A14,24,Up To Date,furniture/equipment,3972,A61,4 - 7 years,2,A92,A101,4,A122,25,A143,A151,1,A173,1,A192,A201,Good
+170,A12,24,Critical Account,business,1935,A61,>= 7 years,4,A91,A101,4,A121,31,A143,A152,2,A173,1,A192,A201,Bad
+171,A11,15,All Paid,car (new),950,A61,>= 7 years,4,A93,A101,3,A123,33,A143,A151,2,A173,2,A191,A201,Bad
+172,A14,12,Up To Date,furniture/equipment,763,A61,1 - 4 years,4,A92,A101,1,A121,26,A143,A152,1,A173,1,A192,A201,Good
+173,A12,24,Late Payment,furniture/equipment,2064,A61,unemployed,3,A92,A101,2,A122,34,A143,A152,1,A174,1,A192,A201,Bad
+174,A12,8,Up To Date,radio/television,1414,A61,1 - 4 years,4,A93,A103,2,A121,33,A143,A152,1,A173,1,A191,A202,Good
+175,A11,21,Late Payment,education,3414,A61,< 1 year,2,A93,A101,1,A122,26,A143,A152,2,A173,1,A191,A201,Bad
+176,A14,30,All Paid This Bank,car (used),7485,A65,unemployed,4,A92,A101,1,A121,53,A141,A152,1,A174,1,A192,A201,Bad
+177,A11,12,Up To Date,furniture/equipment,2577,A61,1 - 4 years,2,A91,A101,1,A123,42,A143,A152,1,A173,1,A191,A201,Good
+178,A11,6,Critical Account,radio/television,338,A63,>= 7 years,4,A93,A101,4,A123,52,A143,A152,2,A173,1,A191,A201,Good
+179,A14,12,Up To Date,radio/television,1963,A61,4 - 7 years,4,A93,A101,2,A123,31,A143,A151,2,A174,2,A192,A201,Good
+180,A11,21,Critical Account,car (new),571,A61,>= 7 years,4,A93,A101,4,A121,65,A143,A152,2,A173,1,A191,A201,Good
+181,A14,36,Late Payment,business,9572,A61,< 1 year,1,A91,A101,1,A123,28,A143,A152,2,A173,1,A191,A201,Bad
+182,A12,36,Late Payment,business,4455,A61,1 - 4 years,2,A91,A101,2,A121,30,A142,A152,2,A174,1,A192,A201,Bad
+183,A11,21,All Paid This Bank,car (new),1647,A65,1 - 4 years,4,A93,A101,2,A122,40,A143,A152,2,A172,2,A191,A201,Bad
+184,A14,24,Critical Account,furniture/equipment,3777,A64,1 - 4 years,4,A93,A101,4,A121,50,A143,A152,1,A173,1,A192,A201,Good
+185,A12,18,Critical Account,car (new),884,A61,>= 7 years,4,A93,A101,4,A123,36,A141,A152,1,A173,2,A192,A201,Bad
+186,A14,15,Critical Account,radio/television,1360,A61,1 - 4 years,4,A93,A101,2,A122,31,A143,A152,2,A173,1,A191,A201,Good
+187,A12,9,All Paid This Bank,car (used),5129,A61,>= 7 years,2,A92,A101,4,A124,74,A141,A153,1,A174,2,A192,A201,Bad
+188,A12,16,Critical Account,car (new),1175,A61,unemployed,2,A93,A101,3,A123,68,A143,A153,3,A171,1,A192,A201,Good
+189,A11,12,Up To Date,radio/television,674,A62,4 - 7 years,4,A94,A101,1,A122,20,A143,A152,1,A173,1,A191,A201,Bad
+190,A12,18,All Paid,furniture/equipment,3244,A61,1 - 4 years,1,A92,A101,4,A123,33,A141,A152,2,A173,1,A192,A201,Good
+191,A14,24,Up To Date,business,4591,A64,1 - 4 years,2,A93,A101,3,A122,54,A143,A152,3,A174,1,A192,A201,Bad
+192,A12,48,All Paid,business,3844,A62,4 - 7 years,4,A93,A101,4,A124,34,A143,A153,1,A172,2,A191,A201,Bad
+193,A12,27,Up To Date,business,3915,A61,1 - 4 years,4,A93,A101,2,A123,36,A143,A152,1,A173,2,A192,A201,Bad
+194,A14,6,Up To Date,radio/television,2108,A61,4 - 7 years,2,A94,A101,2,A121,29,A143,A151,1,A173,1,A191,A201,Good
+195,A12,45,Up To Date,radio/television,3031,A62,1 - 4 years,4,A93,A103,4,A122,21,A143,A151,1,A173,1,A191,A201,Bad
+196,A12,9,Critical Account,education,1501,A61,>= 7 years,2,A92,A101,3,A123,34,A143,A152,2,A174,1,A192,A201,Bad
+197,A14,6,Critical Account,radio/television,1382,A61,1 - 4 years,1,A92,A101,1,A123,28,A143,A152,2,A173,1,A192,A201,Good
+198,A12,12,Up To Date,furniture/equipment,951,A62,< 1 year,4,A92,A101,4,A123,27,A141,A151,4,A173,1,A191,A201,Bad
+199,A12,24,Up To Date,car (used),2760,A65,>= 7 years,4,A93,A101,4,A124,36,A141,A153,1,A173,1,A192,A201,Good
+200,A12,18,Late Payment,furniture/equipment,4297,A61,>= 7 years,4,A91,A101,3,A124,40,A143,A152,1,A174,1,A192,A201,Bad
+201,A14,9,Critical Account,education,936,A63,>= 7 years,4,A93,A101,2,A123,52,A143,A152,2,A173,1,A192,A201,Good
+202,A11,12,Up To Date,car (new),1168,A61,1 - 4 years,4,A94,A101,3,A121,27,A143,A152,1,A172,1,A191,A201,Good
+203,A14,27,Late Payment,business,5117,A61,4 - 7 years,3,A93,A101,4,A123,26,A143,A152,2,A173,1,A191,A201,Good
+204,A11,12,Up To Date,retraining,902,A61,4 - 7 years,4,A94,A101,4,A122,21,A143,A151,1,A173,1,A191,A201,Bad
+205,A14,12,Critical Account,car (new),1495,A61,>= 7 years,4,A93,A101,1,A121,38,A143,A152,2,A172,2,A191,A201,Good
+206,A11,30,Critical Account,car (used),10623,A61,>= 7 years,3,A93,A101,4,A124,38,A143,A153,3,A174,2,A192,A201,Good
+207,A14,12,Critical Account,furniture/equipment,1935,A61,>= 7 years,4,A93,A101,4,A121,43,A143,A152,3,A173,1,A192,A201,Good
+208,A12,12,Critical Account,domestic appliances,1424,A61,4 - 7 years,4,A93,A101,3,A122,26,A143,A152,1,A173,1,A191,A201,Good
+209,A11,24,Up To Date,business,6568,A61,1 - 4 years,2,A94,A101,2,A123,21,A142,A152,1,A172,1,A191,A201,Good
+210,A14,12,Up To Date,car (used),1413,A64,4 - 7 years,3,A93,A101,2,A122,55,A143,A152,1,A173,1,A191,A202,Good
+211,A14,9,Critical Account,radio/television,3074,A65,1 - 4 years,1,A93,A101,2,A121,33,A143,A152,2,A173,2,A191,A201,Good
+212,A14,36,Up To Date,radio/television,3835,A65,>= 7 years,2,A92,A101,4,A121,45,A143,A152,1,A172,1,A192,A201,Good
+213,A11,27,All Paid,business,5293,A61,unemployed,2,A93,A101,4,A122,50,A142,A152,2,A173,1,A192,A201,Bad
+214,A13,30,Late Payment,business,1908,A61,>= 7 years,4,A93,A101,4,A121,66,A143,A152,1,A174,1,A192,A201,Bad
+215,A14,36,Critical Account,radio/television,3342,A65,>= 7 years,4,A93,A101,2,A123,51,A143,A152,1,A173,1,A192,A201,Good
+216,A12,6,Critical Account,retraining,932,A65,4 - 7 years,1,A92,A101,3,A122,39,A143,A152,2,A172,1,A191,A201,Good
+217,A11,18,All Paid,business,3104,A61,4 - 7 years,3,A93,A101,1,A122,31,A141,A152,1,A173,1,A192,A201,Good
+218,A13,36,Up To Date,radio/television,3913,A61,1 - 4 years,2,A93,A101,2,A121,23,A143,A152,1,A173,1,A192,A201,Good
+219,A11,24,Up To Date,furniture/equipment,3021,A61,1 - 4 years,2,A91,A101,2,A121,24,A143,A151,1,A172,1,A191,A201,Good
+220,A14,10,Up To Date,car (new),1364,A61,1 - 4 years,2,A92,A101,4,A123,64,A143,A152,1,A173,1,A192,A201,Good
+221,A12,12,Up To Date,radio/television,625,A61,< 1 year,4,A94,A103,1,A121,26,A141,A152,1,A172,1,A191,A201,Good
+222,A11,12,Up To Date,education,1200,A65,1 - 4 years,4,A92,A101,4,A122,23,A141,A151,1,A173,1,A192,A201,Good
+223,A14,12,Up To Date,radio/television,707,A61,1 - 4 years,4,A93,A101,2,A121,30,A141,A152,2,A173,1,A191,A201,Good
+224,A14,24,Late Payment,business,2978,A65,1 - 4 years,4,A93,A101,4,A121,32,A143,A152,2,A173,2,A192,A201,Good
+225,A14,15,Up To Date,car (used),4657,A61,1 - 4 years,3,A93,A101,2,A123,30,A143,A152,1,A173,1,A192,A201,Good
+226,A14,36,All Paid,repairs,2613,A61,1 - 4 years,4,A93,A101,2,A123,27,A143,A152,2,A173,1,A191,A201,Good
+227,A12,48,Up To Date,radio/television,10961,A64,4 - 7 years,1,A93,A102,2,A124,27,A141,A152,2,A173,1,A192,A201,Bad
+228,A11,12,Up To Date,furniture/equipment,7865,A61,>= 7 years,4,A93,A101,4,A124,53,A143,A153,1,A174,1,A192,A201,Bad
+229,A14,9,Up To Date,radio/television,1478,A61,4 - 7 years,4,A93,A101,2,A123,22,A143,A152,1,A173,1,A191,A201,Bad
+230,A11,24,Up To Date,furniture/equipment,3149,A61,< 1 year,4,A93,A101,1,A124,22,A141,A153,1,A173,1,A191,A201,Good
+231,A13,36,Up To Date,radio/television,4210,A61,1 - 4 years,4,A93,A101,2,A123,26,A143,A152,1,A173,1,A191,A201,Bad
+232,A14,9,Up To Date,car (new),2507,A63,>= 7 years,2,A93,A101,4,A124,51,A143,A153,1,A172,1,A191,A201,Good
+233,A14,12,Up To Date,radio/television,2141,A62,4 - 7 years,3,A93,A101,1,A124,35,A143,A152,1,A173,1,A191,A201,Good
+234,A12,18,Up To Date,radio/television,866,A61,1 - 4 years,4,A94,A103,2,A121,25,A143,A152,1,A172,1,A191,A201,Good
+235,A14,4,Critical Account,radio/television,1544,A61,4 - 7 years,2,A93,A101,1,A121,42,A143,A152,3,A172,2,A191,A201,Good
+236,A11,24,Up To Date,radio/television,1823,A61,unemployed,4,A93,A101,2,A123,30,A142,A152,1,A174,2,A191,A201,Bad
+237,A12,6,Up To Date,car (new),14555,A65,unemployed,1,A93,A101,2,A122,23,A143,A152,1,A171,1,A192,A201,Bad
+238,A12,21,Up To Date,business,2767,A62,>= 7 years,4,A91,A101,2,A123,61,A141,A151,2,A172,1,A191,A201,Bad
+239,A14,12,Critical Account,radio/television,1291,A61,1 - 4 years,4,A92,A101,2,A122,35,A143,A152,2,A173,1,A191,A201,Good
+240,A11,30,Up To Date,radio/television,2522,A61,>= 7 years,1,A93,A103,3,A122,39,A143,A152,1,A173,2,A191,A201,Good
+241,A11,24,Up To Date,car (new),915,A65,>= 7 years,4,A92,A101,2,A123,29,A141,A152,1,A173,1,A191,A201,Bad
+242,A14,6,Up To Date,radio/television,1595,A61,4 - 7 years,3,A93,A101,2,A122,51,A143,A152,1,A173,2,A191,A201,Good
+243,A11,48,All Paid,car (used),4605,A61,>= 7 years,3,A93,A101,4,A124,24,A143,A153,2,A173,2,A191,A201,Bad
+244,A14,12,Critical Account,business,1185,A61,1 - 4 years,3,A92,A101,2,A121,27,A143,A152,2,A173,1,A191,A201,Good
+245,A14,12,All Paid This Bank,retraining,3447,A63,1 - 4 years,4,A92,A101,3,A121,35,A143,A152,1,A172,2,A191,A201,Good
+246,A14,24,Up To Date,business,1258,A61,4 - 7 years,4,A93,A101,1,A121,25,A143,A152,1,A173,1,A192,A201,Good
+247,A14,12,Critical Account,radio/television,717,A61,>= 7 years,4,A93,A101,4,A121,52,A143,A152,3,A173,1,A191,A201,Good
+248,A14,6,All Paid,car (new),1204,A62,1 - 4 years,4,A93,A101,1,A124,35,A141,A151,1,A173,1,A191,A202,Good
+249,A13,24,Up To Date,furniture/equipment,1925,A61,1 - 4 years,2,A93,A101,2,A121,26,A143,A152,1,A173,1,A191,A201,Good
+250,A14,18,Up To Date,radio/television,433,A61,unemployed,3,A92,A102,4,A121,22,A143,A151,1,A173,1,A191,A201,Bad
+251,A11,6,Critical Account,car (new),666,A64,4 - 7 years,3,A92,A101,4,A121,39,A143,A152,2,A172,1,A192,A201,Good
+252,A13,12,Up To Date,furniture/equipment,2251,A61,1 - 4 years,1,A92,A101,2,A123,46,A143,A152,1,A172,1,A191,A201,Good
+253,A12,30,Up To Date,car (new),2150,A61,1 - 4 years,4,A92,A103,2,A124,24,A141,A152,1,A173,1,A191,A201,Bad
+254,A14,24,Late Payment,furniture/equipment,4151,A62,1 - 4 years,2,A93,A101,3,A122,35,A143,A152,2,A173,1,A191,A201,Good
+255,A12,9,Up To Date,furniture/equipment,2030,A65,4 - 7 years,2,A93,A101,1,A123,24,A143,A152,1,A173,1,A192,A201,Good
+256,A12,60,Late Payment,radio/television,7418,A65,1 - 4 years,1,A93,A101,1,A121,27,A143,A152,1,A172,1,A191,A201,Good
+257,A14,24,Critical Account,radio/television,2684,A61,1 - 4 years,4,A93,A101,2,A121,35,A143,A152,2,A172,1,A191,A201,Good
+258,A11,12,All Paid This Bank,radio/television,2149,A61,1 - 4 years,4,A91,A101,1,A124,29,A143,A153,1,A173,1,A191,A201,Bad
+259,A14,15,Up To Date,car (used),3812,A62,< 1 year,1,A92,A101,4,A123,23,A143,A152,1,A173,1,A192,A201,Good
+260,A14,11,Critical Account,radio/television,1154,A62,unemployed,4,A92,A101,4,A121,57,A143,A152,3,A172,1,A191,A201,Good
+261,A11,12,Up To Date,furniture/equipment,1657,A61,1 - 4 years,2,A93,A101,2,A121,27,A143,A152,1,A173,1,A191,A201,Good
+262,A11,24,Up To Date,radio/television,1603,A61,>= 7 years,4,A92,A101,4,A123,55,A143,A152,1,A173,1,A191,A201,Good
+263,A11,18,Critical Account,car (new),5302,A61,>= 7 years,2,A93,A101,4,A124,36,A143,A153,3,A174,1,A192,A201,Good
+264,A14,12,Critical Account,education,2748,A61,>= 7 years,2,A92,A101,4,A124,57,A141,A153,3,A172,1,A191,A201,Good
+265,A14,10,Critical Account,car (new),1231,A61,>= 7 years,3,A93,A101,4,A121,32,A143,A152,2,A172,2,A191,A202,Good
+266,A12,15,Up To Date,radio/television,802,A61,>= 7 years,4,A93,A101,3,A123,37,A143,A152,1,A173,2,A191,A201,Bad
+267,A14,36,Critical Account,business,6304,A65,>= 7 years,4,A93,A101,4,A121,36,A143,A152,2,A173,1,A191,A201,Good
+268,A14,24,Up To Date,radio/television,1533,A61,< 1 year,4,A92,A101,3,A123,38,A142,A152,1,A173,1,A192,A201,Good
+269,A11,14,Up To Date,car (new),8978,A61,>= 7 years,1,A91,A101,4,A122,45,A143,A152,1,A174,1,A192,A202,Bad
+270,A14,24,Up To Date,radio/television,999,A65,>= 7 years,4,A93,A101,2,A123,25,A143,A152,2,A173,1,A191,A201,Good
+271,A14,18,Up To Date,car (new),2662,A65,4 - 7 years,4,A93,A101,3,A122,32,A143,A152,1,A173,1,A191,A202,Good
+272,A14,12,Critical Account,furniture/equipment,1402,A63,4 - 7 years,3,A92,A101,4,A123,37,A143,A151,1,A173,1,A192,A201,Good
+273,A12,48,All Paid This Bank,car (new),12169,A65,unemployed,4,A93,A102,4,A124,36,A143,A153,1,A174,1,A192,A201,Good
+274,A12,48,Up To Date,radio/television,3060,A61,4 - 7 years,4,A93,A101,4,A121,28,A143,A152,2,A173,1,A191,A201,Bad
+275,A11,30,Up To Date,repairs,11998,A61,< 1 year,1,A91,A101,1,A124,34,A143,A152,1,A172,1,A192,A201,Bad
+276,A14,9,Up To Date,radio/television,2697,A61,1 - 4 years,1,A93,A101,2,A121,32,A143,A152,1,A173,2,A191,A201,Good
+277,A14,18,Critical Account,radio/television,2404,A61,1 - 4 years,2,A92,A101,2,A123,26,A143,A152,2,A173,1,A191,A201,Good
+278,A11,12,Up To Date,furniture/equipment,1262,A65,>= 7 years,2,A91,A101,4,A122,49,A143,A152,1,A172,1,A192,A201,Good
+279,A14,6,Up To Date,furniture/equipment,4611,A61,< 1 year,1,A92,A101,4,A122,32,A143,A152,1,A173,1,A191,A201,Bad
+280,A14,24,Up To Date,radio/television,1901,A62,1 - 4 years,4,A93,A101,4,A123,29,A143,A151,1,A174,1,A192,A201,Good
+281,A14,15,Critical Account,car (used),3368,A64,>= 7 years,3,A93,A101,4,A124,23,A143,A151,2,A173,1,A192,A201,Good
+282,A14,12,Up To Date,furniture/equipment,1574,A61,1 - 4 years,4,A93,A101,2,A121,50,A143,A152,1,A173,1,A191,A201,Good
+283,A13,18,All Paid This Bank,radio/television,1445,A65,4 - 7 years,4,A93,A101,4,A123,49,A141,A152,1,A172,1,A191,A201,Good
+284,A14,15,Critical Account,furniture/equipment,1520,A65,>= 7 years,4,A93,A101,4,A122,63,A143,A152,1,A173,1,A191,A201,Good
+285,A12,24,Critical Account,car (new),3878,A62,< 1 year,4,A91,A101,2,A123,37,A143,A152,1,A173,1,A192,A201,Good
+286,A11,47,Up To Date,car (new),10722,A61,< 1 year,1,A92,A101,1,A121,35,A143,A152,1,A172,1,A192,A201,Good
+287,A11,48,Up To Date,car (used),4788,A61,4 - 7 years,4,A93,A101,3,A122,26,A143,A152,1,A173,2,A191,A201,Good
+288,A12,48,Late Payment,others,7582,A62,unemployed,2,A93,A101,4,A124,31,A143,A153,1,A174,1,A192,A201,Good
+289,A12,12,Up To Date,radio/television,1092,A61,1 - 4 years,4,A92,A103,4,A121,49,A143,A152,2,A173,1,A192,A201,Good
+290,A11,24,Late Payment,radio/television,1024,A61,< 1 year,4,A94,A101,4,A121,48,A142,A152,1,A173,1,A191,A201,Bad
+291,A14,12,Up To Date,business,1076,A61,1 - 4 years,2,A94,A101,2,A121,26,A143,A152,1,A173,1,A192,A202,Good
+292,A12,36,Up To Date,car (used),9398,A61,< 1 year,1,A94,A101,4,A123,28,A143,A151,1,A174,1,A192,A201,Bad
+293,A11,24,Critical Account,car (used),6419,A61,>= 7 years,2,A92,A101,4,A124,44,A143,A153,2,A174,2,A192,A201,Good
+294,A13,42,Critical Account,car (used),4796,A61,>= 7 years,4,A93,A101,4,A124,56,A143,A153,1,A173,1,A191,A201,Good
+295,A14,48,Critical Account,business,7629,A65,>= 7 years,4,A91,A101,2,A123,46,A141,A152,2,A174,2,A191,A201,Good
+296,A12,48,Up To Date,furniture/equipment,9960,A61,< 1 year,1,A92,A101,2,A123,26,A143,A152,1,A173,1,A192,A201,Bad
+297,A14,12,Up To Date,car (used),4675,A65,< 1 year,1,A92,A101,4,A123,20,A143,A151,1,A173,1,A191,A201,Good
+298,A14,10,Up To Date,car (new),1287,A65,>= 7 years,4,A93,A102,2,A122,45,A143,A152,1,A172,1,A191,A202,Good
+299,A14,18,Up To Date,furniture/equipment,2515,A61,1 - 4 years,3,A93,A101,4,A121,43,A143,A152,1,A173,1,A192,A201,Good
+300,A12,21,Critical Account,furniture/equipment,2745,A64,4 - 7 years,3,A93,A101,2,A123,32,A143,A152,2,A173,1,A192,A201,Good
+301,A14,6,Up To Date,car (new),672,A61,unemployed,1,A92,A101,4,A121,54,A143,A152,1,A171,1,A192,A201,Good
+302,A12,36,All Paid,radio/television,3804,A61,1 - 4 years,4,A92,A101,1,A123,42,A143,A152,1,A173,1,A192,A201,Bad
+303,A13,24,Critical Account,car (new),1344,A65,4 - 7 years,4,A93,A101,2,A121,37,A141,A152,2,A172,2,A191,A201,Bad
+304,A11,10,Critical Account,car (new),1038,A61,4 - 7 years,4,A93,A102,3,A122,49,A143,A152,2,A173,1,A192,A201,Good
+305,A14,48,Critical Account,car (new),10127,A63,1 - 4 years,2,A93,A101,2,A124,44,A141,A153,1,A173,1,A191,A201,Bad
+306,A14,6,Up To Date,furniture/equipment,1543,A64,1 - 4 years,4,A91,A101,2,A121,33,A143,A152,1,A173,1,A191,A201,Good
+307,A14,30,Up To Date,car (used),4811,A65,4 - 7 years,2,A92,A101,4,A122,24,A142,A151,1,A172,1,A191,A201,Good
+308,A11,12,Up To Date,radio/television,727,A62,< 1 year,4,A94,A101,3,A124,33,A143,A152,1,A172,1,A192,A201,Bad
+309,A12,8,Up To Date,furniture/equipment,1237,A61,1 - 4 years,3,A92,A101,4,A121,24,A143,A152,1,A173,1,A191,A201,Bad
+310,A12,9,Up To Date,car (new),276,A61,1 - 4 years,4,A94,A101,4,A121,22,A143,A151,1,A172,1,A191,A201,Good
+311,A12,48,Up To Date,others,5381,A65,unemployed,3,A93,A101,4,A124,40,A141,A153,1,A171,1,A192,A201,Good
+312,A14,24,Up To Date,furniture/equipment,5511,A62,1 - 4 years,4,A93,A101,1,A123,25,A142,A152,1,A173,1,A191,A201,Good
+313,A13,24,Up To Date,furniture/equipment,3749,A61,< 1 year,2,A92,A101,4,A123,26,A143,A152,1,A173,1,A191,A201,Good
+314,A12,12,Up To Date,car (new),685,A61,4 - 7 years,2,A94,A101,3,A123,25,A141,A152,1,A172,1,A191,A201,Bad
+315,A13,4,Up To Date,car (new),1494,A65,< 1 year,1,A93,A101,2,A121,29,A143,A152,1,A172,2,A191,A202,Good
+316,A11,36,All Paid This Bank,furniture/equipment,2746,A61,>= 7 years,4,A93,A101,4,A123,31,A141,A152,1,A173,1,A191,A201,Bad
+317,A11,12,Up To Date,furniture/equipment,708,A61,1 - 4 years,2,A93,A103,3,A122,38,A143,A152,1,A172,2,A191,A201,Good
+318,A12,24,Up To Date,furniture/equipment,4351,A65,1 - 4 years,1,A92,A101,4,A122,48,A143,A152,1,A172,1,A192,A201,Good
+319,A14,12,Critical Account,education,701,A61,1 - 4 years,4,A93,A101,2,A123,32,A143,A152,2,A173,1,A191,A201,Good
+320,A11,15,Late Payment,furniture/equipment,3643,A61,>= 7 years,1,A92,A101,4,A122,27,A143,A152,2,A172,1,A191,A201,Good
+321,A12,30,Critical Account,car (new),4249,A61,unemployed,4,A94,A101,2,A123,28,A143,A152,2,A174,1,A191,A201,Bad
+322,A11,24,Up To Date,radio/television,1938,A61,< 1 year,4,A91,A101,3,A122,32,A143,A152,1,A173,1,A191,A201,Bad
+323,A11,24,Up To Date,car (used),2910,A61,4 - 7 years,2,A93,A101,1,A124,34,A143,A153,1,A174,1,A192,A201,Good
+324,A11,18,Up To Date,furniture/equipment,2659,A64,1 - 4 years,4,A93,A101,2,A123,28,A143,A152,1,A173,1,A191,A201,Good
+325,A14,18,Critical Account,car (new),1028,A61,1 - 4 years,4,A92,A101,3,A121,36,A143,A152,2,A173,1,A191,A201,Good
+326,A11,8,Critical Account,car (new),3398,A61,4 - 7 years,1,A93,A101,4,A121,39,A143,A152,2,A172,1,A191,A202,Good
+327,A14,12,Critical Account,furniture/equipment,5801,A65,>= 7 years,2,A93,A101,4,A122,49,A143,A151,1,A173,1,A192,A201,Good
+328,A14,24,Up To Date,car (new),1525,A64,4 - 7 years,4,A92,A101,3,A123,34,A143,A152,1,A173,2,A192,A201,Good
+329,A13,36,Up To Date,radio/television,4473,A61,>= 7 years,4,A93,A101,2,A123,31,A143,A152,1,A173,1,A191,A201,Good
+330,A12,6,Up To Date,radio/television,1068,A61,>= 7 years,4,A93,A101,4,A123,28,A143,A152,1,A173,2,A191,A201,Good
+331,A11,24,Critical Account,car (used),6615,A61,unemployed,2,A93,A101,4,A124,75,A143,A153,2,A174,1,A192,A201,Good
+332,A14,18,Critical Account,education,1864,A62,1 - 4 years,4,A92,A101,2,A121,30,A143,A152,2,A173,1,A191,A201,Bad
+333,A12,60,Up To Date,car (new),7408,A62,< 1 year,4,A92,A101,2,A122,24,A143,A152,1,A174,1,A191,A201,Bad
+334,A14,48,Critical Account,car (used),11590,A62,1 - 4 years,2,A92,A101,4,A123,24,A141,A151,2,A172,1,A191,A201,Bad
+335,A11,24,All Paid,furniture/equipment,4110,A61,>= 7 years,3,A93,A101,4,A124,23,A141,A151,2,A173,2,A191,A201,Bad
+336,A11,6,Critical Account,furniture/equipment,3384,A61,1 - 4 years,1,A91,A101,4,A121,44,A143,A151,1,A174,1,A192,A201,Bad
+337,A12,13,Up To Date,radio/television,2101,A61,< 1 year,2,A92,A103,4,A122,23,A143,A152,1,A172,1,A191,A201,Good
+338,A11,15,Up To Date,domestic appliances,1275,A65,1 - 4 years,4,A92,A101,2,A123,24,A143,A151,1,A173,1,A191,A201,Bad
+339,A11,24,Up To Date,furniture/equipment,4169,A61,1 - 4 years,4,A93,A101,4,A122,28,A143,A152,1,A173,1,A191,A201,Good
+340,A12,10,Up To Date,furniture/equipment,1521,A61,1 - 4 years,4,A91,A101,2,A123,31,A143,A152,1,A172,1,A191,A201,Good
+341,A12,24,Critical Account,education,5743,A61,< 1 year,2,A92,A101,4,A124,24,A143,A153,2,A173,1,A192,A201,Good
+342,A11,21,Up To Date,furniture/equipment,3599,A61,4 - 7 years,1,A92,A101,4,A123,26,A143,A151,1,A172,1,A191,A201,Good
+343,A12,18,Up To Date,radio/television,3213,A63,< 1 year,1,A94,A101,3,A121,25,A143,A151,1,A173,1,A191,A201,Good
+344,A12,18,Up To Date,business,4439,A61,>= 7 years,1,A93,A102,1,A121,33,A141,A152,1,A174,1,A192,A201,Good
+345,A13,10,Up To Date,car (new),3949,A61,< 1 year,1,A93,A103,1,A122,37,A143,A152,1,A172,2,A191,A201,Good
+346,A14,15,Critical Account,radio/television,1459,A61,1 - 4 years,4,A92,A101,2,A123,43,A143,A152,1,A172,1,A191,A201,Good
+347,A12,13,Critical Account,radio/television,882,A61,< 1 year,4,A93,A103,4,A121,23,A143,A152,2,A173,1,A191,A201,Good
+348,A12,24,Up To Date,radio/television,3758,A63,unemployed,1,A92,A101,4,A124,23,A143,A151,1,A171,1,A191,A201,Good
+349,A14,6,Late Payment,business,1743,A62,1 - 4 years,1,A93,A101,2,A121,34,A143,A152,2,A172,1,A191,A201,Good
+350,A12,9,Critical Account,education,1136,A64,>= 7 years,4,A93,A101,3,A124,32,A143,A153,2,A173,2,A191,A201,Bad
+351,A14,9,Up To Date,domestic appliances,1236,A61,< 1 year,1,A92,A101,4,A121,23,A143,A151,1,A173,1,A192,A201,Good
+352,A12,9,Up To Date,furniture/equipment,959,A61,1 - 4 years,1,A92,A101,2,A123,29,A143,A152,1,A173,1,A191,A202,Bad
+353,A14,18,Critical Account,car (used),3229,A65,unemployed,2,A93,A101,4,A124,38,A143,A152,1,A174,1,A192,A201,Good
+354,A11,12,All Paid,radio/television,6199,A61,1 - 4 years,4,A93,A101,2,A122,28,A143,A151,2,A173,1,A192,A201,Bad
+355,A14,10,Up To Date,education,727,A63,>= 7 years,4,A93,A101,4,A124,46,A143,A153,1,A173,1,A192,A201,Good
+356,A12,24,Up To Date,car (new),1246,A61,< 1 year,4,A93,A101,2,A121,23,A142,A152,1,A172,1,A191,A201,Bad
+357,A14,12,Critical Account,radio/television,2331,A65,>= 7 years,1,A93,A102,4,A121,49,A143,A152,1,A173,1,A192,A201,Good
+358,A14,36,Late Payment,radio/television,4463,A61,1 - 4 years,4,A93,A101,2,A123,26,A143,A152,2,A174,1,A192,A201,Bad
+359,A14,12,Up To Date,radio/television,776,A61,1 - 4 years,4,A94,A101,2,A121,28,A143,A152,1,A173,1,A191,A201,Good
+360,A11,30,Up To Date,furniture/equipment,2406,A61,4 - 7 years,4,A92,A101,4,A121,23,A143,A151,1,A173,1,A191,A201,Bad
+361,A12,18,Up To Date,education,1239,A65,1 - 4 years,4,A93,A101,4,A124,61,A143,A153,1,A173,1,A191,A201,Good
+362,A13,12,Up To Date,radio/television,3399,A65,>= 7 years,2,A93,A101,3,A123,37,A143,A152,1,A174,1,A191,A201,Good
+363,A13,12,Late Payment,car (new),2247,A61,1 - 4 years,2,A92,A101,2,A123,36,A142,A152,2,A173,1,A192,A201,Good
+364,A14,6,Up To Date,furniture/equipment,1766,A61,1 - 4 years,1,A94,A101,2,A122,21,A143,A151,1,A173,1,A191,A201,Good
+365,A11,18,Up To Date,furniture/equipment,2473,A61,unemployed,4,A93,A101,1,A123,25,A143,A152,1,A171,1,A191,A201,Bad
+366,A14,12,Up To Date,business,1542,A61,4 - 7 years,2,A93,A101,4,A123,36,A143,A152,1,A173,1,A192,A201,Good
+367,A14,18,Critical Account,car (used),3850,A61,4 - 7 years,3,A93,A101,1,A123,27,A143,A152,2,A173,1,A191,A201,Good
+368,A11,18,Up To Date,furniture/equipment,3650,A61,< 1 year,1,A92,A101,4,A123,22,A143,A151,1,A173,1,A191,A201,Good
+369,A11,36,Up To Date,furniture/equipment,3446,A61,>= 7 years,4,A93,A101,2,A123,42,A143,A152,1,A173,2,A191,A201,Bad
+370,A12,18,Up To Date,furniture/equipment,3001,A61,4 - 7 years,2,A92,A101,4,A121,40,A143,A151,1,A173,1,A191,A201,Good
+371,A14,36,Up To Date,car (new),3079,A65,1 - 4 years,4,A93,A101,4,A121,36,A143,A152,1,A173,1,A191,A201,Good
+372,A14,18,Critical Account,radio/television,6070,A61,>= 7 years,3,A93,A101,4,A123,33,A143,A152,2,A173,1,A192,A201,Good
+373,A14,10,Critical Account,furniture/equipment,2146,A61,< 1 year,1,A92,A101,3,A121,23,A143,A151,2,A173,1,A191,A201,Good
+374,A14,60,Critical Account,car (new),13756,A65,>= 7 years,2,A93,A101,4,A124,63,A141,A153,1,A174,1,A192,A201,Good
+375,A12,60,All Paid This Bank,others,14782,A62,>= 7 years,3,A92,A101,4,A124,60,A141,A153,2,A174,1,A192,A201,Bad
+376,A11,48,All Paid This Bank,business,7685,A61,4 - 7 years,2,A92,A103,4,A123,37,A143,A151,1,A173,1,A191,A201,Bad
+377,A14,18,Late Payment,radio/television,2320,A61,unemployed,2,A94,A101,3,A121,34,A143,A152,2,A173,1,A191,A201,Good
+378,A14,7,Late Payment,radio/television,846,A65,>= 7 years,3,A93,A101,4,A124,36,A143,A153,1,A173,1,A191,A201,Good
+379,A12,36,Up To Date,car (new),14318,A61,>= 7 years,4,A93,A101,2,A124,57,A143,A153,1,A174,1,A192,A201,Bad
+380,A14,6,Critical Account,car (new),362,A62,1 - 4 years,4,A92,A101,4,A123,52,A143,A152,2,A172,1,A191,A201,Good
+381,A11,20,Up To Date,furniture/equipment,2212,A65,4 - 7 years,4,A93,A101,4,A123,39,A143,A152,1,A173,1,A192,A201,Good
+382,A12,18,Up To Date,car (used),12976,A61,unemployed,3,A92,A101,4,A124,38,A143,A153,1,A174,1,A192,A201,Bad
+383,A14,22,Up To Date,car (new),1283,A65,4 - 7 years,4,A92,A101,4,A122,25,A143,A151,1,A173,1,A191,A201,Good
+384,A13,12,Up To Date,car (new),1330,A61,< 1 year,4,A93,A101,1,A121,26,A143,A152,1,A173,1,A191,A201,Good
+385,A14,30,Late Payment,business,4272,A62,1 - 4 years,2,A93,A101,2,A122,26,A143,A152,2,A172,1,A191,A201,Good
+386,A14,18,Critical Account,radio/television,2238,A61,1 - 4 years,2,A92,A101,1,A123,25,A143,A152,2,A173,1,A191,A201,Good
+387,A14,18,Up To Date,radio/television,1126,A65,< 1 year,4,A92,A101,2,A121,21,A143,A151,1,A173,1,A192,A201,Good
+388,A12,18,Critical Account,furniture/equipment,7374,A61,unemployed,4,A93,A101,4,A122,40,A142,A152,2,A174,1,A192,A201,Good
+389,A12,15,Critical Account,business,2326,A63,1 - 4 years,2,A93,A101,4,A123,27,A141,A152,1,A173,1,A191,A201,Good
+390,A14,9,Up To Date,business,1449,A61,4 - 7 years,3,A92,A101,2,A123,27,A143,A152,2,A173,1,A191,A201,Good
+391,A14,18,Up To Date,car (new),1820,A61,1 - 4 years,2,A94,A101,2,A122,30,A143,A152,1,A174,1,A192,A201,Good
+392,A12,12,Up To Date,furniture/equipment,983,A64,< 1 year,1,A92,A101,4,A121,19,A143,A151,1,A172,1,A191,A201,Good
+393,A11,36,Up To Date,car (new),3249,A61,4 - 7 years,2,A93,A101,4,A124,39,A141,A153,1,A174,2,A192,A201,Good
+394,A11,6,Critical Account,radio/television,1957,A61,4 - 7 years,1,A92,A101,4,A123,31,A143,A152,1,A173,1,A191,A201,Good
+395,A14,9,Critical Account,furniture/equipment,2406,A61,unemployed,2,A93,A101,3,A123,31,A143,A152,1,A174,1,A191,A201,Good
+396,A12,39,Late Payment,education,11760,A62,4 - 7 years,2,A93,A101,3,A124,32,A143,A151,1,A173,1,A192,A201,Good
+397,A11,12,Up To Date,furniture/equipment,2578,A61,unemployed,3,A92,A101,4,A124,55,A143,A153,1,A174,1,A191,A201,Good
+398,A11,36,Critical Account,furniture/equipment,2348,A61,1 - 4 years,3,A94,A101,2,A122,46,A143,A152,2,A173,1,A192,A201,Good
+399,A12,12,Up To Date,car (new),1223,A61,>= 7 years,1,A91,A101,1,A121,46,A143,A151,2,A173,1,A191,A201,Bad
+400,A14,24,Critical Account,radio/television,1516,A64,1 - 4 years,4,A92,A101,1,A121,43,A143,A152,2,A172,1,A191,A201,Good
+401,A14,18,Up To Date,radio/television,1473,A61,< 1 year,3,A94,A101,4,A121,39,A143,A152,1,A173,1,A192,A201,Good
+402,A12,18,Critical Account,business,1887,A65,1 - 4 years,4,A94,A101,4,A121,28,A141,A152,2,A173,1,A191,A201,Good
+403,A14,24,Late Payment,business,8648,A61,< 1 year,2,A93,A101,2,A123,27,A141,A152,2,A173,1,A192,A201,Bad
+404,A14,14,Late Payment,car (new),802,A61,1 - 4 years,4,A93,A101,2,A123,27,A143,A152,2,A172,1,A191,A201,Good
+405,A12,18,Late Payment,car (new),2899,A65,>= 7 years,4,A93,A101,4,A123,43,A143,A152,1,A173,2,A191,A201,Good
+406,A12,24,Up To Date,radio/television,2039,A61,< 1 year,1,A94,A101,1,A122,22,A143,A152,1,A173,1,A192,A201,Bad
+407,A14,24,Critical Account,car (used),2197,A65,4 - 7 years,4,A93,A101,4,A123,43,A143,A152,2,A173,2,A192,A201,Good
+408,A11,15,Up To Date,radio/television,1053,A61,< 1 year,4,A94,A101,2,A121,27,A143,A152,1,A173,1,A191,A202,Good
+409,A14,24,Up To Date,radio/television,3235,A63,>= 7 years,3,A91,A101,2,A123,26,A143,A152,1,A174,1,A192,A201,Good
+410,A13,12,Critical Account,car (new),939,A63,4 - 7 years,4,A94,A101,2,A121,28,A143,A152,3,A173,1,A192,A201,Bad
+411,A12,24,Up To Date,radio/television,1967,A61,>= 7 years,4,A92,A101,4,A123,20,A143,A152,1,A173,1,A192,A201,Good
+412,A14,33,Critical Account,car (used),7253,A61,4 - 7 years,3,A93,A101,2,A123,35,A143,A152,2,A174,1,A192,A201,Good
+413,A14,12,Critical Account,business,2292,A61,unemployed,4,A93,A101,2,A123,42,A142,A152,2,A174,1,A192,A201,Bad
+414,A14,10,Up To Date,car (new),1597,A63,1 - 4 years,3,A93,A101,2,A124,40,A143,A151,1,A172,2,A191,A202,Good
+415,A11,24,Up To Date,car (new),1381,A65,1 - 4 years,4,A92,A101,2,A122,35,A143,A152,1,A173,1,A191,A201,Bad
+416,A14,36,Critical Account,car (used),5842,A61,>= 7 years,2,A93,A101,2,A122,35,A143,A152,2,A173,2,A192,A201,Good
+417,A11,12,Up To Date,car (new),2579,A61,< 1 year,4,A93,A101,1,A121,33,A143,A152,1,A172,2,A191,A201,Bad
+418,A11,18,Late Payment,education,8471,A65,1 - 4 years,1,A92,A101,2,A123,23,A143,A151,2,A173,1,A192,A201,Good
+419,A14,21,Up To Date,car (new),2782,A63,4 - 7 years,1,A92,A101,2,A123,31,A141,A152,1,A174,1,A191,A201,Good
+420,A12,18,Up To Date,car (new),1042,A65,1 - 4 years,4,A92,A101,2,A122,33,A143,A152,1,A173,1,A191,A201,Bad
+421,A14,15,Up To Date,car (new),3186,A64,4 - 7 years,2,A92,A101,3,A123,20,A143,A151,1,A173,1,A191,A201,Good
+422,A12,12,Up To Date,car (used),2028,A65,1 - 4 years,4,A93,A101,2,A123,30,A143,A152,1,A173,1,A191,A201,Good
+423,A12,12,Critical Account,car (new),958,A61,4 - 7 years,2,A93,A101,3,A121,47,A143,A152,2,A172,2,A191,A201,Good
+424,A14,21,Late Payment,furniture/equipment,1591,A62,4 - 7 years,4,A93,A101,3,A121,34,A143,A152,2,A174,1,A191,A201,Good
+425,A12,12,Up To Date,furniture/equipment,2762,A65,>= 7 years,1,A92,A101,2,A122,25,A141,A152,1,A173,1,A192,A201,Bad
+426,A12,18,Up To Date,car (used),2779,A61,1 - 4 years,1,A94,A101,3,A123,21,A143,A151,1,A173,1,A192,A201,Good
+427,A14,28,Critical Account,radio/television,2743,A61,>= 7 years,4,A93,A101,2,A123,29,A143,A152,2,A173,1,A191,A201,Good
+428,A14,18,Critical Account,radio/television,1149,A64,1 - 4 years,4,A93,A101,3,A121,46,A143,A152,2,A173,1,A191,A201,Good
+429,A14,9,Up To Date,furniture/equipment,1313,A61,>= 7 years,1,A93,A101,4,A123,20,A143,A152,1,A173,1,A191,A201,Good
+430,A11,18,Critical Account,repairs,1190,A61,unemployed,2,A92,A101,4,A124,55,A143,A153,3,A171,2,A191,A201,Bad
+431,A14,5,Up To Date,business,3448,A61,4 - 7 years,1,A93,A101,4,A121,74,A143,A152,1,A172,1,A191,A201,Good
+432,A12,24,Up To Date,others,11328,A61,1 - 4 years,2,A93,A102,3,A123,29,A141,A152,2,A174,1,A192,A201,Bad
+433,A11,6,Critical Account,furniture/equipment,1872,A61,unemployed,4,A93,A101,4,A124,36,A143,A153,3,A174,1,A192,A201,Good
+434,A14,24,Critical Account,repairs,2058,A61,1 - 4 years,4,A91,A101,2,A121,33,A143,A152,2,A173,1,A192,A201,Good
+435,A11,9,Up To Date,furniture/equipment,2136,A61,1 - 4 years,3,A93,A101,2,A121,25,A143,A152,1,A173,1,A191,A201,Good
+436,A12,12,Up To Date,radio/television,1484,A65,1 - 4 years,2,A94,A101,1,A121,25,A143,A152,1,A173,1,A192,A201,Bad
+437,A14,6,Up To Date,repairs,660,A63,4 - 7 years,2,A94,A101,4,A121,23,A143,A151,1,A172,1,A191,A201,Good
+438,A14,24,Critical Account,car (new),1287,A64,>= 7 years,4,A92,A101,4,A121,37,A143,A152,2,A173,1,A192,A201,Good
+439,A11,42,Critical Account,repairs,3394,A61,unemployed,4,A93,A102,4,A123,65,A143,A152,2,A171,1,A191,A201,Good
+440,A13,12,All Paid This Bank,business,609,A61,< 1 year,4,A92,A101,1,A121,26,A143,A152,1,A171,1,A191,A201,Bad
+441,A14,12,Up To Date,car (new),1884,A61,>= 7 years,4,A93,A101,4,A123,39,A143,A152,1,A174,1,A192,A201,Good
+442,A11,12,Up To Date,furniture/equipment,1620,A61,1 - 4 years,2,A92,A102,3,A122,30,A143,A152,1,A173,1,A191,A201,Good
+443,A12,20,Late Payment,others,2629,A61,1 - 4 years,2,A93,A101,3,A123,29,A141,A152,2,A173,1,A192,A201,Good
+444,A14,12,Up To Date,education,719,A61,>= 7 years,4,A93,A101,4,A123,41,A141,A152,1,A172,2,A191,A201,Bad
+445,A12,48,Critical Account,furniture/equipment,5096,A61,1 - 4 years,2,A92,A101,3,A123,30,A143,A152,1,A174,1,A192,A201,Bad
+446,A14,9,Critical Account,education,1244,A65,>= 7 years,4,A92,A101,4,A122,41,A143,A151,2,A172,1,A191,A201,Good
+447,A11,36,Up To Date,car (new),1842,A61,< 1 year,4,A92,A101,4,A123,34,A143,A152,1,A173,1,A192,A201,Bad
+448,A12,7,Up To Date,radio/television,2576,A61,1 - 4 years,2,A93,A103,2,A121,35,A143,A152,1,A173,1,A191,A201,Good
+449,A13,12,Up To Date,furniture/equipment,1424,A65,>= 7 years,3,A92,A101,4,A121,55,A143,A152,1,A174,1,A192,A201,Good
+450,A12,15,Late Payment,repairs,1512,A64,1 - 4 years,3,A94,A101,3,A122,61,A142,A152,2,A173,1,A191,A201,Bad
+451,A14,36,Critical Account,car (used),11054,A65,1 - 4 years,4,A93,A101,2,A123,30,A143,A152,1,A174,1,A192,A201,Good
+452,A14,6,Up To Date,radio/television,518,A61,1 - 4 years,3,A92,A101,1,A121,29,A143,A152,1,A173,1,A191,A201,Good
+453,A14,12,All Paid,furniture/equipment,2759,A61,>= 7 years,2,A93,A101,4,A122,34,A143,A152,2,A173,1,A191,A201,Good
+454,A14,24,Up To Date,car (used),2670,A61,>= 7 years,4,A93,A101,4,A123,35,A143,A152,1,A174,1,A192,A201,Good
+455,A11,24,Up To Date,car (new),4817,A61,4 - 7 years,2,A93,A102,3,A122,31,A143,A152,1,A173,1,A192,A201,Bad
+456,A14,24,Up To Date,car (used),2679,A61,< 1 year,4,A92,A101,1,A124,29,A143,A152,1,A174,1,A192,A201,Good
+457,A11,11,Critical Account,car (new),3905,A61,1 - 4 years,2,A93,A101,2,A121,36,A143,A151,2,A173,2,A191,A201,Good
+458,A11,12,Up To Date,car (used),3386,A61,>= 7 years,3,A93,A101,4,A124,35,A143,A153,1,A173,1,A192,A201,Bad
+459,A11,6,Up To Date,domestic appliances,343,A61,< 1 year,4,A92,A101,1,A121,27,A143,A152,1,A173,1,A191,A201,Good
+460,A14,18,Up To Date,radio/television,4594,A61,< 1 year,3,A93,A101,2,A123,32,A143,A152,1,A173,1,A192,A201,Good
+461,A11,36,Up To Date,furniture/equipment,3620,A61,1 - 4 years,1,A93,A103,2,A122,37,A143,A152,1,A173,2,A191,A201,Good
+462,A11,15,Up To Date,car (new),1721,A61,< 1 year,2,A93,A101,3,A121,36,A143,A152,1,A173,1,A191,A201,Good
+463,A12,12,Up To Date,furniture/equipment,3017,A61,< 1 year,3,A92,A101,1,A121,34,A143,A151,1,A174,1,A191,A201,Good
+464,A12,12,Up To Date,retraining,754,A65,>= 7 years,4,A93,A101,4,A122,38,A143,A152,2,A173,1,A191,A201,Good
+465,A14,18,Up To Date,business,1950,A61,4 - 7 years,4,A93,A101,1,A123,34,A142,A152,2,A173,1,A192,A201,Good
+466,A11,24,Up To Date,car (used),2924,A61,1 - 4 years,3,A93,A103,4,A124,63,A141,A152,1,A173,2,A192,A201,Good
+467,A11,24,Late Payment,radio/television,1659,A61,< 1 year,4,A92,A101,2,A123,29,A143,A151,1,A172,1,A192,A201,Bad
+468,A14,48,Late Payment,radio/television,7238,A65,>= 7 years,3,A93,A101,3,A123,32,A141,A152,2,A173,2,A191,A201,Good
+469,A14,33,Late Payment,business,2764,A61,1 - 4 years,2,A92,A101,2,A123,26,A143,A152,2,A173,1,A192,A201,Good
+470,A14,24,Late Payment,car (used),4679,A61,4 - 7 years,3,A93,A101,3,A123,35,A143,A152,2,A172,1,A192,A201,Good
+471,A12,24,Up To Date,radio/television,3092,A62,< 1 year,3,A94,A101,2,A123,22,A143,A151,1,A173,1,A192,A201,Bad
+472,A11,6,Up To Date,education,448,A61,< 1 year,4,A92,A101,4,A122,23,A143,A152,1,A173,1,A191,A201,Bad
+473,A11,9,Up To Date,car (new),654,A61,1 - 4 years,4,A93,A101,3,A123,28,A143,A152,1,A172,1,A191,A201,Bad
+474,A14,6,Up To Date,retraining,1238,A65,unemployed,4,A93,A101,4,A122,36,A143,A152,1,A174,2,A192,A201,Good
+475,A12,18,Critical Account,radio/television,1245,A61,1 - 4 years,4,A94,A101,2,A123,33,A143,A152,1,A173,1,A191,A201,Bad
+476,A11,18,All Paid,furniture/equipment,3114,A61,< 1 year,1,A92,A101,4,A122,26,A143,A151,1,A173,1,A191,A201,Bad
+477,A14,39,Up To Date,car (used),2569,A63,1 - 4 years,4,A93,A101,4,A123,24,A143,A152,1,A173,1,A191,A201,Good
+478,A13,24,Up To Date,radio/television,5152,A61,4 - 7 years,4,A93,A101,2,A123,25,A141,A152,1,A173,1,A191,A201,Good
+479,A12,12,Up To Date,business,1037,A62,4 - 7 years,3,A93,A101,4,A121,39,A143,A152,1,A172,1,A191,A201,Good
+480,A11,15,Critical Account,furniture/equipment,1478,A61,>= 7 years,4,A93,A101,4,A123,44,A143,A152,2,A173,2,A192,A201,Good
+481,A12,12,Critical Account,radio/television,3573,A61,1 - 4 years,1,A92,A101,1,A121,23,A143,A152,1,A172,1,A191,A201,Good
+482,A12,24,Up To Date,car (new),1201,A61,< 1 year,4,A93,A101,1,A122,26,A143,A152,1,A173,1,A191,A201,Good
+483,A11,30,Up To Date,furniture/equipment,3622,A64,>= 7 years,4,A92,A101,4,A122,57,A143,A151,2,A173,1,A192,A201,Good
+484,A14,15,Late Payment,furniture/equipment,960,A64,4 - 7 years,3,A92,A101,2,A122,30,A143,A152,2,A173,1,A191,A201,Good
+485,A14,12,Critical Account,car (new),1163,A63,1 - 4 years,4,A93,A101,4,A121,44,A143,A152,1,A173,1,A192,A201,Good
+486,A12,6,Late Payment,car (new),1209,A61,unemployed,4,A93,A101,4,A122,47,A143,A152,1,A174,1,A192,A201,Bad
+487,A14,12,Up To Date,radio/television,3077,A61,1 - 4 years,2,A93,A101,4,A123,52,A143,A152,1,A173,1,A192,A201,Good
+488,A14,24,Up To Date,car (new),3757,A61,>= 7 years,4,A92,A102,4,A124,62,A143,A153,1,A173,1,A192,A201,Good
+489,A14,10,Up To Date,car (new),1418,A62,1 - 4 years,3,A93,A101,2,A121,35,A143,A151,1,A172,1,A191,A202,Good
+490,A14,6,Up To Date,car (new),3518,A61,1 - 4 years,2,A93,A103,3,A122,26,A143,A151,1,A173,1,A191,A201,Good
+491,A14,12,Critical Account,radio/television,1934,A61,>= 7 years,2,A93,A101,2,A124,26,A143,A152,2,A173,1,A191,A201,Good
+492,A12,27,All Paid,business,8318,A61,>= 7 years,2,A92,A101,4,A124,42,A143,A153,2,A174,1,A192,A201,Bad
+493,A14,6,Critical Account,radio/television,1237,A62,1 - 4 years,1,A92,A101,1,A122,27,A143,A152,2,A173,1,A191,A201,Good
+494,A12,6,Up To Date,radio/television,368,A65,>= 7 years,4,A93,A101,4,A122,38,A143,A152,1,A173,1,A191,A201,Good
+495,A11,12,Critical Account,car (new),2122,A61,1 - 4 years,3,A93,A101,2,A121,39,A143,A151,2,A172,2,A191,A202,Good
+496,A11,24,Up To Date,furniture/equipment,2996,A65,1 - 4 years,2,A94,A101,4,A123,20,A143,A152,1,A173,1,A191,A201,Bad
+497,A12,36,Up To Date,furniture/equipment,9034,A62,< 1 year,4,A93,A102,1,A124,29,A143,A151,1,A174,1,A192,A201,Bad
+498,A14,24,Critical Account,furniture/equipment,1585,A61,4 - 7 years,4,A93,A101,3,A122,40,A143,A152,2,A173,1,A191,A201,Good
+499,A12,18,Up To Date,radio/television,1301,A61,>= 7 years,4,A94,A103,2,A121,32,A143,A152,1,A172,1,A191,A201,Good
+500,A13,6,Critical Account,car (new),1323,A62,>= 7 years,2,A91,A101,4,A123,28,A143,A152,2,A173,2,A192,A201,Good
+501,A11,24,Up To Date,car (new),3123,A61,< 1 year,4,A92,A101,1,A122,27,A143,A152,1,A173,1,A191,A201,Bad
+502,A11,36,Up To Date,car (used),5493,A61,>= 7 years,2,A93,A101,4,A124,42,A143,A153,1,A173,2,A191,A201,Good
+503,A13,9,Up To Date,radio/television,1126,A62,>= 7 years,2,A91,A101,4,A121,49,A143,A152,1,A173,1,A191,A201,Good
+504,A12,24,Critical Account,radio/television,1216,A62,< 1 year,4,A93,A101,4,A124,38,A141,A152,2,A173,2,A191,A201,Bad
+505,A11,24,Up To Date,car (new),1207,A61,< 1 year,4,A92,A101,4,A122,24,A143,A151,1,A173,1,A191,A201,Bad
+506,A14,10,Up To Date,car (new),1309,A65,1 - 4 years,4,A93,A103,4,A122,27,A143,A152,1,A172,1,A191,A201,Bad
+507,A13,15,Critical Account,car (used),2360,A63,1 - 4 years,2,A93,A101,2,A123,36,A143,A152,1,A173,1,A192,A201,Good
+508,A12,15,All Paid This Bank,car (new),6850,A62,unemployed,1,A93,A101,2,A122,34,A143,A152,1,A174,2,A192,A201,Bad
+509,A14,24,Up To Date,radio/television,1413,A61,1 - 4 years,4,A94,A101,2,A122,28,A143,A152,1,A173,1,A191,A201,Good
+510,A14,39,Up To Date,car (used),8588,A62,>= 7 years,4,A93,A101,2,A123,45,A143,A152,1,A174,1,A192,A201,Good
+511,A11,12,Up To Date,car (new),759,A61,4 - 7 years,4,A93,A101,2,A121,26,A143,A152,1,A173,1,A191,A201,Bad
+512,A14,36,Up To Date,car (used),4686,A61,1 - 4 years,2,A93,A101,2,A124,32,A143,A153,1,A174,1,A192,A201,Good
+513,A13,15,Up To Date,business,2687,A61,4 - 7 years,2,A93,A101,4,A122,26,A143,A151,1,A173,1,A192,A201,Good
+514,A12,12,Late Payment,radio/television,585,A61,1 - 4 years,4,A94,A102,4,A121,20,A143,A151,2,A173,1,A191,A201,Good
+515,A14,24,Up To Date,car (new),2255,A65,< 1 year,4,A93,A101,1,A122,54,A143,A152,1,A173,1,A191,A201,Good
+516,A11,6,Critical Account,car (new),609,A61,4 - 7 years,4,A92,A101,3,A122,37,A143,A152,2,A173,1,A191,A202,Good
+517,A11,6,Critical Account,car (new),1361,A61,< 1 year,2,A93,A101,4,A121,40,A143,A152,1,A172,2,A191,A202,Good
+518,A14,36,Critical Account,furniture/equipment,7127,A61,< 1 year,2,A92,A101,4,A122,23,A143,A151,2,A173,1,A192,A201,Bad
+519,A11,6,Up To Date,car (new),1203,A62,>= 7 years,3,A93,A101,2,A122,43,A143,A152,1,A173,1,A192,A201,Good
+520,A14,6,Critical Account,radio/television,700,A65,>= 7 years,4,A93,A101,4,A124,36,A143,A153,2,A173,1,A191,A201,Good
+521,A14,24,Critical Account,repairs,5507,A61,>= 7 years,3,A93,A101,4,A124,44,A143,A153,2,A173,1,A191,A201,Good
+522,A11,18,Up To Date,radio/television,3190,A61,1 - 4 years,2,A92,A101,2,A121,24,A143,A152,1,A173,1,A191,A201,Bad
+523,A11,48,All Paid,furniture/equipment,7119,A61,1 - 4 years,3,A93,A101,4,A124,53,A143,A153,2,A173,2,A191,A201,Bad
+524,A14,24,Up To Date,car (used),3488,A62,4 - 7 years,3,A92,A101,4,A123,23,A143,A152,1,A173,1,A191,A201,Good
+525,A12,18,Up To Date,radio/television,1113,A61,1 - 4 years,4,A92,A103,4,A121,26,A143,A152,1,A172,2,A191,A201,Good
+526,A12,26,Up To Date,car (used),7966,A61,< 1 year,2,A93,A101,3,A123,30,A143,A152,2,A173,1,A191,A201,Good
+527,A14,15,Critical Account,education,1532,A62,1 - 4 years,4,A92,A101,3,A123,31,A143,A152,1,A173,1,A191,A201,Good
+528,A14,4,Critical Account,radio/television,1503,A61,4 - 7 years,2,A93,A101,1,A121,42,A143,A152,2,A172,2,A191,A201,Good
+529,A11,36,Up To Date,radio/television,2302,A61,1 - 4 years,4,A91,A101,4,A123,31,A143,A151,1,A173,1,A191,A201,Bad
+530,A11,6,Up To Date,car (new),662,A61,< 1 year,3,A93,A101,4,A121,41,A143,A152,1,A172,2,A192,A201,Good
+531,A12,36,Up To Date,education,2273,A61,4 - 7 years,3,A93,A101,1,A123,32,A143,A152,2,A173,2,A191,A201,Good
+532,A12,15,Up To Date,car (new),2631,A62,1 - 4 years,2,A92,A101,4,A123,28,A143,A151,2,A173,1,A192,A201,Bad
+533,A14,12,Late Payment,car (used),1503,A61,1 - 4 years,4,A94,A101,4,A121,41,A143,A151,1,A173,1,A191,A201,Good
+534,A14,24,Up To Date,radio/television,1311,A62,4 - 7 years,4,A94,A101,3,A122,26,A143,A152,1,A173,1,A192,A201,Good
+535,A14,24,Up To Date,radio/television,3105,A65,< 1 year,4,A93,A101,2,A123,25,A143,A152,2,A173,1,A191,A201,Good
+536,A13,21,Critical Account,education,2319,A61,< 1 year,2,A91,A101,1,A123,33,A143,A151,1,A173,1,A191,A201,Bad
+537,A11,6,Up To Date,car (new),1374,A65,unemployed,4,A92,A101,3,A122,75,A143,A152,1,A174,1,A192,A201,Good
+538,A12,18,Critical Account,furniture/equipment,3612,A61,>= 7 years,3,A92,A101,4,A122,37,A143,A152,1,A173,1,A192,A201,Good
+539,A11,48,Up To Date,car (new),7763,A61,>= 7 years,4,A93,A101,4,A124,42,A141,A153,1,A174,1,A191,A201,Bad
+540,A13,18,Up To Date,furniture/equipment,3049,A61,< 1 year,1,A92,A101,1,A122,45,A142,A152,1,A172,1,A191,A201,Good
+541,A12,12,Up To Date,radio/television,1534,A61,< 1 year,1,A94,A101,1,A121,23,A143,A151,1,A173,1,A191,A201,Bad
+542,A14,24,Late Payment,car (new),2032,A61,>= 7 years,4,A93,A101,4,A124,60,A143,A153,2,A173,1,A192,A201,Good
+543,A11,30,Up To Date,furniture/equipment,6350,A65,>= 7 years,4,A93,A101,4,A122,31,A143,A152,1,A173,1,A191,A201,Bad
+544,A13,18,Up To Date,furniture/equipment,2864,A61,1 - 4 years,2,A93,A101,1,A121,34,A143,A152,1,A172,2,A191,A201,Bad
+545,A14,12,Critical Account,car (new),1255,A61,>= 7 years,4,A93,A101,4,A121,61,A143,A152,2,A172,1,A191,A201,Good
+546,A11,24,Late Payment,car (new),1333,A61,unemployed,4,A93,A101,2,A121,43,A143,A153,2,A173,2,A191,A201,Bad
+547,A14,24,Critical Account,car (new),2022,A61,1 - 4 years,4,A92,A101,4,A123,37,A143,A152,1,A173,1,A192,A201,Good
+548,A14,24,Up To Date,radio/television,1552,A61,4 - 7 years,3,A93,A101,1,A123,32,A141,A152,1,A173,2,A191,A201,Good
+549,A11,12,All Paid This Bank,radio/television,626,A61,1 - 4 years,4,A92,A101,4,A121,24,A141,A152,1,A172,1,A191,A201,Bad
+550,A14,48,Critical Account,car (used),8858,A65,4 - 7 years,2,A93,A101,1,A124,35,A143,A153,2,A173,1,A192,A201,Good
+551,A14,12,Critical Account,repairs,996,A65,4 - 7 years,4,A92,A101,4,A121,23,A143,A152,2,A173,1,A191,A201,Good
+552,A14,6,All Paid This Bank,radio/television,1750,A63,>= 7 years,2,A93,A101,4,A122,45,A141,A152,1,A172,2,A191,A201,Good
+553,A11,48,Up To Date,radio/television,6999,A61,4 - 7 years,1,A94,A103,1,A121,34,A143,A152,2,A173,1,A192,A201,Bad
+554,A12,12,Critical Account,car (new),1995,A62,< 1 year,4,A93,A101,1,A123,27,A143,A152,1,A173,1,A191,A201,Good
+555,A12,9,Up To Date,education,1199,A61,4 - 7 years,4,A92,A101,4,A122,67,A143,A152,2,A174,1,A192,A201,Good
+556,A12,12,Up To Date,radio/television,1331,A61,< 1 year,2,A93,A101,1,A123,22,A142,A152,1,A173,1,A191,A201,Bad
+557,A12,18,All Paid,car (new),2278,A62,< 1 year,3,A92,A101,3,A123,28,A143,A152,2,A173,1,A191,A201,Bad
+558,A14,21,All Paid,car (new),5003,A65,1 - 4 years,1,A92,A101,4,A122,29,A141,A152,2,A173,1,A192,A201,Bad
+559,A11,24,All Paid This Bank,furniture/equipment,3552,A61,4 - 7 years,3,A93,A101,4,A123,27,A141,A152,1,A173,1,A191,A201,Bad
+560,A12,18,Critical Account,furniture/equipment,1928,A61,< 1 year,2,A93,A101,2,A121,31,A143,A152,2,A172,1,A191,A201,Bad
+561,A11,24,Up To Date,car (used),2964,A65,>= 7 years,4,A93,A101,4,A124,49,A141,A153,1,A173,2,A192,A201,Good
+562,A11,24,All Paid This Bank,radio/television,1546,A61,4 - 7 years,4,A93,A103,4,A123,24,A141,A151,1,A172,1,A191,A201,Bad
+563,A13,6,Late Payment,radio/television,683,A61,< 1 year,2,A92,A101,1,A122,29,A141,A152,1,A173,1,A191,A201,Good
+564,A12,36,Up To Date,car (new),12389,A65,1 - 4 years,1,A93,A101,4,A124,37,A143,A153,1,A173,1,A192,A201,Bad
+565,A12,24,Late Payment,business,4712,A65,1 - 4 years,4,A93,A101,2,A122,37,A141,A152,2,A174,1,A192,A201,Good
+566,A12,24,Late Payment,radio/television,1553,A62,4 - 7 years,3,A92,A101,2,A122,23,A143,A151,2,A173,1,A192,A201,Good
+567,A11,12,Up To Date,car (new),1372,A61,4 - 7 years,2,A91,A101,3,A123,36,A143,A152,1,A173,1,A191,A201,Bad
+568,A14,24,Critical Account,radio/television,2578,A64,>= 7 years,2,A93,A101,2,A123,34,A143,A152,1,A173,1,A191,A201,Good
+569,A12,48,Up To Date,radio/television,3979,A65,4 - 7 years,4,A93,A101,1,A123,41,A143,A152,2,A173,2,A192,A201,Good
+570,A11,48,Up To Date,radio/television,6758,A61,1 - 4 years,3,A92,A101,2,A123,31,A143,A152,1,A173,1,A192,A201,Bad
+571,A11,24,Up To Date,furniture/equipment,3234,A61,< 1 year,4,A92,A101,4,A121,23,A143,A151,1,A172,1,A192,A201,Bad
+572,A14,30,Critical Account,radio/television,5954,A61,4 - 7 years,3,A93,A102,2,A123,38,A143,A152,1,A173,1,A191,A201,Good
+573,A14,24,Up To Date,car (used),5433,A65,unemployed,2,A92,A101,4,A122,26,A143,A151,1,A174,1,A192,A201,Good
+574,A11,15,Up To Date,business,806,A61,1 - 4 years,4,A92,A101,4,A122,22,A143,A152,1,A172,1,A191,A201,Good
+575,A12,9,Up To Date,radio/television,1082,A61,>= 7 years,4,A93,A101,4,A123,27,A143,A152,2,A172,1,A191,A201,Good
+576,A14,15,Critical Account,furniture/equipment,2788,A61,4 - 7 years,2,A92,A102,3,A123,24,A141,A152,2,A173,1,A191,A201,Good
+577,A12,12,Up To Date,radio/television,2930,A61,4 - 7 years,2,A92,A101,1,A121,27,A143,A152,1,A173,1,A191,A201,Good
+578,A14,24,Critical Account,education,1927,A65,1 - 4 years,3,A92,A101,2,A123,33,A143,A152,2,A173,1,A192,A201,Good
+579,A12,36,Critical Account,car (new),2820,A61,< 1 year,4,A91,A101,4,A123,27,A143,A152,2,A173,1,A191,A201,Bad
+580,A14,24,Up To Date,retraining,937,A61,< 1 year,4,A94,A101,3,A123,27,A143,A152,2,A172,1,A191,A201,Good
+581,A12,18,Critical Account,car (new),1056,A61,>= 7 years,3,A93,A103,3,A121,30,A141,A152,2,A173,1,A191,A201,Bad
+582,A12,12,Critical Account,car (new),3124,A61,< 1 year,1,A93,A101,3,A121,49,A141,A152,2,A172,2,A191,A201,Good
+583,A14,9,Up To Date,furniture/equipment,1388,A61,1 - 4 years,4,A92,A101,2,A121,26,A143,A151,1,A173,1,A191,A201,Good
+584,A12,36,Up To Date,repairs,2384,A61,< 1 year,4,A93,A101,1,A124,33,A143,A151,1,A172,1,A191,A201,Bad
+585,A14,12,Up To Date,car (new),2133,A65,>= 7 years,4,A92,A101,4,A124,52,A143,A153,1,A174,1,A192,A201,Good
+586,A11,18,Up To Date,furniture/equipment,2039,A61,1 - 4 years,1,A92,A101,4,A121,20,A141,A151,1,A173,1,A191,A201,Bad
+587,A11,9,Critical Account,car (new),2799,A61,1 - 4 years,2,A93,A101,2,A121,36,A143,A151,2,A173,2,A191,A201,Good
+588,A11,12,Up To Date,furniture/equipment,1289,A61,1 - 4 years,4,A93,A103,1,A122,21,A143,A152,1,A172,1,A191,A201,Good
+589,A11,18,Up To Date,domestic appliances,1217,A61,1 - 4 years,4,A94,A101,3,A121,47,A143,A152,1,A172,1,A192,A201,Bad
+590,A11,12,Critical Account,furniture/equipment,2246,A61,>= 7 years,3,A93,A101,3,A122,60,A143,A152,2,A173,1,A191,A201,Bad
+591,A11,12,Critical Account,radio/television,385,A61,4 - 7 years,4,A92,A101,3,A121,58,A143,A152,4,A172,1,A192,A201,Good
+592,A12,24,Late Payment,car (new),1965,A65,1 - 4 years,4,A92,A101,4,A123,42,A143,A151,2,A173,1,A192,A201,Good
+593,A14,21,Up To Date,business,1572,A64,>= 7 years,4,A92,A101,4,A121,36,A141,A152,1,A172,1,A191,A201,Good
+594,A12,24,Up To Date,car (new),2718,A61,1 - 4 years,3,A92,A101,4,A122,20,A143,A151,1,A172,1,A192,A201,Bad
+595,A11,24,All Paid This Bank,others,1358,A65,>= 7 years,4,A93,A101,3,A123,40,A142,A152,1,A174,1,A192,A201,Bad
+596,A12,6,All Paid This Bank,car (new),931,A62,< 1 year,1,A92,A101,1,A122,32,A142,A152,1,A172,1,A191,A201,Bad
+597,A11,24,Up To Date,car (new),1442,A61,4 - 7 years,4,A92,A101,4,A123,23,A143,A151,2,A173,1,A191,A201,Bad
+598,A12,24,All Paid,business,4241,A61,1 - 4 years,1,A93,A101,4,A121,36,A143,A152,3,A172,1,A192,A201,Bad
+599,A14,18,Critical Account,car (new),2775,A61,4 - 7 years,2,A93,A101,2,A122,31,A141,A152,2,A173,1,A191,A201,Bad
+600,A14,24,Late Payment,business,3863,A61,1 - 4 years,1,A93,A101,2,A124,32,A143,A153,1,A173,1,A191,A201,Good
+601,A12,7,Up To Date,radio/television,2329,A61,< 1 year,1,A92,A103,1,A121,45,A143,A152,1,A173,1,A191,A201,Good
+602,A12,9,Up To Date,furniture/equipment,918,A61,1 - 4 years,4,A92,A101,1,A122,30,A143,A152,1,A173,1,A191,A201,Bad
+603,A12,24,All Paid This Bank,education,1837,A61,4 - 7 years,4,A92,A101,4,A124,34,A141,A153,1,A172,1,A191,A201,Bad
+604,A14,36,Up To Date,furniture/equipment,3349,A61,1 - 4 years,4,A92,A101,2,A123,28,A143,A152,1,A174,1,A192,A201,Bad
+605,A13,10,Up To Date,furniture/equipment,1275,A61,< 1 year,4,A92,A101,2,A122,23,A143,A152,1,A173,1,A191,A201,Good
+606,A11,24,All Paid This Bank,furniture/equipment,2828,A63,1 - 4 years,4,A93,A101,4,A121,22,A142,A152,1,A173,1,A192,A201,Good
+607,A14,24,Critical Account,business,4526,A61,1 - 4 years,3,A93,A101,2,A121,74,A143,A152,1,A174,1,A192,A201,Good
+608,A12,36,Up To Date,radio/television,2671,A62,1 - 4 years,4,A92,A102,4,A124,50,A143,A153,1,A173,1,A191,A201,Bad
+609,A14,18,Up To Date,radio/television,2051,A61,< 1 year,4,A93,A101,1,A121,33,A143,A152,1,A173,1,A191,A201,Good
+610,A14,15,Up To Date,car (used),1300,A65,>= 7 years,4,A93,A101,4,A124,45,A141,A153,1,A173,2,A191,A201,Good
+611,A11,12,Up To Date,domestic appliances,741,A62,unemployed,4,A92,A101,3,A122,22,A143,A152,1,A173,1,A191,A201,Bad
+612,A13,10,Up To Date,car (new),1240,A62,>= 7 years,1,A92,A101,4,A124,48,A143,A153,1,A172,2,A191,A201,Bad
+613,A11,21,Up To Date,radio/television,3357,A64,< 1 year,4,A92,A101,2,A123,29,A141,A152,1,A173,1,A191,A201,Good
+614,A11,24,All Paid This Bank,car (used),3632,A61,1 - 4 years,1,A92,A103,4,A123,22,A141,A151,1,A173,1,A191,A202,Good
+615,A14,18,Late Payment,furniture/equipment,1808,A61,4 - 7 years,4,A92,A101,1,A121,22,A143,A152,1,A173,1,A191,A201,Bad
+616,A12,48,All Paid,business,12204,A65,1 - 4 years,2,A93,A101,2,A123,48,A141,A152,1,A174,1,A192,A201,Good
+617,A12,60,Late Payment,radio/television,9157,A65,1 - 4 years,2,A93,A101,2,A124,27,A143,A153,1,A174,1,A191,A201,Good
+618,A11,6,Critical Account,car (new),3676,A61,1 - 4 years,1,A93,A101,3,A121,37,A143,A151,3,A173,2,A191,A201,Good
+619,A12,30,Up To Date,furniture/equipment,3441,A62,1 - 4 years,2,A92,A102,4,A123,21,A143,A151,1,A173,1,A191,A201,Bad
+620,A14,12,Up To Date,car (new),640,A61,1 - 4 years,4,A91,A101,2,A121,49,A143,A152,1,A172,1,A191,A201,Good
+621,A12,21,Critical Account,business,3652,A61,4 - 7 years,2,A93,A101,3,A122,27,A143,A152,2,A173,1,A191,A201,Good
+622,A14,18,Critical Account,car (new),1530,A61,1 - 4 years,3,A93,A101,2,A122,32,A141,A152,2,A173,1,A191,A201,Bad
+623,A14,48,Up To Date,business,3914,A65,1 - 4 years,4,A91,A101,2,A121,38,A141,A152,1,A173,1,A191,A201,Bad
+624,A11,12,Up To Date,furniture/equipment,1858,A61,< 1 year,4,A92,A101,1,A123,22,A143,A151,1,A173,1,A191,A201,Good
+625,A11,18,Up To Date,radio/television,2600,A61,1 - 4 years,4,A93,A101,4,A124,65,A143,A153,2,A173,1,A191,A201,Bad
+626,A14,15,Up To Date,radio/television,1979,A65,>= 7 years,4,A93,A101,2,A123,35,A143,A152,1,A173,1,A191,A201,Good
+627,A13,6,Up To Date,furniture/equipment,2116,A61,1 - 4 years,2,A93,A101,2,A121,41,A143,A152,1,A173,1,A192,A201,Good
+628,A12,9,All Paid This Bank,car (new),1437,A62,4 - 7 years,2,A93,A101,3,A124,29,A143,A152,1,A173,1,A191,A201,Bad
+629,A14,42,Critical Account,furniture/equipment,4042,A63,1 - 4 years,4,A93,A101,4,A121,36,A143,A152,2,A173,1,A192,A201,Good
+630,A14,9,Up To Date,education,3832,A65,>= 7 years,1,A93,A101,4,A121,64,A143,A152,1,A172,1,A191,A201,Good
+631,A11,24,Up To Date,radio/television,3660,A61,1 - 4 years,2,A92,A101,4,A123,28,A143,A152,1,A173,1,A191,A201,Good
+632,A11,18,All Paid This Bank,furniture/equipment,1553,A61,1 - 4 years,4,A93,A101,3,A123,44,A141,A152,1,A173,1,A191,A201,Bad
+633,A12,15,Up To Date,radio/television,1444,A65,< 1 year,4,A93,A101,1,A122,23,A143,A152,1,A173,1,A191,A201,Good
+634,A14,9,Up To Date,furniture/equipment,1980,A61,< 1 year,2,A92,A102,2,A123,19,A143,A151,2,A173,1,A191,A201,Bad
+635,A12,24,Up To Date,car (new),1355,A61,< 1 year,3,A92,A101,4,A123,25,A143,A152,1,A172,1,A192,A201,Bad
+636,A14,12,Up To Date,education,1393,A61,>= 7 years,4,A93,A101,4,A122,47,A141,A152,3,A173,2,A192,A201,Good
+637,A14,24,Up To Date,radio/television,1376,A63,4 - 7 years,4,A92,A101,1,A123,28,A143,A152,1,A173,1,A191,A201,Good
+638,A14,60,Late Payment,radio/television,15653,A61,4 - 7 years,2,A93,A101,4,A123,21,A143,A152,2,A173,1,A192,A201,Good
+639,A14,12,Up To Date,radio/television,1493,A61,< 1 year,4,A92,A101,3,A123,34,A143,A152,1,A173,2,A191,A201,Good
+640,A11,42,Late Payment,radio/television,4370,A61,4 - 7 years,3,A93,A101,2,A122,26,A141,A152,2,A173,2,A192,A201,Bad
+641,A11,18,Up To Date,education,750,A61,unemployed,4,A92,A101,1,A121,27,A143,A152,1,A171,1,A191,A201,Bad
+642,A12,15,Up To Date,repairs,1308,A61,>= 7 years,4,A93,A101,4,A123,38,A143,A152,2,A172,1,A191,A201,Good
+643,A14,15,Up To Date,education,4623,A62,1 - 4 years,3,A93,A101,2,A122,40,A143,A152,1,A174,1,A192,A201,Bad
+644,A14,24,Critical Account,radio/television,1851,A61,4 - 7 years,4,A94,A103,2,A123,33,A143,A152,2,A173,1,A192,A201,Good
+645,A11,18,Critical Account,radio/television,1880,A61,4 - 7 years,4,A94,A101,1,A122,32,A143,A152,2,A174,1,A192,A201,Good
+646,A14,36,Late Payment,business,7980,A65,< 1 year,4,A93,A101,4,A123,27,A143,A151,2,A173,1,A192,A201,Bad
+647,A11,30,All Paid,furniture/equipment,4583,A61,1 - 4 years,2,A91,A103,2,A121,32,A143,A152,2,A173,1,A191,A201,Good
+648,A14,12,Up To Date,car (new),1386,A63,1 - 4 years,2,A92,A101,2,A122,26,A143,A152,1,A173,1,A191,A201,Bad
+649,A13,24,Up To Date,car (new),947,A61,4 - 7 years,4,A93,A101,3,A124,38,A141,A153,1,A173,2,A191,A201,Bad
+650,A11,12,Up To Date,education,684,A61,1 - 4 years,4,A93,A101,4,A123,40,A143,A151,1,A172,2,A191,A201,Bad
+651,A11,48,Up To Date,education,7476,A61,4 - 7 years,4,A93,A101,1,A124,50,A143,A153,1,A174,1,A192,A201,Good
+652,A12,12,Up To Date,furniture/equipment,1922,A61,1 - 4 years,4,A93,A101,2,A122,37,A143,A152,1,A172,1,A191,A201,Bad
+653,A11,24,Up To Date,car (new),2303,A61,>= 7 years,4,A93,A102,1,A121,45,A143,A152,1,A173,1,A191,A201,Bad
+654,A12,36,Late Payment,car (new),8086,A62,>= 7 years,2,A93,A101,4,A123,42,A143,A152,4,A174,1,A192,A201,Bad
+655,A14,24,Critical Account,car (used),2346,A61,4 - 7 years,4,A93,A101,3,A123,35,A143,A152,2,A173,1,A192,A201,Good
+656,A11,14,Up To Date,car (new),3973,A61,unemployed,1,A93,A101,4,A124,22,A143,A153,1,A173,1,A191,A201,Good
+657,A12,12,Up To Date,car (new),888,A61,>= 7 years,4,A93,A101,4,A123,41,A141,A152,1,A172,2,A191,A201,Bad
+658,A14,48,Up To Date,radio/television,10222,A65,4 - 7 years,4,A93,A101,3,A123,37,A142,A152,1,A173,1,A192,A201,Good
+659,A12,30,All Paid,business,4221,A61,1 - 4 years,2,A92,A101,1,A123,28,A143,A152,2,A173,1,A191,A201,Good
+660,A12,18,Critical Account,furniture/equipment,6361,A61,>= 7 years,2,A93,A101,1,A124,41,A143,A152,1,A173,1,A192,A201,Good
+661,A13,12,Up To Date,radio/television,1297,A61,1 - 4 years,3,A94,A101,4,A121,23,A143,A151,1,A173,1,A191,A201,Good
+662,A11,12,Up To Date,car (new),900,A65,1 - 4 years,4,A94,A101,2,A123,23,A143,A152,1,A173,1,A191,A201,Bad
+663,A14,21,Up To Date,furniture/equipment,2241,A61,>= 7 years,4,A93,A101,2,A121,50,A143,A152,2,A173,1,A191,A201,Good
+664,A12,6,Late Payment,furniture/equipment,1050,A61,unemployed,4,A93,A101,1,A122,35,A142,A152,2,A174,1,A192,A201,Good
+665,A13,6,Critical Account,education,1047,A61,1 - 4 years,2,A92,A101,4,A122,50,A143,A152,1,A172,1,A191,A201,Good
+666,A14,24,Critical Account,others,6314,A61,unemployed,4,A93,A102,2,A124,27,A141,A152,2,A174,1,A192,A201,Good
+667,A12,30,All Paid This Bank,furniture/equipment,3496,A64,1 - 4 years,4,A93,A101,2,A123,34,A142,A152,1,A173,2,A192,A201,Good
+668,A14,48,All Paid This Bank,business,3609,A61,1 - 4 years,1,A92,A101,1,A121,27,A142,A152,1,A173,1,A191,A201,Good
+669,A11,12,Critical Account,car (new),4843,A61,>= 7 years,3,A93,A102,4,A122,43,A143,A151,2,A173,1,A192,A201,Bad
+670,A13,30,Critical Account,radio/television,3017,A61,>= 7 years,4,A93,A101,4,A122,47,A143,A152,1,A173,1,A191,A201,Good
+671,A14,24,Critical Account,business,4139,A62,1 - 4 years,3,A93,A101,3,A122,27,A143,A152,2,A172,1,A192,A201,Good
+672,A14,36,Up To Date,business,5742,A62,4 - 7 years,2,A93,A101,2,A123,31,A143,A152,2,A173,1,A192,A201,Good
+673,A14,60,Up To Date,car (new),10366,A61,>= 7 years,2,A93,A101,4,A122,42,A143,A152,1,A174,1,A192,A201,Good
+674,A14,6,Critical Account,car (new),2080,A63,1 - 4 years,1,A94,A101,2,A123,24,A143,A152,1,A173,1,A191,A201,Good
+675,A14,21,Late Payment,business,2580,A63,< 1 year,4,A93,A101,2,A121,41,A141,A152,1,A172,2,A191,A201,Bad
+676,A14,30,Critical Account,radio/television,4530,A61,4 - 7 years,4,A92,A101,4,A123,26,A143,A151,1,A174,1,A192,A201,Good
+677,A14,24,Critical Account,furniture/equipment,5150,A61,>= 7 years,4,A93,A101,4,A123,33,A143,A152,1,A173,1,A192,A201,Good
+678,A12,72,Up To Date,radio/television,5595,A62,1 - 4 years,2,A94,A101,2,A123,24,A143,A152,1,A173,1,A191,A201,Bad
+679,A11,24,Up To Date,radio/television,2384,A61,>= 7 years,4,A93,A101,4,A121,64,A141,A151,1,A172,1,A191,A201,Good
+680,A14,18,Up To Date,radio/television,1453,A61,< 1 year,3,A92,A101,1,A121,26,A143,A152,1,A173,1,A191,A201,Good
+681,A14,6,Up To Date,education,1538,A61,< 1 year,1,A92,A101,2,A124,56,A143,A152,1,A173,1,A191,A201,Good
+682,A14,12,Up To Date,radio/television,2279,A65,1 - 4 years,4,A93,A101,4,A124,37,A143,A153,1,A173,1,A192,A201,Good
+683,A14,15,Late Payment,radio/television,1478,A61,1 - 4 years,4,A94,A101,3,A121,33,A141,A152,2,A173,1,A191,A201,Good
+684,A14,24,Critical Account,radio/television,5103,A61,< 1 year,3,A94,A101,3,A124,47,A143,A153,3,A173,1,A192,A201,Good
+685,A12,36,Late Payment,business,9857,A62,4 - 7 years,1,A93,A101,3,A122,31,A143,A152,2,A172,2,A192,A201,Good
+686,A14,60,Up To Date,car (new),6527,A65,1 - 4 years,4,A93,A101,4,A124,34,A143,A153,1,A173,2,A192,A201,Good
+687,A13,10,Critical Account,radio/television,1347,A65,4 - 7 years,4,A93,A101,2,A122,27,A143,A152,2,A173,1,A192,A201,Good
+688,A12,36,Late Payment,car (new),2862,A62,>= 7 years,4,A93,A101,3,A124,30,A143,A153,1,A173,1,A191,A201,Good
+689,A14,9,Up To Date,radio/television,2753,A62,>= 7 years,3,A93,A102,4,A123,35,A143,A152,1,A173,1,A192,A201,Good
+690,A11,12,Up To Date,car (new),3651,A64,1 - 4 years,1,A93,A101,3,A122,31,A143,A152,1,A173,2,A191,A201,Good
+691,A11,15,Critical Account,furniture/equipment,975,A61,1 - 4 years,2,A91,A101,3,A122,25,A143,A152,2,A173,1,A191,A201,Good
+692,A12,15,Up To Date,repairs,2631,A62,1 - 4 years,3,A92,A101,2,A121,25,A143,A152,1,A172,1,A191,A201,Good
+693,A12,24,Up To Date,radio/television,2896,A62,< 1 year,2,A93,A101,1,A123,29,A143,A152,1,A173,1,A191,A201,Good
+694,A11,6,Critical Account,car (new),4716,A65,< 1 year,1,A93,A101,3,A121,44,A143,A152,2,A172,2,A191,A201,Good
+695,A14,24,Up To Date,radio/television,2284,A61,4 - 7 years,4,A93,A101,2,A123,28,A143,A152,1,A173,1,A192,A201,Good
+696,A14,6,Up To Date,car (used),1236,A63,1 - 4 years,2,A93,A101,4,A122,50,A143,A151,1,A173,1,A191,A201,Good
+697,A12,12,Up To Date,radio/television,1103,A61,4 - 7 years,4,A93,A103,3,A121,29,A143,A152,2,A173,1,A191,A202,Good
+698,A14,12,Critical Account,car (new),926,A61,unemployed,1,A92,A101,2,A122,38,A143,A152,1,A171,1,A191,A201,Good
+699,A14,18,Critical Account,radio/television,1800,A61,1 - 4 years,4,A93,A101,2,A123,24,A143,A152,2,A173,1,A191,A201,Good
+700,A13,15,Up To Date,education,1905,A61,>= 7 years,4,A93,A101,4,A123,40,A143,A151,1,A174,1,A192,A201,Good
+701,A14,12,Up To Date,furniture/equipment,1123,A63,1 - 4 years,4,A92,A101,4,A123,29,A143,A151,1,A172,1,A191,A201,Bad
+702,A11,48,Critical Account,car (used),6331,A61,>= 7 years,4,A93,A101,4,A124,46,A143,A153,2,A173,1,A192,A201,Bad
+703,A13,24,Up To Date,radio/television,1377,A62,>= 7 years,4,A92,A101,2,A124,47,A143,A153,1,A173,1,A192,A201,Good
+704,A12,30,Late Payment,business,2503,A62,>= 7 years,4,A93,A101,2,A122,41,A142,A152,2,A173,1,A191,A201,Good
+705,A12,27,Up To Date,business,2528,A61,< 1 year,4,A92,A101,1,A122,32,A143,A152,1,A173,2,A192,A201,Good
+706,A14,15,Up To Date,car (new),5324,A63,>= 7 years,1,A92,A101,4,A124,35,A143,A153,1,A173,1,A191,A201,Good
+707,A12,48,Up To Date,car (new),6560,A62,4 - 7 years,3,A93,A101,2,A122,24,A143,A152,1,A173,1,A191,A201,Bad
+708,A12,12,All Paid,furniture/equipment,2969,A61,< 1 year,4,A92,A101,3,A122,25,A143,A151,2,A173,1,A191,A201,Bad
+709,A12,9,Up To Date,radio/television,1206,A61,>= 7 years,4,A92,A101,4,A121,25,A143,A152,1,A173,1,A191,A201,Good
+710,A12,9,Up To Date,radio/television,2118,A61,1 - 4 years,2,A93,A101,2,A121,37,A143,A152,1,A172,2,A191,A201,Good
+711,A14,18,Critical Account,radio/television,629,A63,>= 7 years,4,A93,A101,3,A122,32,A141,A152,2,A174,1,A192,A201,Good
+712,A11,6,All Paid This Bank,education,1198,A61,>= 7 years,4,A92,A101,4,A124,35,A143,A153,1,A173,1,A191,A201,Bad
+713,A14,21,Up To Date,car (used),2476,A65,>= 7 years,4,A93,A101,4,A121,46,A143,A152,1,A174,1,A192,A201,Good
+714,A11,9,Critical Account,radio/television,1138,A61,1 - 4 years,4,A93,A101,4,A121,25,A143,A152,2,A172,1,A191,A201,Good
+715,A12,60,Up To Date,car (new),14027,A61,4 - 7 years,4,A93,A101,2,A124,27,A143,A152,1,A174,1,A192,A201,Bad
+716,A14,30,Critical Account,car (used),7596,A65,>= 7 years,1,A93,A101,4,A123,63,A143,A152,2,A173,1,A191,A201,Good
+717,A14,30,Critical Account,radio/television,3077,A65,>= 7 years,3,A93,A101,2,A123,40,A143,A152,2,A173,2,A192,A201,Good
+718,A14,18,Up To Date,radio/television,1505,A61,1 - 4 years,4,A93,A101,2,A124,32,A143,A153,1,A174,1,A192,A201,Good
+719,A13,24,Critical Account,radio/television,3148,A65,1 - 4 years,3,A93,A101,2,A123,31,A143,A152,2,A173,1,A192,A201,Good
+720,A12,20,All Paid,car (used),6148,A62,>= 7 years,3,A94,A101,4,A123,31,A141,A152,2,A173,1,A192,A201,Good
+721,A13,9,All Paid,radio/television,1337,A61,< 1 year,4,A93,A101,2,A123,34,A143,A152,2,A174,1,A192,A201,Bad
+722,A12,6,All Paid This Bank,education,433,A64,< 1 year,4,A92,A101,2,A122,24,A141,A151,1,A173,2,A191,A201,Bad
+723,A11,12,Up To Date,car (new),1228,A61,1 - 4 years,4,A92,A101,2,A121,24,A143,A152,1,A172,1,A191,A201,Bad
+724,A12,9,Up To Date,radio/television,790,A63,1 - 4 years,4,A92,A101,3,A121,66,A143,A152,1,A172,1,A191,A201,Good
+725,A14,27,Up To Date,car (new),2570,A61,1 - 4 years,3,A92,A101,3,A121,21,A143,A151,1,A173,1,A191,A201,Bad
+726,A14,6,Critical Account,car (new),250,A64,1 - 4 years,2,A92,A101,2,A121,41,A141,A152,2,A172,1,A191,A201,Good
+727,A14,15,Critical Account,radio/television,1316,A63,1 - 4 years,2,A94,A101,2,A122,47,A143,A152,2,A172,1,A191,A201,Good
+728,A11,18,Up To Date,radio/television,1882,A61,1 - 4 years,4,A92,A101,4,A123,25,A141,A151,2,A173,1,A191,A201,Bad
+729,A12,48,All Paid This Bank,business,6416,A61,>= 7 years,4,A92,A101,3,A124,59,A143,A151,1,A173,1,A191,A201,Bad
+730,A13,24,Critical Account,business,1275,A64,1 - 4 years,2,A91,A101,4,A121,36,A143,A152,2,A173,1,A192,A201,Good
+731,A12,24,Late Payment,radio/television,6403,A61,< 1 year,1,A93,A101,2,A123,33,A143,A152,1,A173,1,A191,A201,Good
+732,A11,24,Up To Date,radio/television,1987,A61,1 - 4 years,2,A93,A101,4,A121,21,A143,A151,1,A172,2,A191,A201,Bad
+733,A12,8,Up To Date,radio/television,760,A61,4 - 7 years,4,A92,A103,2,A121,44,A143,A152,1,A172,1,A191,A201,Good
+734,A14,24,Up To Date,car (used),2603,A64,1 - 4 years,2,A92,A101,4,A123,28,A143,A151,1,A173,1,A192,A201,Good
+735,A14,4,Critical Account,car (new),3380,A61,4 - 7 years,1,A92,A101,1,A121,37,A143,A152,1,A173,2,A191,A201,Good
+736,A12,36,All Paid This Bank,domestic appliances,3990,A65,< 1 year,3,A92,A101,2,A124,29,A141,A152,1,A171,1,A191,A201,Good
+737,A12,24,Up To Date,car (used),11560,A61,1 - 4 years,1,A92,A101,4,A123,23,A143,A151,2,A174,1,A191,A201,Bad
+738,A11,18,Up To Date,car (new),4380,A62,1 - 4 years,3,A93,A101,4,A123,35,A143,A152,1,A172,2,A192,A201,Good
+739,A14,6,Critical Account,car (new),6761,A61,4 - 7 years,1,A93,A101,3,A124,45,A143,A152,2,A174,2,A192,A201,Good
+740,A12,30,All Paid,business,4280,A62,1 - 4 years,4,A92,A101,4,A123,26,A143,A151,2,A172,1,A191,A201,Bad
+741,A11,24,All Paid This Bank,car (new),2325,A62,4 - 7 years,2,A93,A101,3,A123,32,A141,A152,1,A173,1,A191,A201,Good
+742,A12,10,All Paid This Bank,radio/television,1048,A61,1 - 4 years,4,A93,A101,4,A121,23,A142,A152,1,A172,1,A191,A201,Good
+743,A14,21,Up To Date,radio/television,3160,A65,>= 7 years,4,A93,A101,3,A122,41,A143,A152,1,A173,1,A192,A201,Good
+744,A11,24,All Paid This Bank,furniture/equipment,2483,A63,1 - 4 years,4,A93,A101,4,A121,22,A142,A152,1,A173,1,A192,A201,Good
+745,A11,39,Critical Account,furniture/equipment,14179,A65,4 - 7 years,4,A93,A101,4,A122,30,A143,A152,2,A174,1,A192,A201,Good
+746,A11,13,Critical Account,business,1797,A61,< 1 year,3,A93,A101,1,A122,28,A141,A152,2,A172,1,A191,A201,Good
+747,A11,15,Up To Date,car (new),2511,A61,unemployed,1,A92,A101,4,A123,23,A143,A151,1,A173,1,A191,A201,Good
+748,A11,12,Up To Date,car (new),1274,A61,< 1 year,3,A92,A101,1,A121,37,A143,A152,1,A172,1,A191,A201,Bad
+749,A14,21,Up To Date,car (used),5248,A65,1 - 4 years,1,A93,A101,3,A123,26,A143,A152,1,A173,1,A191,A201,Good
+750,A14,15,Up To Date,car (used),3029,A61,4 - 7 years,2,A93,A101,2,A123,33,A143,A152,1,A173,1,A191,A201,Good
+751,A11,6,Up To Date,furniture/equipment,428,A61,>= 7 years,2,A92,A101,1,A122,49,A141,A152,1,A173,1,A192,A201,Good
+752,A11,18,Up To Date,car (new),976,A61,< 1 year,1,A92,A101,2,A123,23,A143,A152,1,A172,1,A191,A201,Bad
+753,A12,12,Up To Date,business,841,A62,4 - 7 years,2,A92,A101,4,A121,23,A143,A151,1,A172,1,A191,A201,Good
+754,A14,30,Critical Account,radio/television,5771,A61,4 - 7 years,4,A92,A101,2,A123,25,A143,A152,2,A173,1,A191,A201,Good
+755,A14,12,Late Payment,repairs,1555,A64,>= 7 years,4,A93,A101,4,A124,55,A143,A153,2,A173,2,A191,A201,Bad
+756,A11,24,Up To Date,car (new),1285,A65,4 - 7 years,4,A92,A101,4,A124,32,A143,A151,1,A173,1,A191,A201,Bad
+757,A13,6,Critical Account,car (new),1299,A61,1 - 4 years,1,A93,A101,1,A121,74,A143,A152,3,A171,2,A191,A202,Good
+758,A13,15,Critical Account,radio/television,1271,A65,1 - 4 years,3,A93,A101,4,A124,39,A143,A153,2,A173,1,A192,A201,Bad
+759,A14,24,Up To Date,car (new),1393,A61,1 - 4 years,2,A93,A103,2,A121,31,A143,A152,1,A173,1,A192,A201,Good
+760,A11,12,Critical Account,car (new),691,A61,>= 7 years,4,A93,A101,3,A122,35,A143,A152,2,A173,1,A191,A201,Bad
+761,A14,15,Critical Account,car (new),5045,A65,>= 7 years,1,A92,A101,4,A123,59,A143,A152,1,A173,1,A192,A201,Good
+762,A11,18,Critical Account,furniture/equipment,2124,A61,1 - 4 years,4,A92,A101,4,A121,24,A143,A151,2,A173,1,A191,A201,Bad
+763,A11,12,Up To Date,radio/television,2214,A61,1 - 4 years,4,A93,A101,3,A122,24,A143,A152,1,A172,1,A191,A201,Good
+764,A14,21,Critical Account,car (new),12680,A65,>= 7 years,4,A93,A101,4,A124,30,A143,A153,1,A174,1,A192,A201,Bad
+765,A14,24,Critical Account,car (new),2463,A62,4 - 7 years,4,A94,A101,3,A122,27,A143,A152,2,A173,1,A192,A201,Good
+766,A12,12,Up To Date,radio/television,1155,A61,>= 7 years,3,A94,A103,3,A121,40,A141,A152,2,A172,1,A191,A201,Good
+767,A11,30,Up To Date,furniture/equipment,3108,A61,< 1 year,2,A91,A101,4,A122,31,A143,A152,1,A172,1,A191,A201,Bad
+768,A14,10,Up To Date,car (used),2901,A65,< 1 year,1,A92,A101,4,A121,31,A143,A151,1,A173,1,A191,A201,Good
+769,A12,12,Critical Account,furniture/equipment,3617,A61,>= 7 years,1,A93,A101,4,A123,28,A143,A151,3,A173,1,A192,A201,Good
+770,A14,12,Critical Account,radio/television,1655,A61,>= 7 years,2,A93,A101,4,A121,63,A143,A152,2,A172,1,A192,A201,Good
+771,A11,24,Up To Date,car (used),2812,A65,>= 7 years,2,A92,A101,4,A121,26,A143,A151,1,A173,1,A191,A201,Good
+772,A11,36,Critical Account,education,8065,A61,1 - 4 years,3,A92,A101,2,A124,25,A143,A152,2,A174,1,A192,A201,Bad
+773,A14,21,Critical Account,car (used),3275,A61,>= 7 years,1,A93,A101,4,A123,36,A143,A152,1,A174,1,A192,A201,Good
+774,A14,24,Critical Account,radio/television,2223,A62,>= 7 years,4,A93,A101,4,A122,52,A141,A152,2,A173,1,A191,A201,Good
+775,A13,12,Critical Account,car (new),1480,A63,unemployed,2,A93,A101,4,A124,66,A141,A153,3,A171,1,A191,A201,Good
+776,A11,24,Up To Date,car (new),1371,A65,1 - 4 years,4,A92,A101,4,A121,25,A143,A151,1,A173,1,A191,A201,Bad
+777,A14,36,Critical Account,car (new),3535,A61,4 - 7 years,4,A93,A101,4,A123,37,A143,A152,2,A173,1,A192,A201,Good
+778,A11,18,Up To Date,radio/television,3509,A61,4 - 7 years,4,A92,A103,1,A121,25,A143,A152,1,A173,1,A191,A201,Good
+779,A14,36,Critical Account,car (used),5711,A64,>= 7 years,4,A93,A101,2,A123,38,A143,A152,2,A174,1,A192,A201,Good
+780,A12,18,Up To Date,repairs,3872,A61,unemployed,2,A92,A101,4,A123,67,A143,A152,1,A173,1,A192,A201,Good
+781,A12,39,Critical Account,radio/television,4933,A61,4 - 7 years,2,A93,A103,2,A121,25,A143,A152,2,A173,1,A191,A201,Bad
+782,A14,24,Critical Account,car (new),1940,A64,>= 7 years,4,A93,A101,4,A121,60,A143,A152,1,A173,1,A192,A201,Good
+783,A12,12,All Paid,retraining,1410,A61,1 - 4 years,2,A93,A101,2,A121,31,A143,A152,1,A172,1,A192,A201,Good
+784,A12,12,Up To Date,car (new),836,A62,< 1 year,4,A92,A101,2,A122,23,A141,A152,1,A172,1,A191,A201,Bad
+785,A12,20,Up To Date,car (used),6468,A65,unemployed,1,A91,A101,4,A121,60,A143,A152,1,A174,1,A192,A201,Good
+786,A12,18,Up To Date,business,1941,A64,1 - 4 years,4,A93,A101,2,A122,35,A143,A152,1,A172,1,A192,A201,Good
+787,A14,22,Up To Date,radio/television,2675,A63,>= 7 years,3,A93,A101,4,A123,40,A143,A152,1,A173,1,A191,A201,Good
+788,A14,48,Critical Account,car (used),2751,A65,>= 7 years,4,A93,A101,3,A123,38,A143,A152,2,A173,2,A192,A201,Good
+789,A12,48,Late Payment,education,6224,A61,>= 7 years,4,A93,A101,4,A124,50,A143,A153,1,A173,1,A191,A201,Bad
+790,A11,40,Critical Account,education,5998,A61,1 - 4 years,4,A93,A101,3,A124,27,A141,A152,1,A173,1,A192,A201,Bad
+791,A12,21,Up To Date,business,1188,A61,>= 7 years,2,A92,A101,4,A122,39,A143,A152,1,A173,2,A191,A201,Bad
+792,A14,24,Up To Date,car (used),6313,A65,>= 7 years,3,A93,A101,4,A123,41,A143,A152,1,A174,2,A192,A201,Good
+793,A14,6,Critical Account,furniture/equipment,1221,A65,1 - 4 years,1,A94,A101,2,A122,27,A143,A152,2,A173,1,A191,A201,Good
+794,A13,24,Up To Date,furniture/equipment,2892,A61,>= 7 years,3,A91,A101,4,A124,51,A143,A153,1,A173,1,A191,A201,Good
+795,A14,24,Up To Date,furniture/equipment,3062,A63,>= 7 years,4,A93,A101,3,A124,32,A143,A151,1,A173,1,A192,A201,Good
+796,A14,9,Up To Date,furniture/equipment,2301,A62,< 1 year,2,A92,A101,4,A122,22,A143,A151,1,A173,1,A191,A201,Good
+797,A11,18,Up To Date,car (used),7511,A65,>= 7 years,1,A93,A101,4,A122,51,A143,A153,1,A173,2,A192,A201,Bad
+798,A14,12,Critical Account,furniture/equipment,1258,A61,< 1 year,2,A92,A101,4,A122,22,A143,A151,2,A172,1,A191,A201,Good
+799,A14,24,Late Payment,car (new),717,A65,>= 7 years,4,A94,A101,4,A123,54,A143,A152,2,A173,1,A192,A201,Good
+800,A12,9,Up To Date,car (new),1549,A65,< 1 year,4,A93,A101,2,A121,35,A143,A152,1,A171,1,A191,A201,Good
+801,A14,24,Critical Account,education,1597,A61,>= 7 years,4,A93,A101,4,A124,54,A143,A153,2,A173,2,A191,A201,Good
+802,A12,18,Critical Account,radio/television,1795,A61,>= 7 years,3,A92,A103,4,A121,48,A141,A151,2,A172,1,A192,A201,Good
+803,A11,20,Critical Account,furniture/equipment,4272,A61,>= 7 years,1,A92,A101,4,A122,24,A143,A152,2,A173,1,A191,A201,Good
+804,A14,12,Critical Account,radio/television,976,A65,>= 7 years,4,A93,A101,4,A123,35,A143,A152,2,A173,1,A191,A201,Good
+805,A12,12,Up To Date,car (new),7472,A65,unemployed,1,A92,A101,2,A121,24,A143,A151,1,A171,1,A191,A201,Good
+806,A11,36,Up To Date,car (new),9271,A61,4 - 7 years,2,A93,A101,1,A123,24,A143,A152,1,A173,1,A192,A201,Bad
+807,A12,6,Up To Date,radio/television,590,A61,< 1 year,3,A94,A101,3,A121,26,A143,A152,1,A172,1,A191,A202,Good
+808,A14,12,Critical Account,radio/television,930,A65,>= 7 years,4,A93,A101,4,A121,65,A143,A152,4,A173,1,A191,A201,Good
+809,A12,42,All Paid This Bank,car (used),9283,A61,unemployed,1,A93,A101,2,A124,55,A141,A153,1,A174,1,A192,A201,Good
+810,A12,15,All Paid,car (new),1778,A61,< 1 year,2,A92,A101,1,A121,26,A143,A151,2,A171,1,A191,A201,Bad
+811,A12,8,Up To Date,business,907,A61,< 1 year,3,A94,A101,2,A121,26,A143,A152,1,A173,1,A192,A201,Good
+812,A12,6,Up To Date,radio/television,484,A61,4 - 7 years,3,A94,A103,3,A121,28,A141,A152,1,A172,1,A191,A201,Good
+813,A11,36,Critical Account,car (used),9629,A61,4 - 7 years,4,A93,A101,4,A123,24,A143,A152,2,A173,1,A192,A201,Bad
+814,A11,48,Up To Date,domestic appliances,3051,A61,1 - 4 years,3,A93,A101,4,A123,54,A143,A152,1,A173,1,A191,A201,Bad
+815,A11,48,Up To Date,car (new),3931,A61,4 - 7 years,4,A93,A101,4,A124,46,A143,A153,1,A173,2,A191,A201,Bad
+816,A12,36,Late Payment,car (new),7432,A61,1 - 4 years,2,A92,A101,2,A122,54,A143,A151,1,A173,1,A191,A201,Good
+817,A14,6,Up To Date,domestic appliances,1338,A63,1 - 4 years,1,A91,A101,4,A121,62,A143,A152,1,A173,1,A191,A201,Good
+818,A14,6,Critical Account,radio/television,1554,A61,4 - 7 years,1,A92,A101,2,A123,24,A143,A151,2,A173,1,A192,A201,Good
+819,A11,36,Up To Date,others,15857,A61,unemployed,2,A91,A102,3,A123,43,A143,A152,1,A174,1,A191,A201,Good
+820,A11,18,Up To Date,radio/television,1345,A61,1 - 4 years,4,A94,A101,3,A121,26,A141,A152,1,A173,1,A191,A201,Bad
+821,A14,12,Up To Date,car (new),1101,A61,1 - 4 years,3,A94,A101,2,A121,27,A143,A152,2,A173,1,A192,A201,Good
+822,A13,12,Up To Date,radio/television,3016,A61,1 - 4 years,3,A94,A101,1,A123,24,A143,A152,1,A173,1,A191,A201,Good
+823,A11,36,Up To Date,furniture/equipment,2712,A61,>= 7 years,2,A93,A101,2,A122,41,A141,A152,1,A173,2,A191,A201,Bad
+824,A11,8,Critical Account,car (new),731,A61,>= 7 years,4,A93,A101,4,A121,47,A143,A152,2,A172,1,A191,A201,Good
+825,A14,18,Critical Account,furniture/equipment,3780,A61,< 1 year,3,A91,A101,2,A123,35,A143,A152,2,A174,1,A192,A201,Good
+826,A11,21,Critical Account,car (new),1602,A61,>= 7 years,4,A94,A101,3,A123,30,A143,A152,2,A173,1,A192,A201,Good
+827,A11,18,Critical Account,car (new),3966,A61,>= 7 years,1,A92,A101,4,A121,33,A141,A151,3,A173,1,A192,A201,Bad
+828,A14,18,All Paid,business,4165,A61,1 - 4 years,2,A93,A101,2,A123,36,A142,A152,2,A173,2,A191,A201,Bad
+829,A11,36,Up To Date,car (used),8335,A65,>= 7 years,3,A93,A101,4,A124,47,A143,A153,1,A173,1,A191,A201,Bad
+830,A12,48,Late Payment,business,6681,A65,1 - 4 years,4,A93,A101,4,A124,38,A143,A153,1,A173,2,A192,A201,Good
+831,A14,24,Late Payment,business,2375,A63,1 - 4 years,4,A93,A101,2,A123,44,A143,A152,2,A173,2,A192,A201,Good
+832,A11,18,Up To Date,car (new),1216,A61,< 1 year,4,A92,A101,3,A123,23,A143,A151,1,A173,1,A192,A201,Bad
+833,A11,45,All Paid,business,11816,A61,>= 7 years,2,A93,A101,4,A123,29,A143,A151,2,A173,1,A191,A201,Bad
+834,A12,24,Up To Date,radio/television,5084,A65,>= 7 years,2,A92,A101,4,A123,42,A143,A152,1,A173,1,A192,A201,Good
+835,A13,15,Up To Date,radio/television,2327,A61,< 1 year,2,A92,A101,3,A121,25,A143,A152,1,A172,1,A191,A201,Bad
+836,A11,12,All Paid,car (new),1082,A61,1 - 4 years,4,A93,A101,4,A123,48,A141,A152,2,A173,1,A191,A201,Bad
+837,A14,12,Up To Date,radio/television,886,A65,1 - 4 years,4,A92,A101,2,A123,21,A143,A152,1,A173,1,A191,A201,Good
+838,A14,4,Up To Date,furniture/equipment,601,A61,< 1 year,1,A92,A101,3,A121,23,A143,A151,1,A172,2,A191,A201,Good
+839,A11,24,Critical Account,car (used),2957,A61,>= 7 years,4,A93,A101,4,A122,63,A143,A152,2,A173,1,A192,A201,Good
+840,A14,24,Critical Account,radio/television,2611,A61,>= 7 years,4,A94,A102,3,A121,46,A143,A152,2,A173,1,A191,A201,Good
+841,A11,36,Up To Date,furniture/equipment,5179,A61,4 - 7 years,4,A93,A101,2,A122,29,A143,A152,1,A173,1,A191,A201,Bad
+842,A14,21,Late Payment,car (used),2993,A61,1 - 4 years,3,A93,A101,2,A121,28,A142,A152,2,A172,1,A191,A201,Good
+843,A14,18,Up To Date,repairs,1943,A61,< 1 year,4,A92,A101,4,A121,23,A143,A152,1,A173,1,A191,A201,Bad
+844,A14,24,All Paid This Bank,business,1559,A61,4 - 7 years,4,A93,A101,4,A123,50,A141,A152,1,A173,1,A192,A201,Good
+845,A14,18,Up To Date,furniture/equipment,3422,A61,>= 7 years,4,A93,A101,4,A122,47,A141,A152,3,A173,2,A192,A201,Good
+846,A12,21,Up To Date,furniture/equipment,3976,A65,4 - 7 years,2,A93,A101,3,A123,35,A143,A152,1,A173,1,A192,A201,Good
+847,A14,18,Up To Date,car (new),6761,A65,1 - 4 years,2,A93,A101,4,A123,68,A143,A151,2,A173,1,A191,A201,Bad
+848,A14,24,Up To Date,car (new),1249,A61,< 1 year,4,A94,A101,2,A121,28,A143,A152,1,A173,1,A191,A201,Good
+849,A11,9,Up To Date,radio/television,1364,A61,4 - 7 years,3,A93,A101,4,A121,59,A143,A152,1,A173,1,A191,A201,Good
+850,A11,12,Up To Date,radio/television,709,A61,>= 7 years,4,A93,A101,4,A121,57,A142,A152,1,A172,1,A191,A201,Bad
+851,A11,20,Critical Account,car (new),2235,A61,1 - 4 years,4,A94,A103,2,A122,33,A141,A151,2,A173,1,A191,A202,Bad
+852,A14,24,Critical Account,car (used),4042,A65,4 - 7 years,3,A93,A101,4,A122,43,A143,A152,2,A173,1,A192,A201,Good
+853,A14,15,Critical Account,radio/television,1471,A61,1 - 4 years,4,A93,A101,4,A124,35,A143,A153,2,A173,1,A192,A201,Good
+854,A11,18,All Paid This Bank,car (new),1442,A61,4 - 7 years,4,A93,A101,4,A124,32,A143,A153,2,A172,2,A191,A201,Bad
+855,A14,36,Late Payment,car (new),10875,A61,>= 7 years,2,A93,A101,2,A123,45,A143,A152,2,A173,2,A192,A201,Good
+856,A14,24,Up To Date,car (new),1474,A62,< 1 year,4,A94,A101,3,A121,33,A143,A152,1,A173,1,A192,A201,Good
+857,A14,10,Up To Date,retraining,894,A65,4 - 7 years,4,A92,A101,3,A122,40,A143,A152,1,A173,1,A192,A201,Good
+858,A14,15,Critical Account,furniture/equipment,3343,A61,1 - 4 years,4,A93,A101,2,A124,28,A143,A153,1,A173,1,A192,A201,Good
+859,A11,15,Up To Date,car (new),3959,A61,1 - 4 years,3,A92,A101,2,A122,29,A143,A152,1,A173,1,A192,A201,Bad
+860,A14,9,Up To Date,car (new),3577,A62,1 - 4 years,1,A93,A103,2,A121,26,A143,A151,1,A173,2,A191,A202,Good
+861,A14,24,Critical Account,car (used),5804,A64,1 - 4 years,4,A93,A101,2,A121,27,A143,A152,2,A173,1,A191,A201,Good
+862,A14,18,Late Payment,business,2169,A61,1 - 4 years,4,A94,A101,2,A123,28,A143,A152,1,A173,1,A192,A201,Bad
+863,A11,24,Up To Date,radio/television,2439,A61,< 1 year,4,A92,A101,4,A121,35,A143,A152,1,A173,1,A192,A201,Bad
+864,A14,27,Critical Account,furniture/equipment,4526,A64,< 1 year,4,A93,A101,2,A121,32,A142,A152,2,A172,2,A192,A201,Good
+865,A14,10,Up To Date,furniture/equipment,2210,A61,1 - 4 years,2,A93,A101,2,A121,25,A141,A151,1,A172,1,A191,A201,Bad
+866,A14,15,Up To Date,furniture/equipment,2221,A63,1 - 4 years,2,A92,A101,4,A123,20,A143,A151,1,A173,1,A191,A201,Good
+867,A11,18,Up To Date,radio/television,2389,A61,< 1 year,4,A92,A101,1,A123,27,A142,A152,1,A173,1,A191,A201,Good
+868,A14,12,Critical Account,furniture/equipment,3331,A61,>= 7 years,2,A93,A101,4,A122,42,A142,A152,1,A173,1,A191,A201,Good
+869,A14,36,Up To Date,business,7409,A65,>= 7 years,3,A93,A101,2,A122,37,A143,A152,2,A173,1,A191,A201,Good
+870,A11,12,Up To Date,furniture/equipment,652,A61,>= 7 years,4,A92,A101,4,A122,24,A143,A151,1,A173,1,A191,A201,Good
+871,A14,36,Late Payment,furniture/equipment,7678,A63,4 - 7 years,2,A92,A101,4,A123,40,A143,A152,2,A173,1,A192,A201,Good
+872,A13,6,Critical Account,car (new),1343,A61,>= 7 years,1,A93,A101,4,A121,46,A143,A152,2,A173,2,A191,A202,Good
+873,A11,24,Critical Account,business,1382,A62,4 - 7 years,4,A93,A101,1,A121,26,A143,A152,2,A173,1,A192,A201,Good
+874,A14,15,Up To Date,domestic appliances,874,A65,< 1 year,4,A92,A101,1,A121,24,A143,A152,1,A173,1,A191,A201,Good
+875,A11,12,Up To Date,furniture/equipment,3590,A61,1 - 4 years,2,A93,A102,2,A122,29,A143,A152,1,A172,2,A191,A201,Good
+876,A12,11,Critical Account,car (new),1322,A64,1 - 4 years,4,A92,A101,4,A123,40,A143,A152,2,A173,1,A191,A201,Good
+877,A11,18,All Paid This Bank,radio/television,1940,A61,< 1 year,3,A93,A102,4,A124,36,A141,A153,1,A174,1,A192,A201,Good
+878,A14,36,Up To Date,radio/television,3595,A61,>= 7 years,4,A93,A101,2,A123,28,A143,A152,1,A173,1,A191,A201,Good
+879,A11,9,Up To Date,car (new),1422,A61,< 1 year,3,A93,A101,2,A124,27,A143,A153,1,A174,1,A192,A201,Bad
+880,A14,30,Critical Account,radio/television,6742,A65,4 - 7 years,2,A93,A101,3,A122,36,A143,A152,2,A173,1,A191,A201,Good
+881,A14,24,Up To Date,car (used),7814,A61,4 - 7 years,3,A93,A101,3,A123,38,A143,A152,1,A174,1,A192,A201,Good
+882,A14,24,Up To Date,car (used),9277,A65,1 - 4 years,2,A91,A101,4,A124,48,A143,A153,1,A173,1,A192,A201,Good
+883,A12,30,Critical Account,car (new),2181,A65,>= 7 years,4,A93,A101,4,A121,36,A143,A152,2,A173,1,A191,A201,Good
+884,A14,18,Critical Account,radio/television,1098,A61,unemployed,4,A92,A101,4,A123,65,A143,A152,2,A171,1,A191,A201,Good
+885,A12,24,Up To Date,furniture/equipment,4057,A61,4 - 7 years,3,A91,A101,3,A123,43,A143,A152,1,A173,1,A192,A201,Bad
+886,A11,12,Up To Date,education,795,A61,< 1 year,4,A92,A101,4,A122,53,A143,A152,1,A173,1,A191,A201,Bad
+887,A12,24,Critical Account,business,2825,A65,4 - 7 years,4,A93,A101,3,A124,34,A143,A152,2,A173,2,A192,A201,Good
+888,A12,48,Up To Date,business,15672,A61,1 - 4 years,2,A93,A101,2,A123,23,A143,A152,1,A173,1,A192,A201,Bad
+889,A14,36,Critical Account,car (new),6614,A61,>= 7 years,4,A93,A101,4,A123,34,A143,A152,2,A174,1,A192,A201,Good
+890,A14,28,All Paid This Bank,car (used),7824,A65,< 1 year,3,A93,A103,4,A121,40,A141,A151,2,A173,2,A192,A201,Good
+891,A11,27,Critical Account,business,2442,A61,>= 7 years,4,A93,A101,4,A123,43,A142,A152,4,A174,2,A192,A201,Good
+892,A14,15,Critical Account,radio/television,1829,A61,>= 7 years,4,A93,A101,4,A123,46,A143,A152,2,A173,1,A192,A201,Good
+893,A11,12,Critical Account,car (new),2171,A61,1 - 4 years,4,A93,A101,4,A122,38,A141,A152,2,A172,1,A191,A202,Good
+894,A12,36,Critical Account,car (used),5800,A61,1 - 4 years,3,A93,A101,4,A123,34,A143,A152,2,A173,1,A192,A201,Good
+895,A14,18,Critical Account,radio/television,1169,A65,1 - 4 years,4,A93,A101,3,A122,29,A143,A152,2,A173,1,A192,A201,Good
+896,A14,36,Late Payment,car (used),8947,A65,4 - 7 years,3,A93,A101,2,A123,31,A142,A152,1,A174,2,A192,A201,Good
+897,A11,21,Up To Date,radio/television,2606,A61,< 1 year,4,A92,A101,4,A122,28,A143,A151,1,A174,1,A192,A201,Good
+898,A14,12,Critical Account,furniture/equipment,1592,A64,4 - 7 years,3,A92,A101,2,A122,35,A143,A152,1,A173,1,A191,A202,Good
+899,A14,15,Up To Date,furniture/equipment,2186,A65,4 - 7 years,1,A92,A101,4,A121,33,A141,A151,1,A172,1,A191,A201,Good
+900,A11,18,Up To Date,furniture/equipment,4153,A61,1 - 4 years,2,A93,A102,3,A123,42,A143,A152,1,A173,1,A191,A201,Bad
+901,A11,16,Critical Account,car (new),2625,A61,>= 7 years,2,A93,A103,4,A122,43,A141,A151,1,A173,1,A192,A201,Bad
+902,A14,20,Critical Account,car (new),3485,A65,< 1 year,2,A91,A101,4,A121,44,A143,A152,2,A173,1,A192,A201,Good
+903,A14,36,Critical Account,car (used),10477,A65,>= 7 years,2,A93,A101,4,A124,42,A143,A153,2,A173,1,A191,A201,Good
+904,A14,15,Up To Date,radio/television,1386,A65,1 - 4 years,4,A94,A101,2,A121,40,A143,A151,1,A173,1,A192,A201,Good
+905,A14,24,Up To Date,radio/television,1278,A61,>= 7 years,4,A93,A101,1,A121,36,A143,A152,1,A174,1,A192,A201,Good
+906,A11,12,Up To Date,radio/television,1107,A61,1 - 4 years,2,A93,A101,2,A121,20,A143,A151,1,A174,2,A192,A201,Good
+907,A11,21,Up To Date,car (new),3763,A65,4 - 7 years,2,A93,A102,2,A121,24,A143,A152,1,A172,1,A191,A202,Good
+908,A12,36,Up To Date,education,3711,A65,1 - 4 years,2,A94,A101,2,A123,27,A143,A152,1,A173,1,A191,A201,Good
+909,A14,15,Late Payment,car (used),3594,A61,< 1 year,1,A92,A101,2,A122,46,A143,A152,2,A172,1,A191,A201,Good
+910,A12,9,Up To Date,car (new),3195,A65,1 - 4 years,1,A92,A101,2,A121,33,A143,A152,1,A172,1,A191,A201,Good
+911,A14,36,Late Payment,radio/television,4454,A61,1 - 4 years,4,A92,A101,4,A121,34,A143,A152,2,A173,1,A191,A201,Good
+912,A12,24,Critical Account,furniture/equipment,4736,A61,< 1 year,2,A92,A101,4,A123,25,A141,A152,1,A172,1,A191,A201,Bad
+913,A12,30,Up To Date,radio/television,2991,A65,>= 7 years,2,A92,A101,4,A123,25,A143,A152,1,A173,1,A191,A201,Good
+914,A14,11,Up To Date,business,2142,A64,>= 7 years,1,A91,A101,2,A121,28,A143,A152,1,A173,1,A192,A201,Good
+915,A11,24,All Paid This Bank,business,3161,A61,1 - 4 years,4,A93,A101,2,A122,31,A143,A151,1,A173,1,A192,A201,Bad
+916,A12,48,All Paid,others,18424,A61,1 - 4 years,1,A92,A101,2,A122,32,A141,A152,1,A174,1,A192,A202,Bad
+917,A14,10,Up To Date,car (used),2848,A62,1 - 4 years,1,A93,A102,2,A121,32,A143,A152,1,A173,2,A191,A201,Good
+918,A11,6,Up To Date,car (new),14896,A61,>= 7 years,1,A93,A101,4,A124,68,A141,A152,1,A174,1,A192,A201,Bad
+919,A11,24,Up To Date,furniture/equipment,2359,A62,unemployed,1,A91,A101,1,A122,33,A143,A152,1,A173,1,A191,A201,Bad
+920,A11,24,Up To Date,furniture/equipment,3345,A61,>= 7 years,4,A93,A101,2,A122,39,A143,A151,1,A174,1,A192,A201,Bad
+921,A14,18,Critical Account,furniture/equipment,1817,A61,1 - 4 years,4,A92,A101,2,A124,28,A143,A152,2,A173,1,A191,A201,Good
+922,A14,48,Late Payment,radio/television,12749,A63,4 - 7 years,4,A93,A101,1,A123,37,A143,A152,1,A174,1,A192,A201,Good
+923,A11,9,Up To Date,radio/television,1366,A61,< 1 year,3,A92,A101,4,A122,22,A143,A151,1,A173,1,A191,A201,Bad
+924,A12,12,Up To Date,car (new),2002,A61,4 - 7 years,3,A93,A101,4,A122,30,A143,A151,1,A173,2,A192,A201,Good
+925,A11,24,All Paid This Bank,furniture/equipment,6872,A61,< 1 year,2,A91,A101,1,A122,55,A141,A152,1,A173,1,A192,A201,Bad
+926,A11,12,All Paid This Bank,car (new),697,A61,< 1 year,4,A93,A101,2,A123,46,A141,A152,2,A173,1,A192,A201,Bad
+927,A11,18,Critical Account,furniture/equipment,1049,A61,< 1 year,4,A92,A101,4,A122,21,A143,A151,1,A173,1,A191,A201,Good
+928,A11,48,Up To Date,car (used),10297,A61,4 - 7 years,4,A93,A101,4,A124,39,A142,A153,3,A173,2,A192,A201,Bad
+929,A14,30,Up To Date,radio/television,1867,A65,>= 7 years,4,A93,A101,4,A123,58,A143,A152,1,A173,1,A192,A201,Good
+930,A11,12,Late Payment,car (new),1344,A61,1 - 4 years,4,A93,A101,2,A121,43,A143,A152,2,A172,2,A191,A201,Good
+931,A11,24,Up To Date,furniture/equipment,1747,A61,< 1 year,4,A93,A102,1,A122,24,A143,A152,1,A172,1,A191,A202,Good
+932,A12,9,Up To Date,radio/television,1670,A61,< 1 year,4,A92,A101,2,A123,22,A143,A152,1,A173,1,A192,A201,Bad
+933,A14,9,Critical Account,car (new),1224,A61,1 - 4 years,3,A93,A101,1,A121,30,A143,A152,2,A173,1,A191,A201,Good
+934,A14,12,Critical Account,radio/television,522,A63,>= 7 years,4,A93,A101,4,A122,42,A143,A152,2,A173,2,A192,A201,Good
+935,A11,12,Up To Date,radio/television,1498,A61,1 - 4 years,4,A92,A101,1,A123,23,A141,A152,1,A173,1,A191,A201,Good
+936,A12,30,Late Payment,radio/television,1919,A62,< 1 year,4,A93,A101,3,A124,30,A142,A152,2,A174,1,A191,A201,Bad
+937,A13,9,Up To Date,radio/television,745,A61,1 - 4 years,3,A92,A101,2,A121,28,A143,A152,1,A172,1,A191,A201,Bad
+938,A12,6,Up To Date,radio/television,2063,A61,< 1 year,4,A94,A101,3,A123,30,A143,A151,1,A174,1,A192,A201,Good
+939,A12,60,Up To Date,education,6288,A61,1 - 4 years,4,A93,A101,4,A124,42,A143,A153,1,A173,1,A191,A201,Bad
+940,A14,24,Critical Account,car (used),6842,A65,1 - 4 years,2,A93,A101,4,A122,46,A143,A152,2,A174,2,A192,A201,Good
+941,A14,12,Up To Date,car (new),3527,A65,< 1 year,2,A93,A101,3,A122,45,A143,A152,1,A174,2,A192,A201,Good
+942,A14,10,Up To Date,car (new),1546,A61,1 - 4 years,3,A93,A101,2,A121,31,A143,A152,1,A172,2,A191,A202,Good
+943,A14,24,Up To Date,furniture/equipment,929,A65,4 - 7 years,4,A93,A101,2,A123,31,A142,A152,1,A173,1,A192,A201,Good
+944,A14,4,Critical Account,car (new),1455,A61,4 - 7 years,2,A93,A101,1,A121,42,A143,A152,3,A172,2,A191,A201,Good
+945,A11,15,Up To Date,furniture/equipment,1845,A61,< 1 year,4,A92,A103,1,A122,46,A143,A151,1,A173,1,A191,A201,Good
+946,A12,48,All Paid,car (new),8358,A63,< 1 year,1,A92,A101,1,A123,30,A143,A152,2,A173,1,A191,A201,Good
+947,A11,24,All Paid This Bank,furniture/equipment,3349,A63,< 1 year,4,A93,A101,4,A124,30,A143,A153,1,A173,2,A192,A201,Bad
+948,A14,12,Up To Date,car (new),2859,A65,unemployed,4,A93,A101,4,A124,38,A143,A152,1,A174,1,A192,A201,Good
+949,A14,18,Up To Date,furniture/equipment,1533,A61,< 1 year,4,A94,A102,1,A122,43,A143,A152,1,A172,2,A191,A201,Bad
+950,A14,24,Up To Date,radio/television,3621,A62,>= 7 years,2,A93,A101,4,A123,31,A143,A152,2,A173,1,A191,A201,Bad
+951,A12,18,Critical Account,business,3590,A61,unemployed,3,A94,A101,3,A123,40,A143,A152,3,A171,2,A192,A201,Good
+952,A11,36,Late Payment,business,2145,A61,4 - 7 years,2,A93,A101,1,A123,24,A143,A152,2,A173,1,A192,A201,Bad
+953,A12,24,Up To Date,car (used),4113,A63,< 1 year,3,A92,A101,4,A123,28,A143,A151,1,A173,1,A191,A201,Bad
+954,A14,36,Up To Date,furniture/equipment,10974,A61,unemployed,4,A92,A101,2,A123,26,A143,A152,2,A174,1,A192,A201,Bad
+955,A11,12,Up To Date,car (new),1893,A61,1 - 4 years,4,A92,A103,4,A122,29,A143,A152,1,A173,1,A192,A201,Good
+956,A11,24,Critical Account,radio/television,1231,A64,>= 7 years,4,A92,A101,4,A122,57,A143,A151,2,A174,1,A192,A201,Good
+957,A13,30,Critical Account,radio/television,3656,A65,>= 7 years,4,A93,A101,4,A122,49,A142,A152,2,A172,1,A191,A201,Good
+958,A12,9,Critical Account,radio/television,1154,A61,>= 7 years,2,A93,A101,4,A121,37,A143,A152,3,A172,1,A191,A201,Good
+959,A11,28,Up To Date,car (new),4006,A61,1 - 4 years,3,A93,A101,2,A123,45,A143,A152,1,A172,1,A191,A201,Bad
+960,A12,24,Up To Date,furniture/equipment,3069,A62,>= 7 years,4,A93,A101,4,A124,30,A143,A153,1,A173,1,A191,A201,Good
+961,A14,6,Critical Account,radio/television,1740,A61,>= 7 years,2,A94,A101,2,A121,30,A143,A151,2,A173,1,A191,A201,Good
+962,A12,21,Late Payment,car (new),2353,A61,1 - 4 years,1,A91,A101,4,A122,47,A143,A152,2,A173,1,A191,A201,Good
+963,A14,15,Up To Date,car (new),3556,A65,1 - 4 years,3,A93,A101,2,A124,29,A143,A152,1,A173,1,A191,A201,Good
+964,A14,24,Up To Date,radio/television,2397,A63,>= 7 years,3,A93,A101,2,A123,35,A141,A152,2,A173,1,A192,A201,Bad
+965,A12,6,Up To Date,repairs,454,A61,< 1 year,3,A94,A101,1,A122,22,A143,A152,1,A172,1,A191,A201,Good
+966,A12,30,Up To Date,radio/television,1715,A65,1 - 4 years,4,A92,A101,1,A123,26,A143,A152,1,A173,1,A191,A201,Good
+967,A12,27,Critical Account,radio/television,2520,A63,1 - 4 years,4,A93,A101,2,A122,23,A143,A152,2,A172,1,A191,A201,Bad
+968,A14,15,Up To Date,radio/television,3568,A61,>= 7 years,4,A92,A101,2,A123,54,A141,A151,1,A174,1,A192,A201,Good
+969,A14,42,Up To Date,radio/television,7166,A65,4 - 7 years,2,A94,A101,4,A122,29,A143,A151,1,A173,1,A192,A201,Good
+970,A11,11,Critical Account,car (new),3939,A61,1 - 4 years,1,A93,A101,2,A121,40,A143,A152,2,A172,2,A191,A201,Good
+971,A12,15,Up To Date,repairs,1514,A62,1 - 4 years,4,A93,A103,2,A121,22,A143,A152,1,A173,1,A191,A201,Good
+972,A14,24,Up To Date,car (new),7393,A61,1 - 4 years,1,A93,A101,4,A122,43,A143,A152,1,A172,2,A191,A201,Good
+973,A11,24,All Paid This Bank,car (new),1193,A61,unemployed,1,A92,A102,4,A124,29,A143,A151,2,A171,1,A191,A201,Bad
+974,A11,60,Up To Date,business,7297,A61,>= 7 years,4,A93,A102,4,A124,36,A143,A151,1,A173,1,A191,A201,Bad
+975,A14,30,Critical Account,radio/television,2831,A61,1 - 4 years,4,A92,A101,2,A123,33,A143,A152,1,A173,1,A192,A201,Good
+976,A13,24,Up To Date,radio/television,1258,A63,1 - 4 years,3,A92,A101,3,A123,57,A143,A152,1,A172,1,A191,A201,Good
+977,A12,6,Up To Date,radio/television,753,A61,1 - 4 years,2,A92,A103,3,A121,64,A143,A152,1,A173,1,A191,A201,Good
+978,A12,18,Late Payment,business,2427,A65,>= 7 years,4,A93,A101,2,A122,42,A143,A152,2,A173,1,A191,A201,Good
+979,A14,24,Late Payment,car (new),2538,A61,>= 7 years,4,A93,A101,4,A123,47,A143,A152,2,A172,2,A191,A201,Bad
+980,A12,15,All Paid This Bank,car (new),1264,A62,1 - 4 years,2,A94,A101,2,A122,25,A143,A151,1,A173,1,A191,A201,Bad
+981,A12,30,Critical Account,furniture/equipment,8386,A61,4 - 7 years,2,A93,A101,2,A122,49,A143,A152,1,A173,1,A191,A201,Bad
+982,A14,48,Up To Date,business,4844,A61,unemployed,3,A93,A101,2,A123,33,A141,A151,1,A174,1,A192,A201,Bad
+983,A13,21,Up To Date,car (new),2923,A62,1 - 4 years,1,A92,A101,1,A123,28,A141,A152,1,A174,1,A192,A201,Good
+984,A11,36,Up To Date,car (used),8229,A61,1 - 4 years,2,A93,A101,2,A122,26,A143,A152,1,A173,2,A191,A201,Bad
+985,A14,24,Critical Account,furniture/equipment,2028,A61,4 - 7 years,2,A93,A101,2,A122,30,A143,A152,2,A172,1,A191,A201,Good
+986,A11,15,Critical Account,furniture/equipment,1433,A61,1 - 4 years,4,A92,A101,3,A122,25,A143,A151,2,A173,1,A191,A201,Good
+987,A13,42,All Paid,business,6289,A61,< 1 year,2,A91,A101,1,A122,33,A143,A152,2,A173,1,A191,A201,Good
+988,A14,13,Up To Date,radio/television,1409,A62,unemployed,2,A92,A101,4,A121,64,A143,A152,1,A173,1,A191,A201,Good
+989,A11,24,Up To Date,car (used),6579,A61,unemployed,4,A93,A101,2,A124,29,A143,A153,1,A174,1,A192,A201,Good
+990,A12,24,Critical Account,radio/television,1743,A61,>= 7 years,4,A93,A101,2,A122,48,A143,A152,2,A172,1,A191,A201,Good
+991,A14,12,Critical Account,education,3565,A65,< 1 year,2,A93,A101,1,A122,37,A143,A152,2,A172,2,A191,A201,Good
+992,A14,15,All Paid This Bank,radio/television,1569,A62,>= 7 years,4,A93,A101,4,A123,34,A141,A152,1,A172,2,A191,A201,Good
+993,A11,18,Up To Date,radio/television,1936,A65,4 - 7 years,2,A94,A101,4,A123,23,A143,A151,2,A172,1,A191,A201,Good
+994,A11,36,Up To Date,furniture/equipment,3959,A61,unemployed,4,A93,A101,3,A122,30,A143,A152,1,A174,1,A192,A201,Good
+995,A14,12,Up To Date,car (new),2390,A65,>= 7 years,4,A93,A101,3,A123,50,A143,A152,1,A173,1,A192,A201,Good
+996,A14,12,Up To Date,furniture/equipment,1736,A61,4 - 7 years,3,A92,A101,4,A121,31,A143,A152,1,A172,1,A191,A201,Good
+997,A11,30,Up To Date,car (used),3857,A61,1 - 4 years,4,A91,A101,4,A122,40,A143,A152,1,A174,1,A192,A201,Good
+998,A14,12,Up To Date,radio/television,804,A61,>= 7 years,4,A93,A101,4,A123,38,A143,A152,1,A173,1,A191,A201,Good
+999,A11,45,Up To Date,radio/television,1845,A61,1 - 4 years,4,A93,A101,4,A124,23,A143,A153,1,A173,1,A192,A201,Bad
+1000,A12,45,Critical Account,car (used),4576,A62,unemployed,3,A93,A101,4,A123,27,A143,A152,1,A173,1,A191,A201,Good
