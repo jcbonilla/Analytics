@@ -1,129 +1,119 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww14700\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl280\partightenfactor0
-
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 [\
-  \{\
-    "login": "ggobi",\
-    "id": 423638,\
-    "url": "https://api.github.com/orgs/ggobi",\
-    "repos_url": "https://api.github.com/orgs/ggobi/repos",\
-    "events_url": "https://api.github.com/orgs/ggobi/events",\
-    "hooks_url": "https://api.github.com/orgs/ggobi/hooks",\
-    "issues_url": "https://api.github.com/orgs/ggobi/issues",\
-    "members_url": "https://api.github.com/orgs/ggobi/members\{/member\}",\
-    "pu	blic_members_url": "https://api.github.com/orgs/ggobi/public_members\{/member\}",\
-    "avatar_url": "https://avatars1.githubusercontent.com/u/423638?v=4",\
-    "description": ""\
-  \},\
-  \{\
-    "login": "rstudio",\
-    "id": 513560,\
-    "url": "https://api.github.com/orgs/rstudio",\
-    "repos_url": "https://api.github.com/orgs/rstudio/repos",\
-    "events_url": "https://api.github.com/orgs/rstudio/events",\
-    "hooks_url": "https://api.github.com/orgs/rstudio/hooks",\
-    "issues_url": "https://api.github.com/orgs/rstudio/issues",\
-    "members_url": "https://api.github.com/orgs/rstudio/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/rstudio/public_members\{/member\}",\
-    "avatar_url": "https://avatars1.githubusercontent.com/u/513560?v=4",\
-    "description": null\
-  \},\
-  \{\
-    "login": "rstats",\
-    "id": 722735,\
-    "url": "https://api.github.com/orgs/rstats",\
-    "repos_url": "https://api.github.com/orgs/rstats/repos",\
-    "events_url": "https://api.github.com/orgs/rstats/events",\
-    "hooks_url": "https://api.github.com/orgs/rstats/hooks",\
-    "issues_url": "https://api.github.com/orgs/rstats/issues",\
-    "members_url": "https://api.github.com/orgs/rstats/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/rstats/public_members\{/member\}",\
-    "avatar_url": "https://avatars1.githubusercontent.com/u/722735?v=4",\
-    "description": null\
-  \},\
-  \{\
-    "login": "ropensci",\
-    "id": 1200269,\
-    "url": "https://api.github.com/orgs/ropensci",\
-    "repos_url": "https://api.github.com/orgs/ropensci/repos",\
-    "events_url": "https://api.github.com/orgs/ropensci/events",\
-    "hooks_url": "https://api.github.com/orgs/ropensci/hooks",\
-    "issues_url": "https://api.github.com/orgs/ropensci/issues",\
-    "members_url": "https://api.github.com/orgs/ropensci/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/ropensci/public_members\{/member\}",\
-    "avatar_url": "https://avatars3.githubusercontent.com/u/1200269?v=4",\
-    "description": ""\
-  \},\
-  \{\
-    "login": "rjournal",\
-    "id": 3330561,\
-    "url": "https://api.github.com/orgs/rjournal",\
-    "repos_url": "https://api.github.com/orgs/rjournal/repos",\
-    "events_url": "https://api.github.com/orgs/rjournal/events",\
-    "hooks_url": "https://api.github.com/orgs/rjournal/hooks",\
-    "issues_url": "https://api.github.com/orgs/rjournal/issues",\
-    "members_url": "https://api.github.com/orgs/rjournal/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/rjournal/public_members\{/member\}",\
-    "avatar_url": "https://avatars2.githubusercontent.com/u/3330561?v=4",\
-    "description": null\
-  \},\
-  \{\
-    "login": "r-dbi",\
-    "id": 5695665,\
-    "url": "https://api.github.com/orgs/r-dbi",\
-    "repos_url": "https://api.github.com/orgs/r-dbi/repos",\
-    "events_url": "https://api.github.com/orgs/r-dbi/events",\
-    "hooks_url": "https://api.github.com/orgs/r-dbi/hooks",\
-    "issues_url": "https://api.github.com/orgs/r-dbi/issues",\
-    "members_url": "https://api.github.com/orgs/r-dbi/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/r-dbi/public_members\{/member\}",\
-    "avatar_url": "https://avatars2.githubusercontent.com/u/5695665?v=4",\
-    "description": "R + databases"\
-  \},\
-  \{\
-    "login": "RConsortium",\
-    "id": 15366137,\
-    "url": "https://api.github.com/orgs/RConsortium",\
-    "repos_url": "https://api.github.com/orgs/RConsortium/repos",\
-    "events_url": "https://api.github.com/orgs/RConsortium/events",\
-    "hooks_url": "https://api.github.com/orgs/RConsortium/hooks",\
-    "issues_url": "https://api.github.com/orgs/RConsortium/issues",\
-    "members_url": "https://api.github.com/orgs/RConsortium/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/RConsortium/public_members\{/member\}",\
-    "avatar_url": "https://avatars1.githubusercontent.com/u/15366137?v=4",\
-    "description": "The R Consortium, Inc was established to provide support to the R Foundation and R Community, using maintaining and distributing R software."\
-  \},\
-  \{\
-    "login": "tidyverse",\
-    "id": 22032646,\
-    "url": "https://api.github.com/orgs/tidyverse",\
-    "repos_url": "https://api.github.com/orgs/tidyverse/repos",\
-    "events_url": "https://api.github.com/orgs/tidyverse/events",\
-    "hooks_url": "https://api.github.com/orgs/tidyverse/hooks",\
-    "issues_url": "https://api.github.com/orgs/tidyverse/issues",\
-    "members_url": "https://api.github.com/orgs/tidyverse/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/tidyverse/public_members\{/member\}",\
-    "avatar_url": "https://avatars2.githubusercontent.com/u/22032646?v=4",\
-    "description": "The tidyverse is a collection of R packages that share common principles and are designed to work together seamlessly"\
-  \},\
-  \{\
-    "login": "r-lib",\
-    "id": 22618716,\
-    "url": "https://api.github.com/orgs/r-lib",\
-    "repos_url": "https://api.github.com/orgs/r-lib/repos",\
-    "events_url": "https://api.github.com/orgs/r-lib/events",\
-    "hooks_url": "https://api.github.com/orgs/r-lib/hooks",\
-    "issues_url": "https://api.github.com/orgs/r-lib/issues",\
-    "members_url": "https://api.github.com/orgs/r-lib/members\{/member\}",\
-    "public_members_url": "https://api.github.com/orgs/r-lib/public_members\{/member\}",\
-    "avatar_url": "https://avatars0.githubusercontent.com/u/22618716?v=4",\
-    "description": ""\
-  \}\
-]\
-}
+[
+  {
+    "login": "ggobi",
+    "id": 423638,
+    "url": "https://api.github.com/orgs/ggobi",
+    "repos_url": "https://api.github.com/orgs/ggobi/repos",
+    "events_url": "https://api.github.com/orgs/ggobi/events",
+    "hooks_url": "https://api.github.com/orgs/ggobi/hooks",
+    "issues_url": "https://api.github.com/orgs/ggobi/issues",
+    "members_url": "https://api.github.com/orgs/ggobi/members{/member}",
+    "pu	blic_members_url": "https://api.github.com/orgs/ggobi/public_members{/member}",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/423638?v=4",
+    "description": ""
+  },
+  {
+    "login": "rstudio",
+    "id": 513560,
+    "url": "https://api.github.com/orgs/rstudio",
+    "repos_url": "https://api.github.com/orgs/rstudio/repos",
+    "events_url": "https://api.github.com/orgs/rstudio/events",
+    "hooks_url": "https://api.github.com/orgs/rstudio/hooks",
+    "issues_url": "https://api.github.com/orgs/rstudio/issues",
+    "members_url": "https://api.github.com/orgs/rstudio/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/rstudio/public_members{/member}",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/513560?v=4",
+    "description": null
+  },
+  {
+    "login": "rstats",
+    "id": 722735,
+    "url": "https://api.github.com/orgs/rstats",
+    "repos_url": "https://api.github.com/orgs/rstats/repos",
+    "events_url": "https://api.github.com/orgs/rstats/events",
+    "hooks_url": "https://api.github.com/orgs/rstats/hooks",
+    "issues_url": "https://api.github.com/orgs/rstats/issues",
+    "members_url": "https://api.github.com/orgs/rstats/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/rstats/public_members{/member}",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/722735?v=4",
+    "description": null
+  },
+  {
+    "login": "ropensci",
+    "id": 1200269,
+    "url": "https://api.github.com/orgs/ropensci",
+    "repos_url": "https://api.github.com/orgs/ropensci/repos",
+    "events_url": "https://api.github.com/orgs/ropensci/events",
+    "hooks_url": "https://api.github.com/orgs/ropensci/hooks",
+    "issues_url": "https://api.github.com/orgs/ropensci/issues",
+    "members_url": "https://api.github.com/orgs/ropensci/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/ropensci/public_members{/member}",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/1200269?v=4",
+    "description": ""
+  },
+  {
+    "login": "rjournal",
+    "id": 3330561,
+    "url": "https://api.github.com/orgs/rjournal",
+    "repos_url": "https://api.github.com/orgs/rjournal/repos",
+    "events_url": "https://api.github.com/orgs/rjournal/events",
+    "hooks_url": "https://api.github.com/orgs/rjournal/hooks",
+    "issues_url": "https://api.github.com/orgs/rjournal/issues",
+    "members_url": "https://api.github.com/orgs/rjournal/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/rjournal/public_members{/member}",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/3330561?v=4",
+    "description": null
+  },
+  {
+    "login": "r-dbi",
+    "id": 5695665,
+    "url": "https://api.github.com/orgs/r-dbi",
+    "repos_url": "https://api.github.com/orgs/r-dbi/repos",
+    "events_url": "https://api.github.com/orgs/r-dbi/events",
+    "hooks_url": "https://api.github.com/orgs/r-dbi/hooks",
+    "issues_url": "https://api.github.com/orgs/r-dbi/issues",
+    "members_url": "https://api.github.com/orgs/r-dbi/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/r-dbi/public_members{/member}",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/5695665?v=4",
+    "description": "R + databases"
+  },
+  {
+    "login": "RConsortium",
+    "id": 15366137,
+    "url": "https://api.github.com/orgs/RConsortium",
+    "repos_url": "https://api.github.com/orgs/RConsortium/repos",
+    "events_url": "https://api.github.com/orgs/RConsortium/events",
+    "hooks_url": "https://api.github.com/orgs/RConsortium/hooks",
+    "issues_url": "https://api.github.com/orgs/RConsortium/issues",
+    "members_url": "https://api.github.com/orgs/RConsortium/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/RConsortium/public_members{/member}",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/15366137?v=4",
+    "description": "The R Consortium, Inc was established to provide support to the R Foundation and R Community, using maintaining and distributing R software."
+  },
+  {
+    "login": "tidyverse",
+    "id": 22032646,
+    "url": "https://api.github.com/orgs/tidyverse",
+    "repos_url": "https://api.github.com/orgs/tidyverse/repos",
+    "events_url": "https://api.github.com/orgs/tidyverse/events",
+    "hooks_url": "https://api.github.com/orgs/tidyverse/hooks",
+    "issues_url": "https://api.github.com/orgs/tidyverse/issues",
+    "members_url": "https://api.github.com/orgs/tidyverse/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/tidyverse/public_members{/member}",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/22032646?v=4",
+    "description": "The tidyverse is a collection of R packages that share common principles and are designed to work together seamlessly"
+  },
+  {
+    "login": "r-lib",
+    "id": 22618716,
+    "url": "https://api.github.com/orgs/r-lib",
+    "repos_url": "https://api.github.com/orgs/r-lib/repos",
+    "events_url": "https://api.github.com/orgs/r-lib/events",
+    "hooks_url": "https://api.github.com/orgs/r-lib/hooks",
+    "issues_url": "https://api.github.com/orgs/r-lib/issues",
+    "members_url": "https://api.github.com/orgs/r-lib/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/r-lib/public_members{/member}",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/22618716?v=4",
+    "description": ""
+  }
+]
