@@ -8,7 +8,7 @@
     "hooks_url": "https://api.github.com/orgs/ggobi/hooks",
     "issues_url": "https://api.github.com/orgs/ggobi/issues",
     "members_url": "https://api.github.com/orgs/ggobi/members{/member}",
-    "pu	blic_members_url": "https://api.github.com/orgs/ggobi/public_members{/member}",
+    "public_members_url": "https://api.github.com/orgs/ggobi/public_members{/member}",
     "avatar_url": "https://avatars1.githubusercontent.com/u/423638?v=4",
     "description": ""
   },
