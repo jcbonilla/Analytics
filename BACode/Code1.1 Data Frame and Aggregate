@@ -1,0 +1,87 @@
+
+var<-"https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/Cheesemakers_v2.csv"
+cheese<-read.csv(var)
+names(cheese)
+str(cheese)
+summary(cheese$Gross.profit)
+
+table(cheese$Gross.profit, cheese$State)
+
+table1<-table(cheese$State)
+table1
+table1 <- as.data.frame(table1)
+
+table2 <-as.data.frame(table(cheese$Customer.ID))
+View(table2)
+
+# data frames - create the data frame.
+help(data.frame)
+emp.data <- data.frame(emp_id = c (1:5), 
+                       emp_name = c("Rick","Dan","Michelle","Ryan","Gary"),
+                       salary = c(623.3,515.2,611.0,729.0,843.25))
+
+
+
+str(emp.data)
+summary(emp.data)
+
+# data frames - extracting
+extract.1 <- data.frame(emp.data$emp_id,emp.data$salary)
+extract.1
+
+extract.2 <- emp.data[1:2,]  #Extract the first two rows and then all columns
+extract.2
+
+extract.3<-emp.data[c(3,5),c(2,3)] #Extract 3rd and 5th row with 2nd and 3th column
+extract.3
+
+extract.4 <-subset(emp.data, salary<600)
+extract.4 
+# data frame - adding colums and rows
+emp.data$dept <- c("IT","Operations","IT","HR","Finance")
+emp.data
+
+
+emp.newdata <- 	data.frame(
+  emp_id = c (6:8), 
+  emp_name = c("Rasmi","Pranab","Tusar"),
+  salary = c(578.0,722.5,632.8), 
+  dept = c("IT","Operations","Finance"),
+  stringsAsFactors = FALSE
+)
+
+emp.finaldata <- rbind(emp.data,emp.newdata)  # Bind the two data frames.
+
+
+# data frame - change names
+colnames(emp.finaldata)<- c("id","name","salary", "team")
+table1<-as.data.frame(table1)
+
+#####################
+## AGGREGATE  #######
+#####################
+help("aggregate")
+
+df.1 <- data.frame(
+  value = c("a", "a", "a", "a", "a","b", "b", "b","c", "c", "c", "c"))
+dummy.count <- aggregate(x = df.1, 
+                         by = list(unique.values = df.1$value), 
+                         FUN = length)
+dummy.count
+
+assets <- data.frame(
+  asset.class = c("equity", "equity","equity","option","option","option","bond", "bond"),
+  rating = c("AAA", "A", "A", "AAA", "BB", "BB", "AAA", "A"),
+  yield.a = c(runif(3), rnorm(5)),
+  yield.b = c(runif(3), rnorm(5)),
+  yield.c = c(runif(3), rnorm(5)))
+assets
+
+exposures <- aggregate(x = assets,
+                       by = list(assets$asset.class),
+                       FUN = mean)
+exposures
+exposures.1 <- aggregate(x = assets[c("yield.a", "yield.b", "yield.c")],
+                       by = list(results=assets$asset.class),
+                       FUN = max)
+exposures.1
