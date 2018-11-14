@@ -1,0 +1,87 @@
+### Business Analytics at NYU
+### Author: JC Bonilla
+### jb3379@nyu.edu
+
+url <-"https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/Univ%20Admissions.csv" 
+imbalance.data<-read.csv(url, header = TRUE)
+
+str(imbalance.data)
+table(imbalance.data$x.Status.1)
+prop.table(table(imbalance.data$x.Status.1))  # we see uneven distributions in target variable
+
+# let's two variables Apps as positive class and NonApps as negative class
+imbalance.data$Apps <- as.logical(0)
+imbalance.data$NonApps <- as.logical(0)
+
+for(i in 1:nrow(imbalance.data)) {
+  if (imbalance.data$x.Status.1[i]=="APPLICANT")
+    imbalance.data$Apps[i] <- as.logical(1)
+  else
+    imbalance.data$NonApps[i] <- as.logical(1)
+}
+
+
+#Sampling Method 1: ROSE
+library(caret)  #function createDataPartition()
+#Lets create our training dataset with a 70/30 split
+seed(123)
+index <- createDataPartition(imbalance.data$Apps, p=0.7, list=FALSE)
+train.imbalanced <- imbalance.data[ index,] 
+test<- imbalance.data[ -index,] 
+
+
+table(train.imbalanced$Apps)
+prop.table(table(train.imbalanced$Apps))  #Apps is the minority class at 5.6%
+barplot(prop.table(table(train.imbalanced$Apps)))
+
+library(ROSE)
+train.under<-ovun.sample(Apps~., data = train.imbalanced, method = "under", N= 17500)$data  #generates error
+train.imbalanced$Apps<-as.integer(train.imbalanced$Apps)
+
+train.under<-ovun.sample(Apps~., data = train.imbalanced, method = "under", N= 17500)$data  # this runs!
+prop.table(table(train.under$Apps))
+
+train.over<-ovun.sample(Apps~., data = train.imbalanced, method = "over", N= 297522)$data
+
+prop.table(table(train.over$Apps))
+
+train.both<-ovun.sample(Apps~., data = train.imbalanced, method = "both", N= 297522)$data
+prop.table(table(train.both$Apps))
+
+
+# Model trainig
+library(rpart)
+test$Apps<-as.integer(test$Apps)
+model.imbalance <- rpart(Apps~ x.Country + x.State + x.Gender + x.Source + x.GPA + x.SAT_Score + x.DistancetoCampus_miles + x.HouseholdIncome + x.InState,
+                         data=train.imbalanced, 
+                         method="class")
+model.under <- rpart(Apps~ x.Country + x.State + x.Gender + x.Source + x.GPA + x.SAT_Score + x.DistancetoCampus_miles + x.HouseholdIncome + x.InState,
+                     data=train.under, 
+                     method="class")
+model.over <- rpart(Apps~ x.Country + x.State + x.Gender + x.Source + x.GPA + x.SAT_Score + x.DistancetoCampus_miles + x.HouseholdIncome + x.InState,
+                    data=train.over, 
+                    method="class")
+model.both <- rpart(Apps~ x.Country + x.State + x.Gender + x.Source + x.GPA + x.SAT_Score + x.DistancetoCampus_miles + x.HouseholdIncome + x.InState,
+                    data=train.both, 
+                    method="class")
+
+predict.imbalance <- predict(model.imbalance, test, type='class', positive=1)
+predict.under <- predict(model.under, test, type='class')
+predict.over <- predict(model.over, test, type='class')
+predict.both <- predict(model.both, test, type='class')
+
+actuals<-as.factor(test$Apps)
+table(predict.imbalance, actuals)
+table(predict.under, actuals)
+table(predict.over, actuals)
+table(predict.both, actuals)
+
+
+require(caret)
+confusionMatrix(predict.imbalance, actuals, positive = "1")
+confusionMatrix(predict.under, actuals, positive = "1")
+confusionMatrix(predict.over, actuals, positive = "1")
+confusionMatrix(predict.both, actuals, positive = "1")
+
+
+
