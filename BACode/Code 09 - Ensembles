@@ -1,0 +1,149 @@
+### Business Analytics at NYU
+### Author: JC Bonilla
+### jb3379@nyu.edu
+
+################
+## ENSEMBLES ###
+################
+
+url<- "https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/school.csv"
+school <- read.csv(url, header = TRUE, stringsAsFactors = TRUE)
+str(school)
+
+# review the "balance" of the positive class we are about to predict
+table(school$Status)
+prop.table(table(school$Status))
+barplot(table(school$Status))
+
+# create a logical field of target variable
+school$APPLICANT <- as.logical(0)
+school$PROSPECT <- as.logical(0)
+
+for(i in 1:nrow(school)) {
+  if (school$Status[i]=="APPLICANT")
+    school$APPLICANT[i] <- as.logical(1)
+  else
+    school$PROSPECT[i] <- as.logical(1)
+}
+
+barplot(table(school$APPLICANT))
+
+
+### Selecting  variables for modeling.  A total of 12 variables with name updates
+library(dplyr)
+names(school)
+school.df <- select(school, 
+                    Country,
+                    State,
+                    Gender,
+                    Source,
+                    InState,
+                    Race,
+                    Religion,
+                    APPLICANT)
+
+
+# MODELING.  Let introduce some advance feature and best practices for replicability
+outcomeName <- 'APPLICANT'
+predictorNames <- names(school.df)[names(school.df) != outcomeName]  # creating a list of features 
+                                                                      #to be included in the model
+                                                                      #Useful with long number of features
+                                          
+school.df$APPLICANT<-as.factor(school.df$APPLICANT)
+
+set.seed(1234)  # setting seed to reproduce results of random sampling
+split<-(.70)
+library (caret)
+index <- createDataPartition(school.df$APPLICANT, p=split, list=FALSE) # row indices for training data
+
+train.df <- school.df[ index,]  # model training data
+test.df<- school.df[ -index,]   # test data
+
+# model setup
+names(getModelInfo())  #200+ ML algorithms
+
+modelLookup(model='rf')  # To find the parameters of a model that can be tuned
+modelLookup(model='gbm') 
+
+
+                      
+fitControl <- trainControl(method = "none")   # control parameters for training
+                                              # see help(trainControl) for details
+
+
+### RF Model
+rf<-train(train.df[,predictorNames],train.df[,outcomeName],
+                method='rf',
+                trControl=fitControl)
+
+gbm<-train(train.df[,predictorNames],train.df[,outcomeName],
+                 method='gbm',
+                 trControl=fitControl)
+
+# summarizing the models
+rfImp<-varImp(rf)  # computes variable importance for regression and classification models
+rfImp
+plot(rfImp)
+
+gbmImp<-varImp(gbm)
+gbmImp
+plot(gbmImp)
+
+
+# measuring performance
+rf.predict<-predict(rf,test.df[,predictorNames],type="raw")
+confusionMatrix(rf.predict,test.df[,outcomeName], positive = "TRUE")
+
+gbm.predict<-predict(gbm,test.df[,predictorNames],type="raw")
+confusionMatrix(gbm.predict,test.df[,outcomeName], positive = "TRUE")
+
+# draw ROC curve and perform visual check for better accurancy/performacen
+library(pROC)
+gbm.probs <- predict(gbm,test.df[,predictorNames],type="prob")    
+rf.probs <- predict(rf,test.df[,predictorNames],type="prob") 
+
+gbm.plot<-plot(roc(test.df$APPLICANT,gbm.probs[,2]))
+rf.plot<-lines(roc(test.df$APPLICANT,rf.probs[,2]), col="blue")
+legend("bottomright", legend=c("rf", "gbm"), col=c("blue", "black"), lwd=2)  # we can see who RF outperfoms GBM
+
+#Model tuning
+modelLookup(model='gbm') 
+help("trainControl")
+
+fitControl.gbm <- trainControl(method = "cv",
+                           number = 20,
+                           sampling = "up")   # control parameters for training
+                                              # see help(trainControl) for details
+
+gbm.tuned<-train(train.df[,predictorNames],train.df[,outcomeName],   #model retraining
+           method='gbm',
+           trControl=fitControl.gbm)
+
+# measuring performance
+gbm.tuned.predict<-predict(gbm.tuned,test.df[,predictorNames],type="raw")
+confusionMatrix(gbm.tuned.predict,test.df[,outcomeName], positive = "TRUE")
+gbm.tuned.probs <- predict(gbm.tuned,test.df[,predictorNames],type="prob")
+gbm.tuned.plot<-lines(roc(test.df$APPLICANT,gbm.tuned.probs[,2]), col="red")
+legend("bottomright", legend=c("rf", "gbm", "gbm.tuned"), col=c("blue", "black", "red"), lwd=2)
+
+#advanced tuning
+fitControl.gbm2 <- trainControl(method = "repeatedcv",
+                               number = 20,
+                               repeats = 5,
+                               sampling = "up")
+
+gbm2.tuned<-train(train.df[,predictorNames],train.df[,outcomeName],
+                 method='gbm',
+                 trControl=fitControl.gbm2)
+
+# measuring performance
+gbm2.tuned.predict<-predict(gbm2.tuned,test.df[,predictorNames],type="raw")
+confusionMatrix(gbm2.tuned.predict,test.df[,outcomeName], positive = "TRUE")
+gbm2.tuned.probs <- predict(gbm2.tuned,test.df[,predictorNames],type="prob")    
+gbm2.tuned.plot<-lines(roc(test.df$APPLICANT,gbm2.tuned.probs[,2]), col="green")
+legend("bottomright", legend=c("rf", "gbm", "gbm.tuned", "gbm2.tuned"), col=c("blue", "black", "red", "green"), lwd=2)
+
+auc(test.df$APPLICANT,gbm.probs[,2])
+auc(test.df$APPLICANT,rf.probs[,2])
+auc(test.df$APPLICANT,gbm.tuned.probs[,2])
+auc(test.df$APPLICANT,gbm2.tuned.probs[,2])
