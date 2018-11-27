@@ -1,0 +1,172 @@
+### Business Analytics at NYU
+### Author: JC Bonilla
+### jb3379@nyu.edu
+
+### Business Analytics at NYU
+### Author: JC Bonilla
+### jb3379@nyu.edu
+
+
+## ENSEMBLES
+library(caret)
+setwd("~/Downloads")
+url<- "https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/airbnb%20training%20data.csv"
+
+airbnb <- read.csv(url, header = TRUE, stringsAsFactors = TRUE)
+
+index <- sample(1:nrow(airbnb),(.1)*nrow(airbnb))  # technique to reduce dataset
+airbnb <- airbnb [index, ]
+
+str(airbnb)
+
+
+# Let model the target variable as booking using = "NDF" 
+table(airbnb$country_destination)
+airbnb$booking <- as.logical(1)
+
+for(i in 1:nrow(airbnb)) {
+  if (airbnb$country_destination[i]=="NDF")
+    airbnb$booking[i] <- as.logical(0)
+  else
+    airbnb$booking[i] <- as.logical(1)
+}
+
+table(airbnb$booking)   # to check "NDF" matches "booking"
+prop.table(table(airbnb$booking))
+
+# Now, let's subset for US only
+airbnb.us<-subset(airbnb, country_destination =="US" |country_destination =="NDF")
+prop.table(table(airbnb.us$booking))   #to review class balance
+table(airbnb.us$country_destination)
+### FEATURE ENGINEERING
+
+library(dataQualityR)
+checkDataQuality(data = airbnb.us, 
+                 out.file.num ="dq_num.csv", 
+                 out.file.cat= "dq_cat.csv")
+dq_num<-read.csv("~/Downloads/dq_num.csv")
+dq_cat<-read.csv("~/Downloads/dq_cat.csv")
+View(dq_num)   # "age" and " date_first_booking" with high perc missing
+View(dq_cat)   
+
+
+# na's and distribition of age
+sum(is.na(airbnb.us))   # check for missing values
+summary(airbnb.us$age)  # distribution
+table(airbnb.us$age)    # frequency
+
+# imputation for "age"
+age.median <- preProcess(airbnb.us, method = c("medianImpute"))
+airbnb.impute <- predict(age.median, airbnb.us)
+sum(is.na(airbnb.impute)) 
+summary(airbnb.impute$age)
+table(airbnb.impute$age)
+
+#truncating age to (18-110)
+airbnb.trunc<-subset(airbnb.impute, age>=18)
+airbnb.trunc<-subset(airbnb.trunc, age<110)
+sum(is.na(airbnb.trunc))
+summary(airbnb.trunc$age)
+table(airbnb.trunc$age)
+
+# compare imputation results.  As you can see this changes the distribution's mean
+boxplot(airbnb.us$age, airbnb.impute$age, airbnb.trunc$age, outline = FALSE) 
+
+airbnb.clean<-airbnb.trunc
+
+# making age into bands
+table(airbnb.clean$age)
+airbnb.clean$ageBands <- cut(airbnb.clean$age, 10)  #automatic approach
+summary(airbnb.clean$ageBands)
+
+airbnb.clean$ageBands <- cut(airbnb.clean$age,
+                             c(0,20,30,40,50,60,70,80,90,100,110))   # manual bins
+summary(airbnb.clean$ageBands)
+
+# date difference
+str(airbnb.clean$date_account_created)
+
+airbnb.clean$date_account_created<-as.Date(airbnb.clean$date_account_created,
+                                           format ="%m/%d/%y")
+airbnb.clean$date_first_booking<-as.Date(airbnb.clean$date_first_booking,
+                                         format ="%m/%d/%y")
+
+airbnb.clean$days<-difftime(airbnb.clean$date_first_booking, 
+                            airbnb.clean$date_account_created,
+                            units="days")
+airbnb.clean$days<-as.numeric(airbnb.clean$days)
+summary(airbnb.clean$days)
+airbnb.clean$days[airbnb.clean$days<0]<-0
+
+airbnb.clean$daysBand<-cut(airbnb.clean$days,20)
+table(airbnb.clean$daysBand)
+
+### Selecting final variables for modeling.  
+library(dplyr)
+names(airbnb.clean)
+airbnb.df <- select(airbnb.clean, 
+                    gender,
+                    signup_method,
+                    signup_app,
+                    first_device_type, 
+                    first_browser,
+                    ageBands,
+                    #daysBand,
+                    booking)
+
+
+# Now, we dummified all categorical variables
+str(airbnb.df)
+airbnb.df$booking <- as.integer(airbnb.df$booking)
+dataDummy <- dummyVars("~.",data=airbnb.df, fullRank=F)
+data.dummified <- as.data.frame(predict(dataDummy,airbnb.df))
+data.dummified$booking <- as.factor(data.dummified$booking)
+airbnb.raw.dummy<-write.csv(data.dummified,file="airbnb.dummified.csv")
+
+# MODELING
+library(caret)
+outcomeName <- 'booking'
+predictorNames <- names(data.dummified)[names(data.dummified) != outcomeName]
+
+set.seed(1234)  # setting seed to reproduce results of random sampling
+split<-(.80)
+index <- createDataPartition(data.dummified$booking, p=split, list=FALSE)  # row indices for training data
+
+train.df <- data.dummified[index, ]  # model training data
+test.df  <- data.dummified[-index, ]   # test data
+
+
+fitControl.gbm <- trainControl(method = "repeatedcv",
+                               number = 2,
+                               repeats = 2,
+                               sampling = "up")
+
+
+
+gbm<-train(train.df[,predictorNames],train.df[,outcomeName],
+                 method='gbm',
+                 trControl=fitControl.gbm)
+
+
+gbmImp<-varImp(gbm,scale=TRUE)
+gbmImp
+plot(gbmImp, top=20)
+
+gbmImp.T<-as.data.frame(gbmImp$importance)
+write.csv(gbmImp.T, "factors.csv")
+
+gbm.predict<-predict(gbm,test.df[,predictorNames],type="raw")
+confusionMatrix(gbm.predict,test.df[,outcomeName], positive = "1")
+
+library(pROC)
+gbm.probs <- predict(gbm,test.df[,predictorNames],type="prob")    
+
+gbm.plot<-plot(roc(test.df$booking,gbm.probs[,2]))
+
+band<-as.numeric(gbm.probs$`1`)
+scoreband<-cut(band,10)
+barplot(prop.table(table(scoreband)))
+
+
+save(gbm, file="GBMmodel.Rdata1")
+
