@@ -85,7 +85,8 @@ rfImp<-varImp(rf)  # computes variable importance for regression and classificat
 rfImp
 plot(rfImp)
 
-gbmImp<-varImp(gbm)
+gbmImp<-varImp(gbm) #generates error.  run with line below
+gbmImp<-summary(gbm)
 gbmImp
 plot(gbmImp)
 
