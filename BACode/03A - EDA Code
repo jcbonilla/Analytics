@@ -1,0 +1,64 @@
+### Business Analytics at NYU
+### Author: JC Bonilla
+### jb3379@nyu.edu
+
+################
+##    EDA    ###
+################
+
+library(dplyr)
+
+class(mtcars)
+str(mtcars)
+head(mtcars)
+summary(mtcars)
+View(mtcars)
+
+
+### group mtcars by cylinders and return some averages
+cars<-mtcars
+cars.x <- select(mtcars,cyl, mpg, hp, qsec)
+table(cars.x$cyl)
+unique(cars.x$cyl)
+grp.cyl <- group_by(cars.x, cyl)
+summarise(grp.cyl, mpg = mean(mpg), hp = mean(hp), qsec = mean(qsec))
+
+
+### draw plots of cylinders vs other variables
+par(mfrow = c(1,3), lwd = 4)
+plot(cars$cyl,cars$mpg, main = "Cylinders Vs Miles Per Gallon", xlab = "Miles Per Gallon", ylab = "Number of Cylinders", type = "h", col = "Red")
+plot(cars$cyl,cars$hp, main = "Cylinders vs Horsepower", xlab = "Horsepower", ylab = "Number of Cylinders", type = "h", col = "Blue")
+plot(cars$cyl,cars$qsec, main = "Cylinders vs Quarter Mile Time", xlab = "Quarter Mile Time in Seconds", ylab = "Number of Cylinders", type = "h", col = "Green")
+
+
+## EXAMPLE 2
+
+data <- read.csv("https://raw.githubusercontent.com/guru99-edu/R-Programming/master/lahman-batting.csv")
+  
+str(data)
+head(data)
+
+
+data.x<-select(data,playerID, yearID, AB, teamID, lgID, G, R, HR, SH)
+  
+arrange(data.x,playerID, teamID, yearID)
+
+summarise(data, mean_run =mean(R))
+
+summarise(data, mean_games = mean(G),
+          mean_SH = mean(SH, na.rm = TRUE))
+
+group.1<-group_by(data,lgID)
+sum.1<-summarise(group.1,mean_run = mean(HR))
+
+library(ggplot2)
+  ggplot(sum.1,aes(x = lgID, y = mean_run, fill = lgID)) +
+  geom_bar(stat = "identity") +
+  theme_classic() +
+  labs(
+    x = "Baseball league",
+    y = "Average home run",
+    title = paste(
+      "Example group_by() with summarise()"
+    )
+  )
