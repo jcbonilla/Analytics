@@ -11,6 +11,8 @@
 ###      7. Loading Data
 ###      8. Basic Analysis
 ###      9. Filtering data
+###      10. Visualization
+
 
 
 
@@ -33,6 +35,9 @@
 sqrt(16)
 
 2:20
+
+3<4
+
 
 
 #So, R does scalar arithmetic returning the scalar value. 
@@ -111,17 +116,36 @@ data
 data.1
 data*data.1   #this will result in an error.  Why?
 
+df<-data.frame()   # A data frame is used for storing data tables. It is a list of vectors of equal length.
+n = c(2, 3, 5) 
+s = c("aa", "bb", "cc") 
+b = c(TRUE, FALSE, TRUE) 
+df = data.frame(n, s, b)
+
+
+mtcars #this is a data source stored in R
+df.mtcars<- mtcars
+class(df.mtcars)
+names(df.mtcars)
+str(df.mtcars)
+head(df.mrcars)
+
+# lets index parts of the DF using "[ ]"
+mtcars[1, 2] 
+mtcars["Mazda RX4", "cyl"] 
+
 ##########################
 ####### Load Data ########
 ##########################
 
 #Methods 1: loading data from .csv file:
 
-data.1<- read.csv("~/Google Drive/zagat.csv", header=TRUE,stringsAsFactors=FALSE)   #direct method
+data.1<- read.csv("~/Downloads/zagat.csv", header=TRUE,stringsAsFactors=FALSE)   #direct method
 data.1
+
 #Methods 2: loading data from a working directory
 getwd()   # display active directory
-setwd("~/Google Drive")
+setwd("~/Documents")
 data.2<- read.csv("zagat.csv", header=TRUE,stringsAsFactors=FALSE)
 data.2
 
@@ -131,7 +155,7 @@ data.3<-read.csv(url, header=TRUE,stringsAsFactors=FALSE)
 data.3
 
 #exploring file
-data.3<-data
+data<-data.3
 names(data)
 dim(data)
 class(data)
@@ -151,14 +175,14 @@ str(data)
 ##########################
 
 #Basic Functions
-  mean()
-  var()
-  sd()
-  min()
-  max()
-  median()
-  quantile()
-  cor()
+mean()
+var()
+sd()
+min()
+max()
+median()
+quantile()
+cor()
 
 
 mean(data$Price)  
@@ -212,3 +236,55 @@ sd(zagat.z2$Service)
 dim(zagat.z1)
 summary(zagat.z1$Service)
 sd(zagat.z1$Service)
+
+
+
+##########################
+### Visualizing data #####
+##########################
+
+help(plot)
+help("lines")
+
+plot(data)
+
+
+
+
+plot(data$Food,data$Price,type="l")
+plot(data$Food,data$Price,type="b")
+plot(data$Food,data$Price,type="h")
+
+plot(data$Food,data$Price,
+     type="h",
+     main="ZAGAT CHART",
+     col = "red", 
+     lwd = 10,)
+require(stats) # for lowess, rpois, rnorm
+plot(cars)
+
+plot(data$Food,data$Price)
+lines(lowess(data$Food,data$Price), 
+      col = "blue", 
+      lwd = 5,)
+
+# Let's review some styling
+
+plot(
+  1:25, 
+  cex  = 3,
+  lwd  = 3,
+  pch  = 1:25, 
+  col  = rainbow(25), 
+  bg   = c(rep(NA, 20), terrain.colors(5)),
+  main = "plot(1:25, pch = 1:25, ...)"
+)
+
+plot(
+  (1:100) ^ 2, 
+  type = "l", 
+  lty  = "dashed",
+  lwd  = 3,
+  col  = "chocolate", 
+  main = 'plot((1:100) ^ 2, type = "l", lty = "dashed", ...)'
+)
