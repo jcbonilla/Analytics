@@ -1,0 +1,19 @@
+## Model: Data Quality Script
+## Author: JC Bonilla - jb3379@nyu.edu
+
+# Script loads a file and produces a data quality report for
+# numerical variables: "dq_num.csv"
+# categorical variables: "dq_cat.cs"
+
+setwd("~/Downloads")
+#load data
+mydata=read.csv("report.csv", stringsAsFactors = TRUE)
+
+library(dataQualityR)   #dataquality package
+checkDataQuality(data = mydata, 
+                 out.file.num ="dq_num.csv", 
+                 out.file.cat= "dq_cat.csv")   #filename for report
+dq_num<-read.csv("~/Downloads/dq_num.csv")
+dq_cat<-read.csv("~/Downloads/dq_cat.csv")
+View(dq_num)   
+View(dq_cat)
