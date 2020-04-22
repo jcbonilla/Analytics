@@ -78,11 +78,11 @@ dfm.stem<- dfm(newscorpus,
 
 topfeatures(dfm.stem, n=50)
 
-dfm.ngram2<- dfm(newscorpus, 
-                 remove = c(swlist,stopwords("english")), 
-                 verbose=TRUE, 
-                 ngrams = 2,
-                 stem=FALSE)
+#update for bigrans using tokens
+toks.1<-tokens(newscorpus)   #creates tokens
+toks.2<-tokens_remove(toks.1, stopwords("english"))  #remove stopwords from tokens
+toks.3 <-tokens_ngrams(toks.2, n=2) # ngram =2
+dfm.ngram2<- dfm(toks.3, verbose=TRUE)
 
 topfeatures(dfm.ngram2, n=50)
 
@@ -90,7 +90,6 @@ topfeatures(dfm.ngram2, n=50)
 kwic(newscorpus, "hot", 2)
 
 kwic(newscorpus , "data", window = 3)
-
 
 
 #Sentiment Analysis
