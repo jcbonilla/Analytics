@@ -1,7 +1,6 @@
 ---
 title: "Classification Three"
-author: "Business Analytics@NYU"
-date: "Fall 2017"
+author: "BBA@NYU"
 output: html_document
 ---
 
@@ -50,7 +49,7 @@ rpart.plot(mytree)
 Example from Jared
 
 ```{r}
-credit <-load("~/Downloads/credit.rdata")
+credit <-read.csv("https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/credit.csv")
 str(credit)
 require(rpart)
 creditTree<-rpart(Credit~CreditAmount + Age + CreditHistory + Employment, data = credit )
@@ -58,6 +57,5 @@ creditTree
 
 rpart.plot(creditTree)
 ```
-
 
 
