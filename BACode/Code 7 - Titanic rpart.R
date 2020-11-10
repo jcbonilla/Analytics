@@ -31,7 +31,7 @@ rpart.plot(fit, type =2, tweak = 2)
 Prediction <- predict(fit, test, type = "class")
 table(Prediction, test$Survived)
 require(caret)
-confusionMatrix(Prediction, test$Survived)
+confusionMatrix(Prediction, as.factor(test$Survived))
 
 
 # Manually trim a decision tree
@@ -43,7 +43,7 @@ rpart.plot(fit, type =2, tweak = 2)
 Prediction2 <- predict(fit, test, type = "class")
 table(Prediction, test$Survived)
 table(Prediction2, test$Survived)
-confusionMatrix(Prediction, test$Survived)
+confusionMatrix(Prediction, as.factor(test$Survived))
 
 
 # one more trick
@@ -55,8 +55,4 @@ fancyRpartPlot(new.fit)
 fit <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked, data=train,
              method="class", control=rpart.control(minsplit=2, cp=0))
 rpart.plot(fit)
-
-
-
-
 
