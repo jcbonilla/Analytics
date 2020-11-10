@@ -20,11 +20,14 @@ for(i in 1:nrow(imbalance.data)) {
     imbalance.data$NonApps[i] <- as.logical(1)
 }
 
+# Another way to execute this:
+imbalance.data$Apps2=ifelse(imbalance.data$x.Status.1=="APPLICANT",1,0)
 
 #Sampling Method 1: ROSE
 library(caret)  #function createDataPartition()
 #Lets create our training dataset with a 70/30 split
-seed(123)
+
+set.seed(123)
 index <- createDataPartition(imbalance.data$Apps, p=0.7, list=FALSE)
 train.imbalanced <- imbalance.data[ index,] 
 test<- imbalance.data[ -index,] 
@@ -82,6 +85,3 @@ confusionMatrix(predict.imbalance, actuals, positive = "1")
 confusionMatrix(predict.under, actuals, positive = "1")
 confusionMatrix(predict.over, actuals, positive = "1")
 confusionMatrix(predict.both, actuals, positive = "1")
-
-
-
