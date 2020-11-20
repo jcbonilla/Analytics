@@ -1,0 +1,16 @@
+Deal_ID,Value,Currency of Weighted value,Probability,Organization,Stage,Status,Deal created,Update time,Total activities,Done activities
+Deal 1,35720,,,Org 1,Prospecting,Won,5/7/18 15:36,10/28/20 19:36,25,25
+Deal 2,96000,USD,,Org 2,Prospecting,Lost,5/7/18 15:38,9/8/20 17:58,7,7
+Deal 3,67000,USD,,Org 3,Prospecting,Lost,5/9/18 23:15,9/8/20 18:23,48,48
+Deal 4,9000,USD,,Org 4,Prospecting,Lost,5/10/18 14:12,9/8/20 17:33,3,3
+Deal 5,32000,USD,,Org 5,Prospecting,Lost,5/10/18 19:08,4/2/20 18:30,19,19
+Deal 6,32000,USD,,Org 6,Prospecting,Lost,5/14/18 14:43,11/27/19 14:13,0,0
+Deal 7,93800,,,Org 7,Prospecting,Won,5/14/18 19:26,10/28/20 19:37,32,32
+Deal 8,34000,USD,,Org 8,Prospecting,Lost,5/15/18 16:41,9/8/20 17:33,52,52
+Deal 9,24000,USD,,Org 9,Prospecting,Open,5/15/18 16:46,9/15/20 21:04,21,21
+Deal 10,47500,USD,,Org 10,Prospecting,Open,5/15/18 16:47,9/8/20 17:23,21,21
+Deal 11,32000,USD,,Org 11,Prospecting,Lost,5/15/18 16:49,9/8/20 17:40,10,10
+Deal 12,18000,USD,,Org 12,Prospecting,Lost,5/15/18 21:13,9/8/20 17:28,13,13
+Deal 13,47500,USD,,Org 13,Prospecting,Open,5/15/18 21:17,10/15/20 19:52,16,16
+Deal 14,32000,USD,,Org 14,Prospecting,Lost,5/16/18 0:19,9/8/20 17:33,13,13
+Deal 15,32000,USD,,Org 15,Stakeholder Demo,Lost,5/16/18 21:50,5/16/19 0:20,33,33

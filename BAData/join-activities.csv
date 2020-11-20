@@ -1,0 +1,86 @@
+activity_ID,Subject,Type,Done,Deal_ID,Due date,Due time,Duration,Note,Add time,Update time
+48977,Left Voicemail with Frank Hribar,Call,Done,Deal 1,2/25/20,,,,2/25/20 20:07,2/25/20 20:07
+48978,Left Voicemail with Joe VanGeison,Call,Done,Deal 2,2/25/20,,,,2/25/20 20:08,2/25/20 20:08
+51881,Call,Call,Done,Deal 3,6/4/20,,,NA,6/4/20 17:52,6/4/20 17:52
+51882,Call,Call,Done,Deal 4,6/9/20,,,Send we rec,6/4/20 17:52,6/9/20 20:13
+52000,Call,Call,Done,Deal 5,6/23/20,,,,6/9/20 20:13,6/23/20 21:03
+57284,Call,Call,To do,Deal 1,1/13/21,,,,10/27/20 23:44,10/27/20 23:44
+52611,Email,Email,Done,Deal 2,6/23/20,,,sent webinar and overview,6/23/20 20:13,6/23/20 20:13
+52612,Call,Call,Done,Deal 3,6/30/20 15:30,15:30:00,,,6/23/20 20:14,6/30/20 14:52
+52786,Call,Call,Done,Deal 4,7/9/20 15:30,15:30:00,,,6/30/20 14:52,7/9/20 16:03
+53001,Connect,Connect,Done,Deal 5,7/9/20,,,,7/9/20 16:03,7/9/20 16:03
+53002,Email,Email,Done,Deal 6,7/9/20,,,,7/9/20 16:08,7/9/20 16:08
+53003,Task/Meeting,Task/Meeting,Done,Deal 7,7/10/20,,,check for meeting times,7/9/20 16:08,7/15/20 14:56
+53110,Email,Email,Done,Deal 8,7/15/20,,,,7/15/20 15:48,7/15/20 15:48
+53111,Call,Call,Done,Deal 9,7/15/20,,,,7/15/20 15:48,7/15/20 15:48
+53203,Connect,Connect,Done,Deal 10,7/15/20,,,,7/16/20 20:00,7/16/20 20:00
+53108,Discovery Call Scheduled,Discovery Call Scheduled,Done,Deal 11,7/23/20 19:30,19:30:00,,,7/15/20 14:57,7/15/20 15:54
+53109,Demo Presentation Scheduled,Demo Presentation Scheduled,Done,Deal 12,7/23/20 19:30,19:30:00,,,7/15/20 14:58,7/15/20 19:01
+53204,Discovery Call Held,Discovery Call Held,Done,Deal 13,7/23/20 19:30,19:30:00,1:00,,7/16/20 20:01,7/23/20 20:47
+53205,Demo Presentation Held,Demo Presentation Held,Done,Deal 14,7/23/20 19:30,19:30:00,1:00,,7/16/20 20:01,7/23/20 20:47
+53521,Email,Email,Done,Deal 15,7/23/20,,,sent recorded demo,7/23/20 23:45,7/23/20 23:45
+53580,Call,Call,Done,Deal 1,7/28/20,,,called to find out about contract is up with Recruit.,7/27/20 20:17,7/27/20 20:17
+53637,Call,Call,Done,Deal 2,7/28/20,,,,7/28/20 22:19,7/28/20 22:19
+53638,Connect,Connect,Done,Deal 3,7/28/20,,,,7/28/20 22:19,7/28/20 22:19
+53636,Email,Email,Done,Deal 4,7/30/20,,,email article Wayne sent me,7/28/20 22:19,7/30/20 16:45
+53718,Call,Call,Done,Deal 5,10/13/20,,,,7/30/20 16:46,10/13/20 15:33
+56665,Call,Call,Done,Deal 6,10/14/20,,,,10/13/20 15:33,10/23/20 20:52
+57125,Call,Call,Done,Deal 7,10/26/20,,,CAll to invite to webinar,10/23/20 20:52,10/26/20 21:11
+57183,Call,Call,Done,Deal 8,10/27/20,,,,10/26/20 21:11,10/27/20 18:58
+57245,Call,Call,Done,Deal 9,10/27/20,,,,10/27/20 18:58,10/27/20 18:58
+57246,Call,Call,Done,Deal 10,10/27/20,,,"Implementing Workday, but interested in CRM. Reach back out in the NY.....",10/27/20 18:58,10/27/20 23:44
+47599,Call,Call,Done,Deal 1,2/20/20,,,,12/9/19 21:46,4/30/20 19:11
+54854,Call,Call,To do,Deal 1,9/3/20,,,,8/25/20 19:38,8/25/20 19:38
+50838,Email,Email,Done,Deal 2,4/22/20,,,,4/22/20 19:41,4/22/20 19:41
+50839,send webinar email,Email,Done,Deal 3,4/28/20,,,,4/22/20 19:41,4/28/20 14:59
+51019,Call,Call,Done,Deal 4,4/28/20,,,,4/28/20 14:59,4/28/20 14:59
+51018,Email,Email,Done,Deal 5,5/5/20,,,,4/28/20 14:59,5/7/20 21:42
+51251,Email,Email,Done,Deal 6,5/12/20,,,,5/7/20 21:42,6/10/20 20:49
+52078,Email,Email,Done,Deal 7,6/10/20,,,,6/10/20 20:49,6/10/20 20:49
+52079,Email,Email,Done,Deal 8,6/17/20,,,,6/10/20 20:49,8/25/20 19:37
+54853,Call,Call,Done,Deal 9,8/25/20,,,,8/25/20 19:38,8/25/20 19:38
+57629,Call,Call,To do,Deal 1,11/12/20,,,,11/4/20 18:04,11/4/20 18:04
+57628,Call,Call,Done,Deal 2,11/4/20,,,,11/4/20 18:04,11/4/20 18:04
+57695,Try back beginning of next week,Call,To do,Deal 1,11/9/20,,,Spoke with Molly and she is slammed asked for call next week,11/5/20 16:25,11/5/20 16:25
+48266,Great Call with Molly Henderson - She will be a great advocate for us!,Call,Done,Deal 2,2/19/20,,,,2/3/20 11:35,2/19/20 16:00
+49141,Chatted with Molly Henderson,Call,Done,Deal 3,3/2/20,,,,3/2/20 14:44,3/2/20 14:44
+49142,Connect,Connect,Done,Deal 4,3/2/20,,,,3/2/20 14:47,3/2/20 14:47
+50942,Call,Call,Done,Deal 5,4/24/20,,,NA,4/24/20 0:49,4/24/20 19:01
+50966,Call,Call,Done,Deal 6,4/30/20,,,,4/24/20 19:01,4/30/20 20:07
+48790,Schedule a meeting for May,Call,Done,Deal 7,5/4/20,,,,2/19/20 15:59,5/7/20 20:30
+51078,Call,Call,Done,Deal 8,5/7/20,,,,4/30/20 20:07,5/7/20 20:30
+51238,Call,Call,Done,Deal 9,5/7/20,,,,5/7/20 20:31,5/7/20 20:31
+51239,Call,Call,Done,Deal 10,5/7/20,,,tried all the numbers,5/7/20 20:32,5/7/20 20:32
+51240,Call,Call,Done,Deal 11,5/12/20,,,,5/7/20 20:32,5/14/20 20:34
+51465,Connect,Connect,Done,Deal 12,5/14/20,,,Liason 3 year contract <div>Using visit days and mongoose</div>,5/14/20 20:35,5/14/20 20:35
+51539,Discovery Call Held,Discovery Call Held,Done,Deal 13,5/15/20,,,,5/19/20 20:20,5/21/20 16:26
+51472,Set Demo,Demo Presentation Scheduled,Done,Deal 14,5/20/20 2:00,2:00:00,,,5/15/20 2:09,5/19/20 20:20
+51540,Demo Presentation Held,Demo Presentation Held,Done,Deal 15,5/20/20,,,,5/19/20 20:21,5/19/20 20:22
+51541,Call,Call,Done,Deal 1,5/20/20,,,Send email tomorrow,5/19/20 20:21,5/21/20 22:12
+51607,Email,Email,Done,Deal 2,5/22/20,,,,5/21/20 22:12,5/22/20 19:07
+51612,Task/Meeting,Task/Meeting,Done,Deal 3,5/22/20,,,Ask Heather about insights demo,5/22/20 3:15,5/22/20 19:07
+51645,Call,Call,Done,Deal 4,6/9/20,,,Sent webinar and info about insights451. next touch is invite to the next webinar,5/22/20 19:09,6/9/20 18:00
+51967,Email,Email,Done,Deal 5,6/11/20,,,,6/9/20 18:00,6/11/20 18:13
+52143,Call,Call,Done,Deal 6,6/11/20,,,,6/11/20 18:11,6/11/20 18:11
+52144,Call,Call,Done,Deal 7,6/11/20,,,LVM on cell,6/11/20 18:13,6/11/20 18:13
+52145,Call,Call,Done,Deal 8,8/27/20,,,See how things are going,6/11/20 18:13,8/31/20 21:10
+55057,Call,Call,Done,Deal 9,9/3/20,,,,8/31/20 21:10,9/3/20 22:24
+55253,Call,Call,Done,Deal 10,9/9/20,,,,9/3/20 22:24,9/9/20 16:18
+56537,Call,Call,Done,Deal 11,10/8/20,,,Spoke with Molly and Liason did not turn on their application after they turned theirs off and asked for her not to tell her boss. Covid is rampant and the whole team is dispersed. Tough time for them. She is taking to her boss about the application problem.&nbsp;,10/8/20 21:06,10/8/20 21:06
+56538,Connect,Connect,Done,Deal 12,10/8/20,,,,10/8/20 21:06,10/8/20 21:06
+56539,Call,Call,Done,Deal 13,11/5/20,,,,10/8/20 21:06,11/5/20 16:24
+57632,Check to see how board meeting went,Task/Meeting,To do,Deal 1,11/10/20 14:00,14:00:00,,,11/4/20 18:17,11/4/20 18:17
+47784,Call LVM,Call,Done,Deal 2,1/7/20,,,,12/31/19 2:40,1/7/20 18:58
+47857,Email intro,Email,Done,Deal 3,1/7/20,,,,1/7/20 19:02,1/7/20 19:02
+47888,Connected w/Charles,Connect,Done,Deal 4,1/8/20,,,"<div>1/8/2020</div><ul><li>Charles said he met with so many people at the NC conference that he cannot remember much about Element451</li><li>He would want a refresher demo and wants his buyer/DM on the demo as well (Marilyn DeBerry - dean of enrollment mgmt)</li><li>They are still in the same situation - Jenzabar and no CRM</li><li>when asked if they were still considering options to implement a CRM he said ""I am not sure - Mrs. DeBerry would be the one to ask)</li><li>Demo scheduled for 1/14 at 10am EST</li></ul>",1/8/20 16:03,1/8/20 16:03
+47889,Demo Refresher 1/14 @ 10am EST,missed_demo,Done,Deal 5,1/14/20 15:00,15:00:00,1:00,"<div>1/8/2020</div><ul><li>Charles said he met with so many people at the NC conference that he cannot remember much about Element451</li><li>He would want a refresher demo and wants his buyer/DM on the demo as well (Marilyn DeBerry - dean of enrollment mgmt)</li><li>They are still in the same situation - Jenzabar and no CRM</li><li>when asked if they were still considering options to implement a CRM he said ""I am not sure - Mrs. DeBerry would be the one to ask)</li><li>Demo scheduled for 1/14 at 10am EST</li></ul>",1/8/20 16:03,1/14/20 15:16
+47912,Call LVM - waiting in demo space,Call,Done,Deal 6,1/14/20,,,Charles has not jumped into zoom meeting yet,1/14/20 15:07,1/14/20 15:07
+47913,reschedule demo email,Email,Done,Deal 7,1/14/20,,,,1/14/20 15:12,1/14/20 15:12
+47914,Call,Call,Done,Deal 8,1/15/20,,,,1/14/20 15:16,1/16/20 16:56
+47856,Call,Call,Done,Deal 9,1/16/20,,,,1/7/20 18:58,1/8/20 15:39
+47949,Call,Call,Done,Deal 10,1/17/20,,,,1/16/20 16:56,1/20/20 18:28
+47977,Call LVM,Call,Done,Deal 11,2/4/20,,,,1/20/20 18:28,2/4/20 17:01
+48304,Email,Email,Done,Deal 12,2/4/20,,,,2/4/20 17:05,2/4/20 17:05
+48303,Call,Call,Done,Deal 13,2/13/20,,,,2/4/20 17:02,2/20/20 21:05
+48893,Call,Call,Done,Deal 14,2/20/20,,,,2/20/20 21:05,2/20/20 21:05
+48894,Call,Call,Done,Deal 15,2/25/20,,,,2/20/20 21:05,2/25/20 21:44
