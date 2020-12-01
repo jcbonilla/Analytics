@@ -66,13 +66,6 @@ dfm.stem<- dfm(newscorpus,
 
 topfeatures(dfm.stem, n=50)
 
-dfm.ngram2<- dfm(newscorpus, 
-                 remove = c(swlist,stopwords("english")), 
-                 verbose=TRUE, 
-                 ngrams = 2,
-                 stem=FALSE)
-
-topfeatures(dfm.ngram2, n=50)
 
 #exploration in context
 kwic(newscorpus, "hot", 2)
@@ -288,3 +281,4 @@ json <- createJSON(phi = news_for_LDA$phi,
                    term.frequency = news_for_LDA$term.frequency)
 
 serVis(json, out.dir = 'vis', open.browser = TRUE)
+
