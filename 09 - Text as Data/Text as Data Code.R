@@ -2,8 +2,6 @@
 ### Author: JC Bonilla
 ### jb3379@nyu.edu
 
-
-library(tm)
 library(quanteda)
 #load .csv file with news articles
 url<-"https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/NewsText.csv"
@@ -36,26 +34,15 @@ newscorpus<- corpus(precorpus$Full.text,
                     docvar=data.frame(Year_tbd=precorpus$Publication.year,
                                       Subjectx= precorpus$Subject))
 #explore the corpus
-names(newscorpus)   #to explore the output of the corpus function: "documents" "metadata"  "settings"  "tokens" 
 summary(newscorpus)  #summary of corpus
-
-
-# To view richness of docs
-doc.df<-newscorpus$documents
-token.df<-count.fields(textConnection(doc.df$texts))
-doc.df$Tokens<-token.df
-
-library(ggplot2)
-p3<-ggplot(data=doc.df, aes(x=Tokens))
-p3 + geom_histogram(binwidth = 20) + ylab("Distribution of tokens")
 
 
 #create document feature matrix from clean corpus + stem
 help(dfm)
 dfm.simple<- dfm(newscorpus, 
-          remove = stopwords("english"), 
-          verbose=TRUE, 
-          stem=FALSE)
+                 remove = stopwords("english"), 
+                 verbose=TRUE, 
+                 stem=FALSE)
 
 topfeatures(dfm.simple, n=50)
 
@@ -73,54 +60,50 @@ dfm<- dfm(newscorpus,
 topfeatures(dfm, n=50)
 
 dfm.stem<- dfm(newscorpus, 
-          remove = c(swlist,stopwords("english")), 
-          verbose=TRUE, 
-          stem=TRUE)
+               remove = c(swlist,stopwords("english")), 
+               verbose=TRUE, 
+               stem=TRUE)
 
 topfeatures(dfm.stem, n=50)
 
 dfm.ngram2<- dfm(newscorpus, 
-               remove = c(swlist,stopwords("english")), 
-               verbose=TRUE, 
-               ngrams = 2,
-               stem=FALSE)
+                 remove = c(swlist,stopwords("english")), 
+                 verbose=TRUE, 
+                 ngrams = 2,
+                 stem=FALSE)
 
 topfeatures(dfm.ngram2, n=50)
 
-
-# to evaluate sparcity
-dfm.tm<-convert(dfm, to="tm")
-dfm.tm  
-dfm.sparse<-removeSparseTerms(dfm.tm,0.9 )
-dfm.sparse
-
-
-
 #exploration in context
-tokens<-as.tokens()
 kwic(newscorpus, "hot", 2)
-
 kwic(newscorpus , "data", window = 3)
-
-
 
 #Sentiment Analysis
 mydict <- dictionary(list(negative = c("detriment*", "bad*", "awful*", "terrib*", "horribl*"),
                           postive = c("good", "great", "super*", "excellent", "yay")))
 
 dfm.sentiment <- dfm(newscorpus, 
-    remove = c(swlist,stopwords("english")), 
-    verbose=TRUE, 
-    dictionary = mydict,
-    stem=FALSE)
+                     remove = c(swlist,stopwords("english")), 
+                     verbose=TRUE, 
+                     dictionary = mydict,
+                     stem=FALSE)
 topfeatures(dfm.sentiment)
 View(dfm.sentiment)
+
+#specifying a correlation limit of 0.5
+library(tm)
+dfm.tm<-convert(dfm, to="tm")
+dfm.tm
+findAssocs(dfm.tm, 
+           c("data", "tech", "big"), 
+           corlimit=0.4)
+findAssocs(dfm.tm, 
+           c("public","model", "create" ), 
+           corlimit=0.7)
 
 #########################
 ### WORD CLOUD ########
 #########################
-
-
 library(wordcloud)
 set.seed(142)   #keeps cloud' shape fixed
 dark2 <- brewer.pal(8, "Set1")   
@@ -131,21 +114,11 @@ wordcloud(names(freq),
           scale=c(3, .1), 
           colors=brewer.pal(8, "Set1"))
 
-
-#specifying a correlation limit of 0.5   
-findAssocs(dfm.tm, 
-           c("data", "tech", "big"), 
-           corlimit=0.4)
-findAssocs(dfm.tm, 
-           c("public","model", "create" ), 
-           corlimit=0.7)
-
 ##########################
 ### Topic Modeling
 ##########################
 
 library(stm)
-
 #Process the data for analysis.
 help("textProcessor")
 temp<-textProcessor(documents=precorpus$Full.text, metadata = precorpus)
