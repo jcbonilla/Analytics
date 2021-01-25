@@ -1,2 +1,0 @@
-##Managing Data Projects
-Designing analytics solutions not only depends on the data and models, but also on the aspects governing the culture and environment around teams where the analytics will be deployed.  In order to design successful data solutions, we will cover in this week the principles of how to turn information into insight, project scoping,  thinking data, and mitigating risks for analytics adoption.
