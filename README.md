@@ -1,9 +1,15 @@
-# Business Analytics, New York University #
-This repository contains the class materials for the Business Analytics taught at New York University.  Comments or questions please email Dr. JC Bonilla at jb3379@nyu.edu
+# Analytics, New York University #
+This repository contains the supportive class materials for the Analytics courses taught at New York University.  Comments or questions please email Dr. JC Bonilla at jb3379@nyu.edu
 
 
-# Course Description
+# Business Analytics 
 Business analytics is a set of data analysis and modeling techniques for understanding business situations and improving business decisions.  This course provides an introduction to business analytics concepts, methods and tools with concrete examples from industry applications. In the first part of the course, we will focus on data analysis concepts and understanding data with a refresher on basic probability and statistics. In the second part, we will cover the principles and techniques for data visualization to improve comprehension, communication, and decision-making. The final part of the course will introduce the basic principles and techniques of applied mathematical modeling for managerial decision making with an emphasis on optimization models that are widely used in diverse industries and functional areas, including finance, marketing, and operations. Finally, throughout the course, we explore the challenges that can arise in implementing analytical approaches within an organization.
  
 The course emphasizes that business analytics is not a theoretical discipline: these techniques are only interesting and important to the extent that they can be used to provide real insights and improve the speed, reliability, and quality of decisions.
  
+# Analytics for Process Improvement
+Analytics for process performance is a more specific term for a type of business analytics which focuses on improving existing operations.  This type of analytics involves the use of various data mining and data aggregation tools to get more transparent information for business planning, develop consensus and drive improvements. 
+
+This course provides an introduction to process analytics concepts, methods and tools with concrete examples from industry applications. This course builds around 3 unique projects: First, a project on descriptive analytics to measure and analyze processes.   In this first part of the course, we will focus on descriptive analytics and exploratory data analysis concepts with a refresher on basic probability and statistics.  The second project involves predictive analytics for process performance.  Here, we will cover predictive techniques such a linear regression, classification modeling, and text mining. The final project is the capstone experience of the course.  Using publicly accessible datasets or data that is secured via mutual consent, students are required to link business impact and modern data analytics techniques for overall process improvement.
+
+Throughout the course, we explore the challenges that can arise in implementing analytical approaches within an organization. The course emphasizes that analytics is not a theoretical discipline: these techniques are only interesting and important to the extent that they can be used to provide real insights and improve the speed, reliability, and quality of operations. 
