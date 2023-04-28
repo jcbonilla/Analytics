@@ -7,8 +7,7 @@ library(quanteda)
 #load .csv file with news articles
 url<-"https://raw.githubusercontent.com/jcbonilla/BusinessAnalytics/master/BAData/NewsText.csv"
 
-precorpus<- read.csv(url, 
-                     header=TRUE, stringsAsFactors=FALSE)
+precorpus<- read.csv(url,header=TRUE, stringsAsFactors=FALSE)   #file load
 
 dim(precorpus) # dim of file; 107 files with 11 headers
 names(precorpus)   # names of the headers
@@ -16,7 +15,11 @@ head(precorpus)
 str(precorpus)
 head(precorpus$Full.text)
 
+##########################
+### PREPROCESSING
+##########################
 
+#clean up process using gsub and regular expressions
 precorpus$Full.text <- gsub("'", "", precorpus$Full.text) # remove apostrophes
 precorpus$Full.text <- gsub("[[:punct:]]", " ", precorpus$Full.text)  # replace punctuation with space
 precorpus$Full.text <- gsub("[[:cntrl:]]", " ", precorpus$Full.text)  # replace control characters with space
@@ -26,11 +29,7 @@ precorpus$Full.text <- gsub("[^a-zA-Z -]", " ", precorpus$Full.text) # allows on
 precorpus$Full.text <- tolower(precorpus$Full.text)  # force to lowercase
 head(precorpus$Full.text)
 
-##########################
-### Preprocessing
-##########################
 #create a corpus
-require (quanteda)
 help(corpus)
 names(precorpus)
 newscorpus<- corpus(precorpus$Full.text)
@@ -45,40 +44,80 @@ newscorpus<- corpus(precorpus$Full.text,
                                       Subject= precorpus$Subject,
                                       Place=precorpus$Location,
                                       Title= precorpus$Title))
-
-names(newscorpus)  
+names(newscorpus) 
 summary(newscorpus)  #summary of corpus
 
-#create document feature matrix from clean corpus + stem
-help(dfm)
-dfm.simple<- dfm(newscorpus, 
-                 remove = stopwords("english"), 
-                 verbose=TRUE, 
-                 stem=FALSE)
+#create a corpus
+help(corpus)
+names(precorpus)
+newscorpus<- corpus(precorpus$Full.text)
+#explore the corpus
+names(newscorpus)
+summary(newscorpus)  #summary of corpus
 
+#create a corpus with metadata
+newscorpus<- corpus(precorpus$Full.text,
+                    docnames=precorpus$Document_ID,
+                    docvar=data.frame(Year=precorpus$Publication.year,
+                                      Subject= precorpus$Subject,
+                                      Place=precorpus$Location,
+                                      Title= precorpus$Title))
+names(newscorpus) 
+summary(newscorpus)  #summary of corpus
+
+
+##########################
+### ANALYSIS
+##########################
+
+#create document feature matrix from clean corpus + stem
+help(tokens)
+help(dfm)
+dfm.tokens=tokens(newscorpus)
+dfm.simple=dfm(dfm.tokens)
 topfeatures(dfm.simple, n=50)
 
+#advanced clean up dococument
+dfm.tokens=tokens(newscorpus, remove_punct = TRUE, remove_symbols = TRUE, remove_numbers = TRUE, 
+                  remove_url = TRUE,
+                  remove_separators = TRUE)
+dfm.simple=dfm(dfm.tokens)
+topfeatures(dfm.simple, n=50)
+
+topfeatures(dfm.simple, n=10,   decreasing = FALSE)
+
+#create document feature matrix from clean corpus + stem
+help(tokens)
+help(dfm)
+dfm.tokens=tokens(newscorpus)
+dfm.simple=dfm(dfm.tokens)
+topfeatures(dfm.simple, n=50)
+
+#advanced clean up dococument
+dfm.tokens=tokens(newscorpus, remove_punct = TRUE, remove_symbols = TRUE, remove_numbers = TRUE, 
+                  remove_url = TRUE,
+                  remove_separators = TRUE)
+dfm.simple=dfm(dfm.tokens)
+topfeatures(dfm.simple, n=50)
+topfeatures(dfm.simple, n=10,   decreasing = TRUE)
+
+
+# removing stop words
+help(dfm_remove)
+
+dfm<- dfm_remove(dfm.simple, stopwords("english"))
+topfeatures(dfm, n=50)
 
 # create a custom dictonary
 swlist = c("s", "u","said", "the", "also", "say", "just", "like","for", 
            "us", "can", "may", "now", "year", "according", "mr", 
            "market", "share", "one", "company")
 
-dfm<- dfm(newscorpus, 
-          remove = c(swlist,stopwords("english")), 
-          verbose=TRUE, 
-          stem=FALSE)
 
-topfeatures(dfm, n=50)
+dfm.sw<- dfm_remove(dfm.simple, c(stopwords("english"),swlist))
+topfeatures(dfm.sw, n=50)
 
-dfm.stem<- dfm(newscorpus, 
-               remove = c(swlist,stopwords("english")), 
-               verbose=TRUE, 
-               stem=TRUE)
-
-topfeatures(dfm.stem, n=50)
-
-#update for bigrans using tokens
+#update for bigrams using tokens
 toks.1<-tokens(newscorpus)   #creates tokens
 toks.2<-tokens_remove(toks.1, stopwords("english"))  #remove stopwords from tokens
 toks.3 <-tokens_ngrams(toks.2, n=2) # ngram =2
@@ -86,43 +125,16 @@ dfm.ngram2<- dfm(toks.3, verbose=TRUE)
 
 topfeatures(dfm.ngram2, n=50)
 
-#exploration in context
-kwic(newscorpus, "hot", 2)
-
-kwic(newscorpus , "data", window = 3)
-
+#Stemming
+dfm.stem=dfm_wordstem(dfm.sw)
+topfeatures(dfm.stem, n=50)
 
 #Sentiment Analysis
 mydict <- dictionary(list(negative = c("detriment*", "bad*", "awful*", "terrib*", "horribl*"),
                           positive = c("good", "great", "super*", "excellent", "yay")))
 
-dfm.sentiment <- dfm(newscorpus, 
-                     remove = c(swlist,stopwords("english")), 
-                     verbose=TRUE, 
-                     dictionary = mydict,
-                     stem=FALSE)
+dfm.sentiment=dfm_lookup(dfm.sw, mydict)
 topfeatures(dfm.sentiment)
-View(dfm.sentiment)
-
-# to evaluate sparcity
-dfm
-dfm.tm<-convert(dfm, to="tm")
-dfm.tm  
-require(tm)
-dfm.sparse<-removeSparseTerms(dfm.tm,0.5 )
-dfm.sparse
-
-#specifying a correlation limit of 0.5   
-findAssocs(dfm.tm, 
-           c("data", "tech", "big"), 
-           corlimit=0.4)
-findAssocs(dfm.tm, 
-           c("public","model", "create" ), 
-           corlimit=0.7)
-
-
-
-
 
 #########################
 ### WORD CLOUD ########
@@ -137,61 +149,28 @@ wordcloud(names(freq),
           scale=c(3, .1), 
           colors=brewer.pal(8, "Set1"))
 
-
-##########################
-### Topic Modeling
-##########################
-
-library(stm)
-
-#Process the data for analysis.
-help("textProcessor")
-temp<-textProcessor(documents=precorpus$Full.text, metadata = precorpus)
-names(temp)  # produces:  "documents", "vocab", "meta", "docs.removed" 
-meta<-temp$meta
-vocab<-temp$vocab
-docs<-temp$documents
-out <- prepDocuments(docs, vocab, meta)
-docs<-out$documents
-vocab<-out$vocab
-meta <-out$meta
-
-
-#running stm for top 20 topics
-help("stm")
-prevfit <-stm(docs , vocab , 
-              K=20, 
-              verbose=TRUE,
-              data=meta, 
-              max.em.its=50)
-
-topics <-labelTopics(prevfit , topics=c(1:20))
-topics   #shows topics with highest probability words
-
-#explore the topics in context.  Provides an example of the text 
-help("findThoughts")
-findThoughts(prevfit, texts = precorpus$Full.text,  topics = 10,  n = 2)
-
-help("plot.STM")
-plot.STM(prevfit, type="summary")
-plot.STM(prevfit, type="labels", topics=c(5,7,8))
-plot.STM(prevfit, type="perspectives", topics = c(19,10))
-
-# to aid on assigment of labels & intepretation of topics
-help(topicCorr)
-mod.out.corr <- topicCorr(prevfit)  #Estimates a graph of topic correlations
-plot(mod.out.corr)
-
+#########################
+### CORRELATIONS ########
+#########################
+# to evaluate sparcity
+dfm
+dfm.tm<-convert(dfm.sw, to="tm")
+dfm.tm  
+dfm.sparse<-removeSparseTerms(dfm.tm,0.5 )
+dfm.sparse
+#specifying a correlation limit of 0.5   
+findAssocs(dfm.tm, 
+           c("data", "tech", "big"), 
+           corlimit=0.4)
+findAssocs(dfm.tm, 
+           c("public","model", "create" ), 
+           corlimit=0.7)
 
 
 #####################
 # Hierc. Clustering 
 #####################
-library(tm)
-dfm.tm<-convert(dfm, to="tm")
-dfm.tm
 dtmss <- removeSparseTerms(dfm.tm, 0.5)
-dtmss
 d.dfm <- dist(t(dtmss), method="euclidian")
 fit <- hclust(d=d.dfm, method="average")
 hcd <- as.dendrogram(fit)
@@ -211,10 +190,10 @@ ggdendrogram(fit, rotate = TRUE, size = 4, theme_dendro = FALSE,  color = "blue"
   ggtitle("Cluster Dendrogram")
 
 
+##########################
+### Topic Modeling
+##########################
 
-#######################################
-### Advanced method for Topic Modeling
-#######################################
 
 library(dplyr)
 require(magrittr)
